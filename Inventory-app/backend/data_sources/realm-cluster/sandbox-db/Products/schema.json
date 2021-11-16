@@ -1,0 +1,42 @@
+{
+    "bsonType": "object",
+    "properties": {
+        "_id": {
+            "bsonType": "objectId"
+        },
+        "_partition": {
+            "bsonType": "string"
+        },
+        "description": {
+            "bsonType": "string"
+        },
+        "detail": {
+            "bsonType": "string"
+        },
+        "image": {
+            "bsonType": "string"
+        },
+        "name": {
+            "bsonType": "string"
+        },
+        "price": {
+            "bsonType": "double"
+        },
+        "sku": {
+            "bsonType": "long"
+        },
+        "totalQuantity": {
+            "bsonType": "long"
+        }
+    },
+    "required": [
+        "_id",
+        "_partition",
+        "name",
+        "sku",
+        "image",
+        "price",
+        "totalQuantity"
+    ],
+    "title": "Products"
+}

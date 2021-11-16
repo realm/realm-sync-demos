@@ -1,0 +1,8 @@
+{
+    "app_id": "phase-1-sandbox-kuaoq",
+    "config_version": 20210101,
+    "name": "phase-1-sandbox",
+    "location": "US-VA",
+    "deployment_model": "GLOBAL",
+    "environment": "development"
+}

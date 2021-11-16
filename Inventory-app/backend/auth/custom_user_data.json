@@ -1,0 +1,7 @@
+{
+    "enabled": true,
+    "mongo_service_name": "realm-cluster",
+    "database_name": "sandbox-db",
+    "collection_name": "Users",
+    "user_id_field": "customDataId"
+}
