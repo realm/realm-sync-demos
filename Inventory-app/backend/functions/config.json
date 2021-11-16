@@ -1,0 +1,30 @@
+[
+    {
+        "name": "createNewUser",
+        "private": true
+    },
+    {
+        "name": "customAuthFunction",
+        "private": true
+    },
+    {
+        "name": "updateProductInfo",
+        "private": true
+    },
+    {
+        "name": "sendEmailToUser",
+        "private": true
+    },
+    {
+        "name": "hashPassword",
+        "private": true
+    },
+    {
+        "name": "checkPassword",
+        "private": true
+    },
+    {
+        "name": "updateInventory",
+        "private": true
+    }
+]

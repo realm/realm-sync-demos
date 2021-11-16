@@ -1,0 +1,32 @@
+{
+    "assignedTo": {
+        "ref": "#/relationship/realm-cluster/sandbox-db/Users",
+        "source_key": "assignedTo",
+        "foreign_key": "_id",
+        "is_list": false
+    },
+    "createdBy": {
+        "ref": "#/relationship/realm-cluster/sandbox-db/Users",
+        "source_key": "createdBy",
+        "foreign_key": "_id",
+        "is_list": false
+    },
+    "destinationStore": {
+        "ref": "#/relationship/realm-cluster/sandbox-db/Stores",
+        "source_key": "destinationStore",
+        "foreign_key": "_id",
+        "is_list": false
+    },
+    "products": {
+        "ref": "#/relationship/realm-cluster/sandbox-db/ProductQuantity",
+        "source_key": "products",
+        "foreign_key": "_id",
+        "is_list": true
+    },
+    "sourceStore": {
+        "ref": "#/relationship/realm-cluster/sandbox-db/Stores",
+        "source_key": "sourceStore",
+        "foreign_key": "_id",
+        "is_list": false
+    }
+}

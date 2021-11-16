@@ -1,0 +1,8 @@
+{
+    "product": {
+        "ref": "#/relationship/realm-cluster/sandbox-db/Products",
+        "source_key": "product",
+        "foreign_key": "_id",
+        "is_list": false
+    }
+}

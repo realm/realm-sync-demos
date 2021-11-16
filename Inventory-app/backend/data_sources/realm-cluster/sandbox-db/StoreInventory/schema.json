@@ -1,0 +1,33 @@
+{
+    "bsonType": "object",
+    "properties": {
+        "_id": {
+            "bsonType": "objectId"
+        },
+        "_partition": {
+            "bsonType": "string"
+        },
+        "image": {
+            "bsonType": "string"
+        },
+        "productId": {
+            "bsonType": "objectId"
+        },
+        "productName": {
+            "bsonType": "string"
+        },
+        "quantity": {
+            "bsonType": "long"
+        },
+        "storeId": {
+            "bsonType": "objectId"
+        }
+    },
+    "required": [
+        "_id",
+        "_partition",
+        "productName",
+        "image"
+    ],
+    "title": "StoreInventory"
+}

@@ -1,0 +1,10 @@
+{
+    "name": "realm-cluster",
+    "type": "mongodb-atlas",
+    "config": {
+        "clusterName": "RealmCluster",
+        "readPreference": "primary",
+        "wireProtocolEnabled": false
+    },
+    "version": 1
+}

@@ -1,0 +1,26 @@
+{
+    "id": "6130de9d30bae0ffa8522685",
+    "name": "updateProductInfo",
+    "type": "DATABASE",
+    "config": {
+        "operation_types": [
+            "UPDATE"
+        ],
+        "database": "sandbox-db",
+        "collection": "Products",
+        "service_name": "realm-cluster",
+        "match": {},
+        "project": {},
+        "full_document": true,
+        "full_document_before_change": false,
+        "unordered": false
+    },
+    "disabled": false,
+    "event_processors": {
+        "FUNCTION": {
+            "config": {
+                "function_name": "updateProductInfo"
+            }
+        }
+    }
+}

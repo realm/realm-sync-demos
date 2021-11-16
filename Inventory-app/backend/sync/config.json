@@ -1,0 +1,15 @@
+{
+    "state": "enabled",
+    "database_name": "sandbox-db",
+    "partition": {
+        "key": "_partition",
+        "type": "string",
+        "required": true,
+        "permissions": {
+            "read": true,
+            "write": true
+        }
+    },
+    "development_mode_enabled": false,
+    "service_name": "realm-cluster"
+}

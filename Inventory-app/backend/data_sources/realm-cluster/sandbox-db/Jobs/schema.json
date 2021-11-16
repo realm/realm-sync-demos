@@ -1,0 +1,41 @@
+{
+    "bsonType": "object",
+    "properties": {
+        "_id": {
+            "bsonType": "objectId"
+        },
+        "_partition": {
+            "bsonType": "string"
+        },
+        "assignedTo": {
+            "bsonType": "objectId"
+        },
+        "createdBy": {
+            "bsonType": "objectId"
+        },
+        "destinationStore": {
+            "bsonType": "objectId"
+        },
+        "pickupDatetime": {
+            "bsonType": "date"
+        },
+        "products": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "objectId"
+            }
+        },
+        "sourceStore": {
+            "bsonType": "objectId"
+        },
+        "status": {
+            "bsonType": "string"
+        }
+    },
+    "required": [
+        "_id",
+        "_partition",
+        "status"
+    ],
+    "title": "Jobs"
+}
