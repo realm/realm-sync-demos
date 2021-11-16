@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+   android:layout_marginLeft="8dp"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/productName"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:layout_weight="2"
+        android:maxLines="1"
+        android:background="@drawable/back"
+        android:layout_gravity="center"
+        tools:text="Select a Product "
+        android:textSize="15sp" />
+    <TextView
+        android:id="@+id/quantity"
+        android:layout_weight="1"
+        android:layout_width="50dp"
+        android:background="@drawable/back"
+        android:hint="Quantity"
+        android:padding="8dp"
+        android:textSize="15sp"
+        android:layout_gravity="center"
+        android:layout_height="40dp"/>
+    <ImageView
+        android:layout_width="30dp"
+        android:id="@+id/removeItem"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:src="@drawable/ic_remove"
+        android:layout_height="40dp"/>
+
+
+</LinearLayout>
+</layout>

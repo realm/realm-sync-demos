@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="createJobViewModel"
+            type="com.wekanmdb.storeinventory.ui.createjobs.CreateJobViewModel" />
+
+
+    </data>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentEnd="true"
+    android:layout_gravity="center">
+
+    <include
+        android:id="@+id/common_create_job"
+        layout="@layout/common_toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/common_create_job">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/gleft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="16dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/gright"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="16dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/gtop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="16dp" />
+            <TextView
+                android:id="@+id/sourceTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Pick Up Store"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@id/gleft"
+                app:layout_constraintRight_toLeftOf="@id/gright"
+                app:layout_constraintTop_toBottomOf="@id/gtop"/>
+
+            <TextView
+                android:id="@+id/sourcestoreh"
+                android:background="@drawable/back"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:gravity="left"
+                android:padding="8dp"
+                android:layout_margin="8dp"
+                android:hint="Prefilled store name"
+                app:layout_constraintLeft_toRightOf="@id/gleft"
+                app:layout_constraintRight_toLeftOf="@id/gright"
+                app:layout_constraintTop_toBottomOf="@id/sourceTitle"/>
+            <TextView
+                android:id="@+id/dropStoreTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Destination Store"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@id/gleft"
+                app:layout_constraintRight_toLeftOf="@id/gright"
+                app:layout_constraintTop_toBottomOf="@id/sourcestoreh"/>
+            <TextView
+                android:id="@+id/dropstoreh"
+                android:background="@drawable/back"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:drawableRight="@drawable/ic_right_arrow"
+                android:hint="Drop store name"
+                android:gravity="left"
+                android:padding="8dp"
+                android:layout_margin="8dp"
+                app:layout_constraintLeft_toRightOf="@id/gleft"
+                app:layout_constraintRight_toLeftOf="@id/gright"
+                app:layout_constraintTop_toBottomOf="@id/dropStoreTitle"/>
+            <TextView
+                android:id="@+id/dateTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Date &amp; Time"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@id/gleft"
+                app:layout_constraintRight_toLeftOf="@id/timeTitle"
+                app:layout_constraintTop_toBottomOf="@id/dropstoreh"/>
+            <TextView
+                android:id="@+id/timeTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Time"
+                android:visibility="invisible"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@id/dateTitle"
+                app:layout_constraintRight_toLeftOf="@id/gright"
+                app:layout_constraintTop_toBottomOf="@id/dropstoreh"/>
+
+            <TextView
+                android:id="@+id/dateh"
+                style="@style/outlineBox"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:hint="Date"
+                android:padding="8dp"
+                android:layout_margin="8dp"
+                android:focusableInTouchMode="false"
+                android:background="@drawable/back"
+                android:gravity="left"
+                app:layout_constraintLeft_toRightOf="@id/gleft"
+                app:layout_constraintRight_toLeftOf="@id/timeh"
+                app:layout_constraintTop_toBottomOf="@id/dateTitle" />
+
+
+
+            <TextView
+                android:id="@+id/timeh"
+                style="@style/outlineBox"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:hint="Time"
+                android:padding="8dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/back"
+                android:gravity="left"
+                app:layout_constraintLeft_toRightOf="@id/dateh"
+                app:layout_constraintRight_toLeftOf="@id/gright"
+                app:layout_constraintTop_toBottomOf="@id/dateTitle" />
+            <TextView
+                android:id="@+id/assigneeTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Assignee"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@id/gleft"
+                app:layout_constraintRight_toLeftOf="@id/gright"
+                app:layout_constraintTop_toBottomOf="@id/dateh"/>
+
+
+
+            <TextView
+                android:id="@+id/assigneeh"
+                android:background="@drawable/back"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                app:errorEnabled="true"
+                android:gravity="left"
+                android:hint=" Select Assignee"
+                android:layout_margin="8dp"
+                android:padding="8dp"
+                app:layout_constraintLeft_toRightOf="@id/gleft"
+                app:layout_constraintRight_toLeftOf="@id/gright"
+                app:layout_constraintTop_toBottomOf="@id/assigneeTitle"
+                app:drawableEndCompat="@drawable/ic_right_arrow"/>
+            <ProgressBar
+                android:id="@+id/loading"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@id/assigneeh"
+                app:layout_constraintLeft_toRightOf="@id/gleft"
+                app:layout_constraintRight_toLeftOf="@id/gright"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/prodAddTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Add Products"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@id/gleft"
+                app:layout_constraintRight_toLeftOf="@id/quantityTitle"
+                app:layout_constraintTop_toBottomOf="@id/assigneeh"/>
+            <TextView
+                android:id="@+id/prodNameInput"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_margin="8dp"
+                android:padding="8dp"
+                android:hint="Enter Product Name"
+                android:textStyle="bold"
+                android:background="@drawable/back"
+                app:layout_constraintLeft_toRightOf="@id/gleft"
+                app:layout_constraintRight_toLeftOf="@id/quantityTitle"
+                app:layout_constraintTop_toBottomOf="@id/prodAddTitle"/>
+            <EditText
+                android:id="@+id/quantityTitle"
+                android:layout_width="77dp"
+                android:layout_height="40dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/back"
+                android:hint="Qty"
+                android:padding="8dp"
+                app:layout_constraintLeft_toRightOf="@id/prodNameInput"
+                app:layout_constraintRight_toLeftOf="@id/gright"
+                app:layout_constraintTop_toBottomOf="@id/prodAddTitle"/>
+
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="8dp"
+                app:layout_constraintLeft_toRightOf="@id/gleft"
+                app:layout_constraintRight_toLeftOf="@id/gright"
+                app:layout_constraintTop_toBottomOf="@id/prodNameInput" />
+            <Button
+                android:id="@+id/addProduct"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:layout_margin="8dp"
+                style="@style/background_create_job_Button"
+                android:text="+Add Product"
+                app:backgroundTint="@color/color_createJob_screen"
+                app:layout_constraintTop_toBottomOf="@id/listView"
+                app:layout_constraintLeft_toRightOf="@id/gleft"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/gright" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+    <Button
+        android:id="@+id/createjob"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_margin="8dp"
+        android:text="Create Job"
+        android:background="@drawable/bg_login"
+        style="@style/background_create_job_Button"
+        app:backgroundTint="@color/color_createJob_screen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
