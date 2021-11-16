@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#EB7B14</color>
+    <color name="purple_500">#EB7B14</color>
+    <color name="purple_700">#EB7B14</color>
+    <color name="teal_200">#219653</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_color">#F5F5F5</color>
+    <color name="chat_background">#F9FDFF</color>
+    <color name="chatbox_background">#F1F5F8</color>
+    <color name="home_back">#F3F3F3</color>
+    <color name="home_backs">#BAB8B8</color>
+    <color name="colorGrey">#4C4C4C</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorPrimary">#EE4557</color>
+    <color name="color_createJob_screen">#EE4557</color>
+    <color name="text_color">@color/black</color>
+    <color name="text_hint_color">#737373</color>
+    <color name="search_background">#F1F5F8</color>
+    <color name="viewColor">#23000000</color>
+    <color name="viewbg">#23F8F6F6</color>
+</resources>

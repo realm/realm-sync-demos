@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
+
+        <item name="colorPrimary">#00ffff</item>
+        <item name="colorPrimaryDark">#987654</item>
+        <item name="colorAccent">#ff00ff</item>
+        <item name="android:buttonBarNegativeButtonStyle" >@style/NegativeButtonStyle</item>
+        <item name="android:buttonBarPositiveButtonStyle">@style/NegativeButtonStyle</item>
+    </style>
+    <style name="NegativeButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">#ff00ff</item>
+    </style>
+
+    <style name="CustomCalenderTheme" parent="Theme.AppCompat.Light.Dialog">
+
+        <item name="colorPrimary">#00ffff</item>
+        <item name="colorPrimaryDark">#987654</item>
+        <item name="colorAccent">#EE4557</item>
+        <item name="android:buttonBarNegativeButtonStyle" >@style/NegativeButtonCalender</item>
+        <item name="android:buttonBarPositiveButtonStyle">@style/NegativeButtonCalender</item>
+
+    </style>
+    <style name="NegativeButtonCalender" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">#EE4557</item>
+    </style>
+
+
+</resources>
