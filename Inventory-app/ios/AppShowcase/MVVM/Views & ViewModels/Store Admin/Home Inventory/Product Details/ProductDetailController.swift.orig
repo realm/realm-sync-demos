@@ -1,0 +1,95 @@
+//
+//  ProductDetailController.swift
+//  AppShowcase
+//
+//  Created by Gagandeep on 31/08/21.
+//
+
+import UIKit
+
+class ProductDetailController: UIViewController {
+    
+    @IBOutlet weak var productImage: UIImageView!
+    @IBOutlet weak var productDescription: UITextView!
+    @IBOutlet weak var productSKUNumber: UITextField!
+    @IBOutlet weak var productPrice: UITextField!
+    @IBOutlet weak var productQuantity: UITextField!
+    @IBOutlet weak var productName: UITextField!
+    @IBOutlet weak var productTableView: UITableView!
+    //Passing model values
+    var inventory: StoreInventory?
+    var product: Products?
+    
+    // MARK: - View Controller Life cycle
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        productTableView.rowHeight = UITableView.automaticDimension
+        productTableView.estimatedRowHeight = 60
+        loadData()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.tabBarController?.tabBar.isHidden = true
+    }
+    
+    // MARK: - Private methods
+
+    private func loadData(){
+        self.productName.text = self.product?.name
+<<<<<<< HEAD
+        self.productQuantity.text = "\(self.product?.totalQuantity ?? 0)"
+        self.productDescription.text = self.product?.detail
+        self.productPrice.text = "$\(self.product?.price ?? 0.0)"
+        self.productSKUNumber.text = "SKU: \(self.product?.sku ?? 0)"
+=======
+        self.productQuantity.text = String(describing: self.product?.totalQuantity)
+        self.productPrice.text = "300"
+        self.productSKUNumber.text = "ABfg456"
+>>>>>>> feature
+    
+        if let urlStr =  self.inventory?.image {
+            guard let url = URL(string: urlStr) else {
+                self.productImage.image = nil
+                return
+            }
+            self.productImage.af.setImage(withURL: url)
+        } else {
+            self.productImage.image = nil
+        }
+        productTableView.reloadData()
+    }
+}
+
+extension ProductDetailController: UITableViewDelegate,UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        switch indexPath.row {
+        case 0:
+            cell.textLabel?.text = product?.name
+            cell.detailTextLabel?.text = ""
+            cell.textLabel?.font = .boldSystemFont(ofSize: 16)
+        case 1:
+            cell.textLabel?.text = "Quantity"
+            cell.detailTextLabel?.text = "\(inventory?.quantity ?? 0)"
+        case 2:
+            cell.textLabel?.text = "SKU"
+            cell.detailTextLabel?.text = "\(product?.sku ?? 0)"
+        case 3:
+            cell.textLabel?.text = "Price"
+            cell.detailTextLabel?.text = "$\(product?.price ?? 0.0)"
+        case 4:
+            cell.textLabel?.text = "Description"
+            cell.detailTextLabel?.text = product?.detail
+        default:
+            cell.textLabel?.text = ""
+            cell.detailTextLabel?.text = ""
+        }
+
+        return cell
+    }
+}
