@@ -1,6 +1,6 @@
 # Inventory App
 
-With the help of Realm's Ecosystem and MongoDB, This Inventory app showcases the Inventory & Delivery operations of a mind/large sale store chain. 
+With the help of Realm's Ecosystem and MongoDB, This Inventory app showcases the Inventory & Delivery operations of a mid/large sale store chain. 
 
 ## Features
 
