@@ -305,24 +305,24 @@ import RealmSwift
     
     /// Get jobs I created as a  store admin
     /// - Returns: jobs array
-    func getStoreAdminJobs() -> (Results<Jobs>?, Results<Jobs>?) {
+    func getStoreAdminJobs() -> Results<Jobs>? { //}(Results<Jobs>?, Results<Jobs>?) {
         let userId = UserDefaults.standard.value(forKey: Defaults.userId) as? String ?? ""
         let userIdObj = try! RealmSwift.ObjectId(string: userId)
         let user = self.getUser(withId: userIdObj)
-        let currentJobResults = masterRealm?.objects(Jobs.self).filter("createdBy = %@ AND status != %@", user!, "done").sorted(byKeyPath: "pickupDatetime", ascending: true)
-        let doneJobResults = masterRealm?.objects(Jobs.self).filter("createdBy = %@ AND status = %@", user!, "done").sorted(byKeyPath: "pickupDatetime", ascending: true)
-        return (currentJobResults, doneJobResults)
+        let date = Calendar.current.date(bySettingHour: 0, minute: 0, second: 0, of: Date())!
+        let currentJobResults = masterRealm?.objects(Jobs.self).filter("createdBy = %@ AND pickupDatetime >= %@", user!, date).sorted(byKeyPath: "pickupDatetime", ascending: true)
+        return currentJobResults
     }
     
     /// Get jobs I got assigned as a delivery user
     /// - Returns: jobs array
-    func getDeliveryJobs() -> (Results<Jobs>?, Results<Jobs>?) {
+    func getDeliveryJobs() -> Results<Jobs>? {  //(Results<Jobs>?, Results<Jobs>?) {
         let userId = UserDefaults.standard.value(forKey: Defaults.userId) as? String ?? ""
         let userIdObj = try! RealmSwift.ObjectId(string: userId)
         let user = self.getUser(withId: userIdObj)
-        let currentJobResults = masterRealm?.objects(Jobs.self).filter("assignedTo = %@ AND status != %@", user!, "done").sorted(byKeyPath: "pickupDatetime", ascending: true)
-        let doneJobResults = masterRealm?.objects(Jobs.self).filter("assignedTo = %@ AND status = %@", user!, "done").sorted(byKeyPath: "pickupDatetime", ascending: true)
-        return (currentJobResults, doneJobResults)
+        let date = Calendar.current.date(bySettingHour: 0, minute: 0, second: 0, of: Date())!
+        let currentJobResults = masterRealm?.objects(Jobs.self).filter("assignedTo = %@ AND pickupDatetime >= %@", user!, date).sorted(byKeyPath: "pickupDatetime", ascending: true)
+        return currentJobResults
     }
     
     func getJob(withId jobId: ObjectId) -> Jobs? {
