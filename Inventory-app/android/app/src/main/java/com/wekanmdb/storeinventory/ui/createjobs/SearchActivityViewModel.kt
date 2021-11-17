@@ -50,13 +50,13 @@ class SearchActivityViewModel @Inject constructor() : BaseViewModel<SearchNaviga
 
     fun storeListListener(){
         try {
-            storeList?.addChangeListener({ storList ->
+            storeList?.addChangeListener { storList ->
                 if (storList.isNotEmpty()) {
                     responseBodyStores.postValue(storList!!)
                 } else {
                     responseBodyStores.value = null
                 }
-            })
+            }
         }
         catch (e:Exception){
             e.localizedMessage
@@ -86,13 +86,13 @@ class SearchActivityViewModel @Inject constructor() : BaseViewModel<SearchNaviga
 
     fun assigneeListListener(){
         try {
-            assigneeList?.addChangeListener({ assigneeList ->
+            assigneeList?.addChangeListener { assigneeList ->
                 if (assigneeList.isNotEmpty()) {
-                    responseBodyAssignees.postValue(assigneeList!!)
+                    responseBodyAssignees.postValue(assigneeList)
                 } else {
                     responseBodyAssignees.value = null
                 }
-            })
+            }
         }
         catch (e:Exception){
             e.localizedMessage
@@ -125,13 +125,13 @@ class SearchActivityViewModel @Inject constructor() : BaseViewModel<SearchNaviga
     fun storeInventoryListListener(){
         try {
 
-            storeInventoryList?.addChangeListener({ invList ->
-                if (assigneeList?.isNotEmpty()!!) {
-                    responseBodyInventoryList.postValue(invList!!)
+            storeInventoryList?.addChangeListener { invList ->
+                if (invList.isNotEmpty()) {
+                    responseBodyInventoryList.postValue(invList)
                 } else {
                     responseBodyInventoryList.value = null
                 }
-            })
+            }
         }
         catch (e:Exception){
             e.localizedMessage

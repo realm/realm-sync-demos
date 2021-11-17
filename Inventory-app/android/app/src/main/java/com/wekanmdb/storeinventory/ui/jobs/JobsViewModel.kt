@@ -46,8 +46,12 @@ class JobsViewModel @Inject constructor() : BaseViewModel<JobsNavigator>() {
 
     fun getJobList() {
         val userId = ObjectId(userId.get().toString())
-        jobsList = apprealm?.where<Jobs>()?.equalTo("createdBy._id", userId)?.greaterThan("pickupDatetime", Date())?.sort("pickupDatetime", Sort.ASCENDING)?.findAll()
-//        jobsList = apprealm?.where<Jobs>()?.equalTo("createdBy._id", userId)?.sort("pickupDatetime", Sort.ASCENDING)?.findAll()
+        val calendar = Calendar.getInstance()
+
+        calendar.set(Calendar.HOUR_OF_DAY, 0)
+        calendar.set(Calendar.MINUTE, 0)
+        calendar.set(Calendar.SECOND, 0)
+        jobsList = apprealm?.where<Jobs>()?.equalTo("createdBy._id", userId)?.greaterThan("pickupDatetime", calendar.time)?.sort("pickupDatetime", Sort.ASCENDING)?.findAll()
             if (jobsList?.size!!>0) {
                 jobresponseBody.postValue(jobsList)
             } else {
