@@ -19,7 +19,13 @@ class DeliveryJobViewModel @Inject constructor() : BaseViewModel<DeliveryJobNavi
 
     fun getDeliveryJob() {
         val objectId = ObjectId(userId.get().toString())
-        jobsList = apprealm?.where<Jobs>()?.equalTo("assignedTo._id", objectId)?.greaterThan("pickupDatetime", Date())?.sort("pickupDatetime", Sort.ASCENDING)?.findAll()
+        val calendar = Calendar.getInstance()
+
+        calendar.set(Calendar.HOUR_OF_DAY, 0)
+        calendar.set(Calendar.MINUTE, 0)
+        calendar.set(Calendar.SECOND, 0)
+
+        jobsList = apprealm?.where<Jobs>()?.equalTo("assignedTo._id", objectId)?.greaterThan("pickupDatetime", calendar.time)?.sort("pickupDatetime", Sort.ASCENDING)?.findAll()
         if (jobsList?.size!! > 0) {
             jobresponseBody.postValue(jobsList)
         } else {

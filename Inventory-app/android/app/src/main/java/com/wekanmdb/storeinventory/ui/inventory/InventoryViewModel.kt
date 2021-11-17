@@ -23,12 +23,14 @@ class InventoryViewModel @Inject constructor() : BaseViewModel<InventoryNavigato
 
     fun getStore() {
         val storeId = ObjectId(storeId.get().toString())
-        storesItemList = apprealm?.where<Stores>()?.equalTo("_id", storeId)?.findAll()
-        if (storesItemList?.isNotEmpty()!!) {
-            val store: Stores? = storesItemList!![0]
-            storesresponseBody.postValue(store!!)
-        } else {
-            storesresponseBody.value = null
+        if(apprealm != null && apprealm?.isClosed == false) {
+            storesItemList = apprealm?.where<Stores>()?.equalTo("_id", storeId)?.findAll()
+            if (storesItemList?.isNotEmpty()!!) {
+                val store: Stores? = storesItemList!![0]
+                storesresponseBody.postValue(store!!)
+            } else {
+                storesresponseBody.value = null
+            }
         }
     }
 
