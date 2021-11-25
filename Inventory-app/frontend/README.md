@@ -39,6 +39,19 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
+# Screens
+
+## Login screen <br><img src="./Screenshots/1login.png" width="700" height="400">
+## Create User screen <br><img src="./Screenshots/2users-create.png" width="700" height="400">
+## User List screen <br><img src="./Screenshots/3users-list.png" width="700" height="400">
+## Create Store screen <br><img src="./Screenshots/4store-create.png" width="700" height="400">
+## Store Inventory List screen <br><img src="./Screenshots/5store-inventory-list.png" width="700" height="400">
+## Store List screen <br><img src="./Screenshots/6store-list.png" width="700" height="400">
+## Create Product screen <br><img src="./Screenshots/7products-create.png" width="700" height="400">
+## Product List screen <br><img src="./Screenshots/8products-list.png" width="700" height="400">
+## Create Job screen <br><img src="./Screenshots/9job-create.png" width="700" height="400">
+## Job List screen <br><img src="./Screenshots/10jobs-list.png" width="700" height="400">
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
