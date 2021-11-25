@@ -29,19 +29,19 @@
 - In-Progress
 - Completed (Capture Date and Time of completion)
 
-![Splash screen](./ScreenShots/1splash.jpg)
-![Login screen](./ScreenShots/2login.jpg)
-![Store Admin Dashboard screen](./ScreenShots/3store_admin_dash.jpg)
-![Admin Profile screen](./ScreenShots/4admin_profile.jpg)
-![Product Details screen](./ScreenShots/5product_details.jpg)
-![Date Pick screen](./ScreenShots/6job_create_date_pick.jpg)
-![Time Pick screen](./ScreenShots/7job_create_time_pick.jpg)
-![Create Job screen](./ScreenShots/8job_create.jpg)
-![Assign User screen](./ScreenShots/9assign_user.jpg)
-![Add Product screen](./ScreenShots/10add_product.jpg)
-![Add Drop Store screen](./ScreenShots/11add_drop_store.jpg)
-![Admin Dashboard Jobs screen](./ScreenShots/12admin_dash_jobs.jpg)
-![Admin Edit Job Assignee screen](./ScreenShots/13job_edit_assignee.jpg)
-![Delivery Dashboard screen](./ScreenShots/14delivery_user_dash.jpg)
-![Delivery Edit Job Status screen](./ScreenShots/15job_edit_status.jpg)
-![Logout screen](./ScreenShots/16logout.jpg)
+## Splash screen <br><img src="./ScreenShots/1splash.jpg" width="400" height="700">
+## Login screen <br><img src="./ScreenShots/2login.jpg" width="400" height="700">
+## Store Admin Dashboard screen <br><img src="./ScreenShots/3store_admin_dash.jpg" width="400" height="700">
+## Admin Profile screen <br><img src="./ScreenShots/4admin_profile.jpg" width="400" height="700">
+## Product Details screen <br><img src="./ScreenShots/5product_details.jpg" width="400" height="700">
+## Date Pick screen <br><img src="./ScreenShots/6job_create_date_pick.jpg" width="400" height="700">
+## Time Pick screen <br><img src="./ScreenShots/7job_create_time_pick.jpg" width="400" height="700">
+## Create Job screen <br><img src="./ScreenShots/8job_create.jpg" width="400" height="700">
+## Assign User screen <br><img src="./ScreenShots/9assign_user.jpg" width="400" height="700">
+## Add Product screen <br><img src="./ScreenShots/10add_product.jpg" width="400" height="700">
+## Add Drop Store screen <br><img src="./ScreenShots/11add_drop_store.jpg" width="400" height="700">
+## Admin Dashboard Jobs screen <br><img src="./ScreenShots/12admin_dash_jobs.jpg" width="400" height="700">
+## Admin Edit Job Assignee screen <br><img src="./ScreenShots/13job_edit_assignee.jpg" width="400" height="700">
+## Delivery Dashboard screen <br><img src="./ScreenShots/14delivery_user_dash.jpg" width="400" height="700">
+## Delivery Edit Job Status screen <br><img src="./ScreenShots/15job_edit_status.jpg" width="400" height="700">
+## Logout screen <br><img src="./ScreenShots/16logout.jpg" width="400" height="700">
