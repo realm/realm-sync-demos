@@ -4,13 +4,13 @@ With the help of Realm's Ecosystem and MongoDB, this Inventory app showcases the
 
 ## Features
 
-- Manage Products inventory across the store chain. 
-- Manage active stores and its inventory.
-- Assign a store manager to a store to manage it's realtime inventory.
+- Manage Products inventory across a store chain. 
+- Manage active stores and their inventory.
+- Assign a store manager to a store to manage its realtime inventory.
 - Create a delivery user to fullfil the delivery jobs.
-- Alert store user on inventory shortage.
-- Store user can create a job request to topup the inventory.
-- Delivery user can perform jobs assigned to them.
+- Alert store users to inventory shortage.
+- Store users can create a job request to topup inventory.
+- Delivery users can perform jobs assigned to them.
 ## Tech
 
 This app uses a number of tools and services to work properly:
@@ -22,11 +22,11 @@ This app uses a number of tools and services to work properly:
 
 ## Folder Structure.
 
-The project has multiple projects into it each works as a seperate project.
+The project has multiple elementd in it, each works as a seperate project.
 
  - backend - The Realm project which has the realm config and schema's for this project.
- - frontend - The Admin dashboard to login and manage Inventory, Stores and Users.
+ - frontend - The Admin dashboard to login and manage Inventory, Stores, Jobs and Users.
  - android - The Store/Delivery User app.
- - ios - The Store/Delivery User app.
+ - iOS - The Store/Delivery User app.
  
-Each of this sub-folders will have required documentation to step-by-step installation and usage.
+Each of these sub-folders has required documentation and step-by-step installation and usage guides.
