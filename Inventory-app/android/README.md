@@ -1,6 +1,8 @@
 
 # Store manager app
- This app demonstrates a usecase of logistics for product movement, App will be used by the store admin for creating job to move product from store to store. The delivery user uses the app to process the job while the product movement happens.
+This app demonstrates a use case for logistics for product movement. 
+App will be used by the store admin for creating jobs. To move product from store to store.
+The delivery user uses the app to process the job while the product movement happens.
 
 ## Features:
 
@@ -28,6 +30,8 @@
 - Option to update the delivery job status to
 - In-Progress
 - Completed (Capture Date and Time of completion)
+
+# Screens
 
 ## Splash screen <br><img src="./ScreenShots/1splash.jpg" width="400" height="700">
 ## Login screen <br><img src="./ScreenShots/2login.jpg" width="400" height="700">

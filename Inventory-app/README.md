@@ -1,6 +1,6 @@
 # Inventory App
 
-With the help of Realm's Ecosystem and MongoDB, This Inventory app showcases the Inventory & Delivery operations of a mid/large sale store chain. 
+With the help of Realm's Ecosystem and MongoDB, this Inventory app showcases the Inventory & Delivery operations of a mid/large store chain.
 
 ## Features
 
@@ -15,10 +15,10 @@ With the help of Realm's Ecosystem and MongoDB, This Inventory app showcases the
 
 This app uses a number of tools and services to work properly:
 
-- [Realm DB]().
-- [Realm Sync]().
-- [React]().
-- [Realm GraphQL]().
+- [Realm DB](https://docs.mongodb.com/realm/cloud/).
+- [Realm Sync](https://docs.mongodb.com/realm/sync/).
+- [React](https://reactjs.org/docs/getting-started.html).
+- [Realm GraphQL](https://docs.mongodb.com/realm/graphql/).
 
 ## Folder Structure.
 
