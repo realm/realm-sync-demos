@@ -1,0 +1,46 @@
+{
+    "bsonType": "object",
+    "properties": {
+        "_id": {
+            "bsonType": "objectId"
+        },
+        "_partition": {
+            "bsonType": "string"
+        },
+        "customDataId": {
+            "bsonType": "string"
+        },
+        "email": {
+            "bsonType": "string"
+        },
+        "firstName": {
+            "bsonType": "string"
+        },
+        "lastName": {
+            "bsonType": "string"
+        },
+        "location": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "double"
+            },
+            "maxItems": 2,
+            "minItems": 2
+        },
+        "stores": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "objectId"
+            }
+        },
+        "userRole": {
+            "bsonType": "string"
+        }
+    },
+    "required": [
+        "_id",
+        "_partition",
+        "email"
+    ],
+    "title": "Users"
+}

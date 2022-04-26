@@ -1,0 +1,8 @@
+{
+    "config_version": 20210101,
+    "app_id": "phase2-test-srgcs",
+    "name": "phase2-test",
+    "location": "US-VA",
+    "deployment_model": "LOCAL",
+    "environment": "development"
+}

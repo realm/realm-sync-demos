@@ -1,0 +1,6 @@
+{
+    "enabled": true,
+    "app_default_domain": "phase-2-sandbox-vikjc.mongodbstitch.com",
+    "default_error_path": "/index.html",
+    "default_error_code": "404"
+}

@@ -1,0 +1,32 @@
+{
+    "assignedTo": {
+        "ref": "#/relationship/mongodb-atlas/sandbox/Users",
+        "source_key": "assignedTo",
+        "foreign_key": "_id",
+        "is_list": false
+    },
+    "createdBy": {
+        "ref": "#/relationship/mongodb-atlas/sandbox/Users",
+        "source_key": "createdBy",
+        "foreign_key": "_id",
+        "is_list": false
+    },
+    "destinationStore": {
+        "ref": "#/relationship/mongodb-atlas/sandbox/Stores",
+        "source_key": "destinationStore",
+        "foreign_key": "_id",
+        "is_list": false
+    },
+    "products": {
+        "ref": "#/relationship/mongodb-atlas/sandbox/ProductQuantity",
+        "source_key": "products",
+        "foreign_key": "_id",
+        "is_list": true
+    },
+    "sourceStore": {
+        "ref": "#/relationship/mongodb-atlas/sandbox/Stores",
+        "source_key": "sourceStore",
+        "foreign_key": "_id",
+        "is_list": false
+    }
+}

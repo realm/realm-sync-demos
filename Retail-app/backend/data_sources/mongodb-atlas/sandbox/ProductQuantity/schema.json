@@ -1,0 +1,23 @@
+{
+    "bsonType": "object",
+    "properties": {
+        "_id": {
+            "bsonType": "objectId"
+        },
+        "_partition": {
+            "bsonType": "string"
+        },
+        "product": {
+            "bsonType": "objectId"
+        },
+        "quantity": {
+            "bsonType": "long"
+        }
+    },
+    "required": [
+        "_id",
+        "_partition",
+        "quantity"
+    ],
+    "title": "ProductQuantity"
+}
