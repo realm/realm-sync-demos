@@ -1,0 +1,41 @@
+//
+//  HomePageViewModel.swift
+//  AppShowcase
+//
+//  Created by Gagandeep on 31/08/21.
+//
+
+import UIKit
+
+class HomePageViewModel: NSObject {
+    var products =  [Products]()
+    var filteredArray = [Products]()
+<<<<<<< HEAD:AppShowcase/AppShowcase/MVVM/Views & ViewModels/Store Admin/Home Inventory/HomePageViewModel.swift
+
+    func getProducts(){
+        self.products = RealmManager.shared.getAllInventories() ?? []
+=======
+    //For now adding static data
+    func addProducts(){
+       
+        
+       
+    }
+    func getArray(){
+        //call API for getting objects
+>>>>>>> feature:AppShowcase/AppShowcase/MVVM/Views & ViewModels/Store Admin/Product Inventory/HomePageViewModel.swift
+        self.filteredArray = self.products
+    }
+    //check count
+    var productCount:  Int {
+    return self.filteredArray .count
+    }
+    //Getting single product
+    func cellRowIndexPath(index:Int) -> Products?{
+        return  nil//filteredArray [index]
+    }
+    func searchList(text:String){
+        filteredArray =  text.isEmpty ? products : products.filter{ $0.name.lowercased().starts(with: text.lowercased())  }
+      
+    }
+}

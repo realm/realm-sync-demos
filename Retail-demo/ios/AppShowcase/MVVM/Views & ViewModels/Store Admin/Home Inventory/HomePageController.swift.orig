@@ -1,0 +1,124 @@
+//
+//  HomePageController.swift
+//  AppShowcase
+//
+//  Created by Gagandeep on 31/08/21.
+//
+
+import UIKit
+
+class HomePageController: UIViewController {
+    
+    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet var objViewModel: HomePageViewModel!
+    
+    @IBOutlet weak var sideMenuBtn: UIBarButtonItem!
+    @IBOutlet weak var searchBtn: UIBarButtonItem!
+    lazy   var searchBar:UISearchBar = UISearchBar(frame: CGRect(x: 0, y: 0, width:self.view.frame.size.width-50, height: 20))
+    
+    // MARK: - View Controller Life cycle
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.searchBar.delegate = self
+        // Do any additional setup after loading the view.
+        loadProducts()
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.tabBarController?.tabBar.isHidden = false
+    }
+    
+    // MARK: - Private methods
+    
+    private func loadProducts() {
+        self.objViewModel.getProducts()
+        self.collectionView.reloadData()
+    }
+    
+    // MARK: - Button Actions
+    
+    @IBAction private func openSearchbar(_ sender: UIBarButtonItem) {
+        searchBar.placeholder = "Search Here"
+        let leftNavBarButton = UIBarButtonItem(customView:searchBar)
+        self.navigationItem.leftBarButtonItem = leftNavBarButton
+    }
+
+    private func cancelBarButtonItemClicked() {
+        self.searchBarCancelButtonClicked(self.searchBar)
+    }
+    
+    @objc private func sideMenuBtnAction(){
+        //Do for menu
+        
+    }
+    
+    @objc private func searchBarOpenAction(){
+        self.searchBar.isHidden = false
+        searchBar.placeholder = "Search Here"
+        let leftNavBarButton = UIBarButtonItem(customView:searchBar)
+        self.navigationItem.leftBarButtonItem = leftNavBarButton
+        
+    }
+}
+
+// MARK:- Collection view Delegate and Data source methods
+
+extension HomePageController:UICollectionViewDelegate,UICollectionViewDataSource{
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 3//self.objViewModel.filteredArray.count
+    }
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellIdentifier.KProductCollectionViewCell, for: indexPath) as? ProductsCollectionViewCell
+        cell?.outerView.makeRoundCorner(withRadius: 8)
+        cell?.model = self.objViewModel.cellRowIndexPath(index: indexPath.row)
+        return cell!
+    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let result = self.objViewModel.cellRowIndexPath(index: indexPath.row)
+        let vc = self.storyboard?.instantiateViewController(identifier: StoryboardID.KProductDetailPage.rawValue) as? ProductDetailController
+//        vc?.inventory = result
+        vc?.product = result //RealmManager.shared.getProduct(withId: (result?.productId)!)
+        self.navigationController?.pushViewController(vc!, animated: true)
+    }
+}
+
+<<<<<<< HEAD:AppShowcase/AppShowcase/MVVM/Views & ViewModels/Store Admin/Home Inventory/HomePageController.swift
+extension HomePageController: UICollectionViewDelegateFlowLayout{
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let collectionViewWidth = collectionView.bounds.width
+        return CGSize(width: collectionViewWidth/2, height: 170)
+    }
+=======
+       func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+           let collectionViewWidth = collectionView.bounds.width
+           return CGSize(width: collectionViewWidth/2, height: 200)
+       }
+
+       
+>>>>>>> feature:AppShowcase/AppShowcase/MVVM/Views & ViewModels/Store Admin/Product Inventory/HomePageController.swift
+}
+
+// MARK: - SearchBar Delegates
+extension HomePageController:UISearchBarDelegate{
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String){
+        self.objViewModel.searchList(text: searchText)
+        self.collectionView.reloadData()
+    }
+    func searchBarShouldBeginEditing(_ searchBar: UISearchBar) -> Bool {
+        let cancelSearchBarButtonItem = UIBarButtonItem(title: "X", style: UIBarButtonItem.Style.plain, target: self, action: #selector(searchBarCancelButtonClicked))
+        self.navigationItem.setRightBarButton(cancelSearchBarButtonItem, animated: true)
+        return true
+    }
+    @objc func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        self.navigationItem.setRightBarButton(nil, animated: true)
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "list"), style: .plain, target: self, action:#selector(sideMenuBtnAction) )
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "search"), style: .plain, target: self, action: #selector(searchBarOpenAction))
+        self.searchBar.isHidden = true
+        self.loadProducts()
+    }
+}

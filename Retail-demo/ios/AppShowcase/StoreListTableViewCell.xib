@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="StoreListTableViewCell" rowHeight="80" id="30C-q3-iDd" customClass="StoreListTableViewCell" customModule="AppShowcase" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="460" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="30C-q3-iDd" id="nrb-yA-Nxc">
+                <rect key="frame" x="0.0" y="0.0" width="460" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Uz-6R-7iD">
+                        <rect key="frame" x="10" y="5" width="440" height="70"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oA7-L7-Is9">
+                                <rect key="frame" x="405" y="25" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="5db-5t-sbs"/>
+                                    <constraint firstAttribute="height" constant="20" id="ERT-6Z-P4M"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="radio"/>
+                                <connections>
+                                    <action selector="radioSelectStoreAction:" destination="-2" eventType="touchUpInside" id="v7J-Og-g54"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gf2-8d-Eq2">
+                                <rect key="frame" x="15" y="35" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="14"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gLe-Od-R76">
+                                <rect key="frame" x="20" y="69" width="400" height="1"/>
+                                <color key="backgroundColor" red="0.85490196078431369" green="0.85490196078431369" blue="0.85490196078431369" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="5qX-Ti-J1G"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="oA7-L7-Is9" secondAttribute="trailing" constant="15" id="0kp-fl-j9h"/>
+                            <constraint firstItem="gLe-Od-R76" firstAttribute="leading" secondItem="8Uz-6R-7iD" secondAttribute="leading" constant="20" id="267-Ru-BTh"/>
+                            <constraint firstAttribute="trailing" secondItem="gLe-Od-R76" secondAttribute="trailing" constant="20" id="DOe-WB-3qL"/>
+                            <constraint firstAttribute="bottom" secondItem="gLe-Od-R76" secondAttribute="bottom" id="X00-FN-cwh"/>
+                            <constraint firstItem="oA7-L7-Is9" firstAttribute="centerY" secondItem="Gf2-8d-Eq2" secondAttribute="centerY" id="YUw-7U-cQ6"/>
+                            <constraint firstItem="Gf2-8d-Eq2" firstAttribute="centerY" secondItem="8Uz-6R-7iD" secondAttribute="centerY" id="dEm-Bz-Asz"/>
+                            <constraint firstItem="Gf2-8d-Eq2" firstAttribute="leading" secondItem="8Uz-6R-7iD" secondAttribute="leading" constant="15" id="ntv-XX-o6A"/>
+                            <constraint firstItem="oA7-L7-Is9" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Gf2-8d-Eq2" secondAttribute="trailing" constant="5" id="rcW-WQ-2Wx"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="8Uz-6R-7iD" firstAttribute="top" secondItem="nrb-yA-Nxc" secondAttribute="top" constant="5" id="9ND-f5-YSd"/>
+                    <constraint firstAttribute="trailing" secondItem="8Uz-6R-7iD" secondAttribute="trailing" constant="10" id="h4j-9Z-TdP"/>
+                    <constraint firstItem="8Uz-6R-7iD" firstAttribute="leading" secondItem="nrb-yA-Nxc" secondAttribute="leading" constant="10" id="k97-Ko-t0o"/>
+                    <constraint firstAttribute="bottom" secondItem="8Uz-6R-7iD" secondAttribute="bottom" constant="5" id="swf-NX-bth"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="baseView" destination="8Uz-6R-7iD" id="nq5-99-z5X"/>
+                <outlet property="radioSelectButton" destination="oA7-L7-Is9" id="Opx-Vk-34H"/>
+                <outlet property="storeName" destination="Gf2-8d-Eq2" id="7De-ZP-fVs"/>
+            </connections>
+            <point key="canvasLocation" x="71.014492753623188" y="114.50892857142857"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="radio" width="18" height="18"/>
+    </resources>
+</document>
