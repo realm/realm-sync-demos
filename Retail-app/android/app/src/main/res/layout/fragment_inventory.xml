@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="inventoryViewModel"
+            type="com.wekanmdb.storeinventory.ui.inventory.InventoryViewModel" />
+
+        <variable
+            name="inventoryAdapter"
+            type="com.wekanmdb.storeinventory.ui.inventory.InventoryAdapter" />
+
+        <variable
+            name="stores"
+            type="com.wekanmdb.storeinventory.model.store.Stores" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/viewbg">
+
+
+        <TextView
+            android:id="@+id/tv_store_name"
+            style="@style/text_style_semibold_16sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:hint="text"
+            android:padding="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/et_search"
+            style="@style/text_style_bold_small_title_gray"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:autofillHints="@string/product_name"
+            android:background="@drawable/edittext_bg_gray_corner"
+            android:drawableStart="@drawable/ic_search"
+            android:drawablePadding="10dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="Search"
+            android:inputType="textPersonName"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            app:layout_constraintEnd_toStartOf="@+id/imageView4"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_store_name" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="@string/todo"
+            android:onClick="@{()->inventoryViewModel.searchClick()}"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/et_search"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/et_search"
+            app:srcCompat="@drawable/ic_search" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_inventory"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="60dp"
+            android:scrollbars="none"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView31"
+            app:setAdapter="@{inventoryAdapter}"
+            app:spanCount="2"
+            tools:listitem="@layout/item_inventory" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/view_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_search" />
+
+        <TextView
+            android:id="@+id/textView31"
+            style="@style/text_style_bold_very_small_title_white_text"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:visibility="invisible"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/green_bg"
+            android:gravity="center"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            app:layout_constraintStart_toStartOf="@+id/et_search"
+            app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+
+        <com.learning.info.helper.customviewpager.CustomViewPager
+            android:id="@+id/rv_pager"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/rv_inventory"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="40dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="16dp"
+            android:background="@mipmap/logo"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_store_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_store_name" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView11"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView11"
+            app:srcCompat="@mipmap/store_red" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

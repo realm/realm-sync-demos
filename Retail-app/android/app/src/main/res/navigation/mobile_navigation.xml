@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_inventory">
+
+    <fragment
+        android:id="@+id/navigation_inventory"
+        android:name="com.wekanmdb.storeinventory.ui.inventory.InventoryFragment"
+        android:label="@string/inventory"
+        tools:layout="@layout/fragment_inventory" />
+
+    <fragment
+        android:id="@+id/navigation_job"
+        android:name="com.wekanmdb.storeinventory.ui.jobs.JobsFragment"
+        android:label="@string/job"
+        tools:layout="@layout/fragment_jobs" />
+    <fragment
+        android:id="@+id/navigation_point_of_sale"
+        android:name="com.wekanmdb.storeinventory.ui.orders.OrdersFragment"
+        android:label="@string/job"
+        tools:layout="@layout/fragment_point_of_sale" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.wekanmdb.storeinventory.ui.profile.ProfileFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/navigation_product_details"
+        android:name="com.wekanmdb.storeinventory.ui.productdetails.ProductDetailsFragment"
+        android:label="Product Details"
+        tools:layout="@layout/fragment_product_details" />
+
+
+</navigation>

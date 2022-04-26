@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="createJobViewModel"
+            type="com.wekanmdb.storeinventory.ui.createjobs.CreateJobViewModel" />
+
+
+    </data>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentEnd="true"
+    android:layout_gravity="center">
+
+    <include
+        android:id="@+id/common_create_job"
+        layout="@layout/common_toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="55dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/common_create_job"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/gleft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="16dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/gright"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="16dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/gtop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="4dp" />
+
+            <TextView
+                android:id="@+id/sourceTitle"
+                style="@style/text_style_semibold_14sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/pick_up_store"
+                app:layout_constraintRight_toLeftOf="@id/gright"
+                app:layout_constraintStart_toEndOf="@+id/imageView20"
+                app:layout_constraintTop_toBottomOf="@id/gtop" />
+
+            <TextView
+                android:id="@+id/sourcestoreh"
+                style="@style/text_style_semibold_12sp"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edittext_bg_gray_corner"
+                android:gravity="start|center"
+                android:hint="@string/prefilled_store_name"
+                android:paddingStart="8dp"
+                app:layout_constraintLeft_toRightOf="@id/gleft"
+                app:layout_constraintRight_toLeftOf="@id/gright"
+                app:layout_constraintTop_toBottomOf="@id/sourceTitle" />
+
+            <TextView
+                android:id="@+id/dropStoreTitle"
+                style="@style/text_style_semibold_14sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/destination_store"
+                app:layout_constraintRight_toLeftOf="@id/gright"
+                app:layout_constraintStart_toEndOf="@+id/imageView21"
+                app:layout_constraintTop_toBottomOf="@id/sourcestoreh" />
+
+            <TextView
+                android:id="@+id/dropstoreh"
+                style="@style/text_style_semibold_12sp"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:background="@drawable/edittext_bg_gray_corner"
+                android:gravity="start|center"
+                android:hint="@string/drop_store_name"
+                android:layout_marginTop="8dp"
+                android:paddingStart="8dp"
+                app:layout_constraintLeft_toRightOf="@id/gleft"
+                app:layout_constraintRight_toLeftOf="@id/gright"
+                app:layout_constraintTop_toBottomOf="@id/dropStoreTitle" />
+
+            <TextView
+                android:id="@+id/dateTitle"
+                style="@style/text_style_semibold_14sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/date_amp_time"
+                app:layout_constraintRight_toLeftOf="@id/timeTitle"
+                app:layout_constraintStart_toEndOf="@+id/imageView22"
+                app:layout_constraintTop_toBottomOf="@id/dropstoreh" />
+
+            <TextView
+                android:id="@+id/timeTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:visibility="invisible"
+                app:layout_constraintLeft_toRightOf="@id/dateTitle"
+                app:layout_constraintRight_toLeftOf="@id/gright"
+                app:layout_constraintTop_toBottomOf="@id/dropstoreh" />
+
+            <TextView
+                android:id="@+id/dateh"
+                style="@style/text_style_semibold_12sp"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:background="@drawable/edittext_bg_gray_corner"
+                android:focusableInTouchMode="false"
+                android:gravity="start|center"
+                android:layout_marginTop="8dp"
+                android:hint="@string/date"
+                android:paddingStart="8dp"
+                app:layout_constraintLeft_toRightOf="@id/gleft"
+                app:layout_constraintRight_toLeftOf="@id/timeh"
+                app:layout_constraintTop_toBottomOf="@id/dateTitle" />
+
+
+            <TextView
+                android:id="@+id/timeh"
+                style="@style/text_style_semibold_12sp"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:background="@drawable/edittext_bg_gray_corner"
+                android:gravity="start|center"
+                android:hint="@string/time"
+                android:layout_marginTop="8dp"
+                android:paddingStart="8dp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintLeft_toRightOf="@id/dateh"
+                app:layout_constraintRight_toLeftOf="@id/gright"
+                app:layout_constraintTop_toBottomOf="@id/dateTitle" />
+
+            <TextView
+                android:id="@+id/assigneeTitle"
+                style="@style/text_style_semibold_14sp"
+                android:layout_width="65dp"
+                android:layout_height="19dp"
+                android:layout_margin="8dp"
+                android:text="@string/assignee"
+                app:layout_constraintRight_toLeftOf="@id/gright"
+                app:layout_constraintStart_toEndOf="@+id/imageView23"
+                app:layout_constraintTop_toBottomOf="@id/dateh" />
+
+
+            <TextView
+                android:id="@+id/assigneeh"
+                style="@style/text_style_semibold_12sp"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:background="@drawable/edittext_bg_gray_corner"
+                android:gravity="start|center"
+                android:layout_marginTop="8dp"
+                android:hint="@string/select_assignee"
+                android:paddingStart="8dp"
+                app:errorEnabled="true"
+                app:layout_constraintLeft_toRightOf="@id/gleft"
+                app:layout_constraintRight_toLeftOf="@id/gright"
+                app:layout_constraintTop_toBottomOf="@id/assigneeTitle" />
+
+            <ProgressBar
+                android:id="@+id/loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintLeft_toRightOf="@id/gleft"
+                app:layout_constraintRight_toLeftOf="@id/gright"
+                app:layout_constraintTop_toBottomOf="@id/assigneeh" />
+
+            <TextView
+                android:id="@+id/prodAddTitle"
+                style="@style/text_style_semibold_14sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/add_products"
+                app:layout_constraintRight_toLeftOf="@id/quantityTitle"
+                app:layout_constraintStart_toEndOf="@+id/imageView24"
+                app:layout_constraintTop_toBottomOf="@id/assigneeh" />
+
+            <TextView
+                android:id="@+id/prodNameInput"
+                style="@style/text_style_semibold_12sp"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:background="@drawable/edittext_bg_gray_corner"
+                android:hint="@string/enter_product_name"
+                android:maxLines="1"
+                android:gravity="start|center"
+                android:layout_marginTop="8dp"
+                android:paddingStart="8dp"
+                app:layout_constraintLeft_toRightOf="@id/gleft"
+                app:layout_constraintRight_toLeftOf="@id/quantityTitle"
+                app:layout_constraintTop_toBottomOf="@id/prodAddTitle" />
+
+            <EditText
+                android:id="@+id/quantityTitle"
+                style="@style/text_style_semibold_12sp"
+                android:layout_width="77dp"
+                android:layout_height="34dp"
+                android:background="@drawable/edittext_bg_gray_corner"
+                android:gravity="start|center"
+                android:hint="@string/qty"
+                android:paddingStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintLeft_toRightOf="@id/prodNameInput"
+                app:layout_constraintRight_toLeftOf="@id/gright"
+                app:layout_constraintTop_toBottomOf="@id/prodAddTitle" />
+
+            <TextView
+                android:id="@+id/addProduct"
+                style="@style/background_create_job_Button"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_margin="16dp"
+                android:background="@drawable/bg_green_border"
+                android:gravity="center"
+                android:paddingStart="8dp"
+                android:text="@string/add_product"
+                android:textColor="@color/green_dark"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.562"
+                app:layout_constraintLeft_toRightOf="@id/gleft"
+                app:layout_constraintRight_toLeftOf="@id/gright"
+                app:layout_constraintTop_toBottomOf="@id/prodNameInput"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintLeft_toRightOf="@id/gleft"
+                app:layout_constraintRight_toLeftOf="@id/gright"
+                app:layout_constraintTop_toBottomOf="@id/addProduct" />
+
+
+            <ImageView
+                android:id="@+id/imageView20"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintBottom_toBottomOf="@+id/sourceTitle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/sourceTitle"
+                app:srcCompat="@mipmap/store_red" />
+
+            <ImageView
+                android:id="@+id/imageView21"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintBottom_toBottomOf="@+id/dropStoreTitle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/dropStoreTitle"
+                app:srcCompat="@mipmap/location" />
+
+            <ImageView
+                android:id="@+id/imageView22"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintBottom_toBottomOf="@+id/dateTitle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/dateTitle"
+                app:srcCompat="@mipmap/clock" />
+
+            <ImageView
+                android:id="@+id/imageView23"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintBottom_toBottomOf="@+id/assigneeTitle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/assigneeTitle"
+                app:srcCompat="@mipmap/assignee" />
+
+            <ImageView
+                android:id="@+id/imageView24"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintBottom_toBottomOf="@+id/prodAddTitle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/prodAddTitle"
+                app:srcCompat="@mipmap/add_icon" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/createjob"
+        style="@style/background_create_job_Button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button_bg"
+        android:paddingStart="8dp"
+        android:text="@string/create"
+        app:backgroundTint="@color/color_createJob_screen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView67"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/create_job"
+        style="@style/text_style_semibold_16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/common_create_job"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/common_create_job"
+        app:layout_constraintTop_toTopOf="@+id/common_create_job" />
+
+    <TextView
+        android:id="@+id/textView68"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="@string/cancel"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/blue"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView67"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView67" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

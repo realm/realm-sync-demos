@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="orders"
+            type="com.wekanmdb.storeinventory.model.orders.Orders" />
+
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center">
+
+
+            <ImageView
+                android:id="@+id/imageView37"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="@+id/view8"
+                app:layout_constraintTop_toBottomOf="@+id/view8"
+                app:srcCompat="@mipmap/location" />
+
+            <TextView
+                android:id="@+id/textDelivaryInfo"
+                style="@style/text_style_regular_12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:hint="@string/delivery_information"
+                android:text="@{orders.type.name.toString()}"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView37"
+                app:layout_constraintStart_toEndOf="@+id/imageView37"
+                app:layout_constraintTop_toTopOf="@+id/imageView37" />
+
+            <TextView
+                android:id="@+id/textAddress"
+                style="@style/text_style_semibold_12sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:hint="@string/address"
+                android:text="@{orders.type.address.toString()}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/imageView37"
+                app:layout_constraintTop_toBottomOf="@+id/imageView37" />
+
+            <ImageView
+                android:id="@+id/imageView38"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="@+id/textAddress"
+                app:layout_constraintTop_toBottomOf="@+id/textCustomerName"
+                app:srcCompat="@mipmap/clock" />
+
+            <TextView
+                android:id="@+id/textView93"
+                style="@style/text_style_regular_12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="@string/date_amp_time"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView38"
+                app:layout_constraintStart_toEndOf="@+id/imageView38"
+                app:layout_constraintTop_toTopOf="@+id/imageView38" />
+
+            <TextView
+                android:id="@+id/textDate"
+                style="@style/text_style_semibold_12sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="@string/date"
+                app:layout_constraintEnd_toStartOf="@+id/textTime"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/imageView38"
+                app:layout_constraintTop_toBottomOf="@+id/imageView38" />
+
+            <TextView
+                android:id="@+id/textTime"
+                style="@style/text_style_semibold_12sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="24dp"
+                android:hint="@string/time"
+                app:layout_constraintBottom_toBottomOf="@+id/textDate"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textDate"
+                app:layout_constraintTop_toTopOf="@+id/textDate" />
+
+            <View
+                android:id="@+id/view6"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/view_bg"
+                app:layout_constraintEnd_toEndOf="@+id/textTime"
+                app:layout_constraintStart_toStartOf="@+id/textDate"
+                app:layout_constraintTop_toBottomOf="@+id/textView109" />
+
+            <ImageView
+                android:id="@+id/imageView39"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="@+id/textAddress"
+                app:layout_constraintTop_toBottomOf="@+id/textAddress"
+                app:srcCompat="@mipmap/user_red" />
+
+            <TextView
+                android:id="@+id/textView96"
+                style="@style/text_style_regular_12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="@string/customer_name"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView39"
+                app:layout_constraintStart_toEndOf="@+id/imageView39"
+                app:layout_constraintTop_toTopOf="@+id/imageView39" />
+
+            <TextView
+                android:id="@+id/textCustomerName"
+                style="@style/text_style_semibold_12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{orders.customerName.toString()}"
+                android:layout_marginTop="8dp"
+                android:hint="@string/customer_name"
+                app:layout_constraintStart_toStartOf="@+id/imageView39"
+                app:layout_constraintTop_toBottomOf="@+id/imageView39" />
+
+
+            <ImageView
+                android:id="@+id/imageView40"
+                android:layout_width="22dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="@+id/textDate"
+                app:layout_constraintTop_toBottomOf="@+id/textDate"
+                app:srcCompat="@mipmap/credit_card" />
+
+            <TextView
+                android:id="@+id/textView102"
+                style="@style/text_style_regular_12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="@string/payment_status"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView40"
+                app:layout_constraintStart_toEndOf="@+id/imageView40"
+                app:layout_constraintTop_toTopOf="@+id/imageView40" />
+
+
+            <TextView
+                android:id="@+id/textView106"
+                style="@style/text_style_regular_14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/order_id"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textOrderID"
+                style="@style/text_style_semibold_18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:text="@{orders.orderId.toString()}"
+                app:layout_constraintBottom_toBottomOf="@+id/textView106"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView106" />
+
+            <View
+                android:id="@+id/view8"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/view_bg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView106"
+                app:layout_constraintTop_toBottomOf="@+id/textOrderID" />
+
+
+            <TextView
+                android:id="@+id/textView109"
+                style="@style/text_style_semibold_14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@{orders.paymentStatus.toString()}"
+                android:textColor="@color/blue"
+                app:layout_constraintStart_toStartOf="@+id/imageView40"
+                app:layout_constraintTop_toBottomOf="@+id/textView102" />
+
+
+            <TextView
+                android:id="@+id/textView111"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="center"
+                android:text=". . ."
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/view6"
+                app:layout_constraintStart_toStartOf="@+id/view6"
+                app:layout_constraintTop_toBottomOf="@+id/view6"
+                app:layout_constraintVertical_bias="0.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</layout>
