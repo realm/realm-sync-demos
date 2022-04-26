@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
+
+        <item name="colorPrimary">@color/app_new_color</item>
+        <item name="colorPrimaryVariant">@color/app_new_color</item>
+        <item name="colorAccent">#ff00ff</item>
+        <item name="android:buttonBarNegativeButtonStyle" >@style/NegativeButtonStyle</item>
+        <item name="android:buttonBarPositiveButtonStyle">@style/NegativeButtonStyle</item>
+    </style>
+    <style name="NegativeButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">#ff00ff</item>
+    </style>
+
+    <style name="CustomCalenderTheme" parent="Theme.AppCompat.Light.Dialog">
+
+        <item name="colorPrimary">#00ffff</item>
+        <item name="colorPrimaryDark">#987654</item>
+        <item name="colorAccent">#EE4557</item>
+        <item name="android:buttonBarNegativeButtonStyle" >@style/NegativeButtonCalender</item>
+        <item name="android:buttonBarPositiveButtonStyle">@style/NegativeButtonCalender</item>
+
+    </style>
+    <style name="NegativeButtonCalender" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">#EE4557</item>
+    </style>
+    <style name="signup_edittext_style">
+        <item name="android:height">
+            32dp
+        </item>
+        <item name="android:textSize">
+            12sp
+        </item>
+        <item name="android:ems">
+            10
+        </item>
+
+        <item name="android:paddingStart">
+            8dp
+        </item>
+        <item name="android:fontFamily">
+            @font/poppins_semibold
+        </item>
+        <item name="android:background">
+            @drawable/edittext_bg_gray
+        </item>
+    </style>
+    <style name="signup_text_style">
+
+        <item name="android:textSize">
+            14sp
+        </item>
+
+
+        <item name="android:fontFamily">
+            @font/poppins_semibold
+        </item>
+
+        <item name="android:textColor">
+            @color/black
+        </item>
+
+    </style>
+    <style name="semiBold" parent="@android:style/TextAppearance.Small">
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+</resources>

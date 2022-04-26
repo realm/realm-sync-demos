@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="searchActivityViewModel"
+            type="com.wekanmdb.storeinventory.ui.createjobs.SearchActivityViewModel" />
+
+    </data>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.createjobs.SearchActivity">
+
+    <include
+        android:id="@+id/common_create_job"
+        layout="@layout/common_toolbar"
+        android:layout_width="30dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+
+        android:layout_marginEnd="16dp"
+        android:theme="@style/AppSearchView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/common_create_job"
+        app:queryHint="Search" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:clipToPadding="false"
+
+        app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
+        app:layout_constraintBottom_toTopOf="@+id/loadMore"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search"
+        tools:context=".ui.createjobs.SearchActivity" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/loadMore"
+        style="@style/TextAppearance.AppCompat.Widget.Button.Inverse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorAccent"
+        android:text="Load More"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/searchame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text=""
+        style="@style/text_style_semibold_16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/common_create_job"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/common_create_job" />
+
+    <TextView
+        android:id="@+id/textView70"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_style_medium_10sp"
+        android:text="@string/create_order"
+        app:layout_constraintBottom_toBottomOf="@+id/common_create_job"
+        app:layout_constraintStart_toEndOf="@+id/common_create_job"
+        app:layout_constraintTop_toTopOf="@+id/common_create_job" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

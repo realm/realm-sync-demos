@@ -1,0 +1,3 @@
+package com.wekanmdb.storeinventory.ui.productdetails
+
+interface ProductDetailsNavigator

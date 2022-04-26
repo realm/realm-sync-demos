@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="jobsViewModel"
+            type="com.wekanmdb.storeinventory.ui.jobs.JobsViewModel" />
+
+        <variable
+            name="jobsAdapter"
+            type="com.wekanmdb.storeinventory.ui.jobs.JobsAdapter" />
+
+        <variable
+            name="stores"
+            type="com.wekanmdb.storeinventory.model.store.Stores" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/et_jobsearch"
+            style="@style/text_style_semibold_16sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:hint="text"
+            android:text="@{stores.name.toString()}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/textView34"
+            style="@style/text_style_bold_very_small_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edittext_bg_gray_corner"
+            android:fontFamily="@font/poppins_semibold"
+            android:padding="4dp"
+            android:text="Total Items : 0"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_jobsearch" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_jobs"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:visibility="gone"
+            android:layout_marginBottom="2dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toTopOf="@+id/textView66"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView34"
+            app:setAdapter="@{jobsAdapter}"
+            tools:listitem="@layout/item_jobs" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/nojobsLayout"
+            android:layout_width="190dp"
+            android:layout_height="176dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView66"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@mipmap/bg_gray">
+
+            <ImageView
+                android:id="@+id/imageView26"
+                android:layout_width="180dp"
+                android:layout_height="160dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@mipmap/empty_job" />
+
+            <TextView
+                android:id="@+id/textView71"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no_jobs_assigned"
+                android:textColor="@color/gray_product_color"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins_semibold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView66"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="65dp"
+            android:background="@drawable/button_bg"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center"
+            android:onClick="@{()->jobsViewModel.addJobClick()}"
+            android:text="@string/add_new"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="24dp"
+            android:layout_height="22dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/et_jobsearch"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/et_jobsearch"
+            app:srcCompat="@mipmap/filter" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

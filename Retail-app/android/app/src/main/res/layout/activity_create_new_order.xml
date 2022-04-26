@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="createOrderViewModel"
+            type="com.wekanmdb.storeinventory.ui.createOrders.CreateOrderViewModel" />
+
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center">
+
+        <include
+            android:id="@+id/common_create_job"
+            layout="@layout/common_toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView67"
+            style="@style/text_style_semibold_16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/create_new_order_header"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/common_create_job">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout_editor_absoluteX="-50dp"
+                tools:layout_editor_absoluteY="-38dp">
+
+
+                <TextView
+                    android:id="@+id/textView75"
+                    style="@style/text_style_semibold_14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/order_id"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textOrderId"
+                    style="@style/text_style_semibold_12sp"
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="24dp"
+                    android:background="@drawable/edittext_bg_gray_corner"
+                    android:gravity="center|start"
+                    android:hint="@string/order_id"
+                    android:paddingStart="8dp"
+                    android:text="123456"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/textView75"
+                    app:layout_constraintTop_toBottomOf="@+id/textView75" />
+
+                <TextView
+                    android:id="@+id/textView77"
+                    style="@style/text_style_semibold_14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/date_amp_time"
+                    app:layout_constraintStart_toStartOf="@+id/textOrderId"
+                    app:layout_constraintTop_toBottomOf="@+id/textOrderId" />
+
+                <TextView
+                    android:id="@+id/textDate"
+                    style="@style/text_style_semibold_12sp"
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/edittext_bg_gray_corner"
+                    android:gravity="center|start"
+                    android:hint="@string/date"
+                    android:paddingStart="8dp"
+                    app:layout_constraintEnd_toStartOf="@+id/textTime"
+                    app:layout_constraintStart_toStartOf="@+id/textView77"
+                    app:layout_constraintTop_toBottomOf="@+id/textView77" />
+
+                <TextView
+                    android:id="@+id/textTime"
+                    style="@style/text_style_semibold_12sp"
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/edittext_bg_gray_corner"
+                    android:gravity="center|start"
+                    android:hint="@string/time"
+                    android:paddingStart="8dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textDate"
+                    app:layout_constraintEnd_toEndOf="@+id/textOrderId"
+                    app:layout_constraintStart_toEndOf="@+id/textDate"
+                    app:layout_constraintTop_toTopOf="@+id/textDate" />
+
+                <TextView
+                    android:id="@+id/textView80"
+                    style="@style/text_style_semibold_14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/customer_name"
+                    app:layout_constraintEnd_toEndOf="@+id/textTime"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/textDate"
+                    app:layout_constraintTop_toBottomOf="@+id/textDate" />
+
+                <EditText
+                    android:id="@+id/editCustomerName"
+                    style="@style/text_style_semibold_12sp"
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/edittext_bg_gray_corner"
+                    android:ems="10"
+                    android:hint="@string/customer_name"
+                    android:inputType="textPersonName"
+                    android:paddingStart="8dp"
+                    app:layout_constraintEnd_toEndOf="@+id/textTime"
+                    app:layout_constraintStart_toStartOf="@+id/textView80"
+                    app:layout_constraintTop_toBottomOf="@+id/textView80" />
+
+                <TextView
+                    android:id="@+id/textView81"
+                    style="@style/text_style_semibold_14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/customer_email"
+                    app:layout_constraintEnd_toEndOf="@+id/editCustomerName"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/editCustomerName"
+                    app:layout_constraintTop_toBottomOf="@+id/editCustomerName" />
+
+                <EditText
+                    android:id="@+id/editCustomerEmail"
+                    style="@style/text_style_semibold_12sp"
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/edittext_bg_gray_corner"
+                    android:ems="10"
+                    android:gravity="center|start"
+                    android:hint="@string/customer_email"
+                    android:inputType="textEmailAddress"
+                    android:paddingStart="8dp"
+                    app:layout_constraintEnd_toEndOf="@+id/editCustomerName"
+                    app:layout_constraintStart_toStartOf="@+id/textView81"
+                    app:layout_constraintTop_toBottomOf="@+id/textView81" />
+
+                <TextView
+                    android:id="@+id/textView82"
+                    style="@style/text_style_semibold_14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/pickup"
+                    app:layout_constraintEnd_toEndOf="@+id/editCustomerEmail"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/editCustomerEmail"
+                    app:layout_constraintTop_toBottomOf="@+id/editCustomerEmail" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup1"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="@+id/editCustomerEmail"
+                    app:layout_constraintStart_toStartOf="@+id/textView82"
+                    app:layout_constraintTop_toBottomOf="@+id/textView82">
+
+                    <RadioButton
+                        android:id="@+id/storePickup"
+                        style="@style/text_style_semibold_12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/store_pickup" />
+
+                    <RadioButton
+                        android:id="@+id/homeDelivery"
+                        style="@style/text_style_semibold_12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/home_delivery" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/textView83"
+                    style="@style/text_style_semibold_14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/paid_by"
+                    app:layout_constraintEnd_toEndOf="@+id/radioGroup1"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/radioGroup1"
+                    app:layout_constraintTop_toBottomOf="@+id/address" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup2"
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="@+id/editCustomerEmail"
+                    app:layout_constraintStart_toStartOf="@+id/textView83"
+                    app:layout_constraintTop_toBottomOf="@+id/textView83">
+
+                    <RadioButton
+                        android:id="@+id/cash"
+                        style="@style/text_style_semibold_12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/cash" />
+
+                    <RadioButton
+                        android:id="@+id/creditCard"
+                        style="@style/text_style_semibold_12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/credit_card" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/textView84"
+                    android:visibility="gone"
+                    style="@style/text_style_semibold_14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/add_address"
+                    app:layout_constraintStart_toStartOf="@+id/radioGroup1"
+                    app:layout_constraintTop_toBottomOf="@+id/radioGroup1" />
+
+                <FrameLayout
+                    android:id="@+id/address"
+                    android:visibility="gone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="@+id/radioGroup1"
+                    app:layout_constraintStart_toStartOf="@+id/textView84"
+                    app:layout_constraintTop_toBottomOf="@+id/textView84">
+                    <fragment
+                        android:id="@+id/autocomplete_fragment"
+                        android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:id="@+id/editCustomerAddress"
+                        style="@style/text_style_semibold_12sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_bg_gray_corner"
+                        android:gravity="center|start"
+                        android:hint="@string/add_address"
+                        android:padding="6dp"
+                  />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/textView85"
+                    style="@style/text_style_semibold_14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/add_products"
+                    app:layout_constraintStart_toStartOf="@+id/radioGroup2"
+                    app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+
+                <TextView
+                    android:id="@+id/textAddProduct"
+                    style="@style/text_style_semibold_12sp"
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/edittext_bg_gray_corner"
+                    android:gravity="center|start"
+                    android:hint="@string/product_name_"
+                    android:maxLines="1"
+                    android:paddingStart="8dp"
+                    app:layout_constraintEnd_toStartOf="@+id/textQty"
+                    app:layout_constraintStart_toStartOf="@+id/textView85"
+                    app:layout_constraintTop_toBottomOf="@+id/textView85" />
+
+                <EditText
+                    android:id="@+id/textQty"
+                    style="@style/text_style_semibold_12sp"
+                    android:layout_width="70dp"
+                    android:layout_height="36dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/edittext_bg_gray_corner"
+                    android:gravity="center"
+                    android:hint="@string/qty"
+                    app:layout_constraintBottom_toBottomOf="@+id/textAddProduct"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textAddProduct" />
+
+                <TextView
+                    android:id="@+id/textAddProducts"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="32dp"
+                    android:background="@drawable/bg_signup_back"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="center"
+                    android:text="@string/add_product"
+                    android:textColor="@color/app_new_color"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="@+id/textQty"
+                    app:layout_constraintStart_toStartOf="@+id/textAddProduct"
+                    app:layout_constraintTop_toBottomOf="@+id/textAddProduct" />
+
+                <TextView
+                    android:id="@+id/textView89"
+                    style="@style/text_style_semibold_14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/added_products"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/textAddProduct"
+                    app:layout_constraintTop_toBottomOf="@+id/textAddProducts" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="4dp"
+                    app:layout_constraintBottom_toTopOf="@+id/textNext"
+                    app:layout_constraintEnd_toEndOf="@+id/textQty"
+                    app:layout_constraintStart_toStartOf="@+id/textAddProduct"
+                    app:layout_constraintTop_toBottomOf="@+id/textView89" />
+
+                <TextView
+                    android:id="@+id/textNext"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="50dp"
+                    android:background="@drawable/button_bg"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="center"
+                    android:text="@string/next"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/recyclerView2"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/recyclerView2" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

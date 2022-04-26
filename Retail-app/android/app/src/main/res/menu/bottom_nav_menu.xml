@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_inventory"
+        android:icon="@mipmap/invenry"
+        android:title="@string/inventory" />
+
+    <item
+        android:id="@+id/navigation_job"
+        android:icon="@mipmap/jobs"
+        android:title="@string/job" />
+    <item
+        android:id="@+id/navigation_point_of_sale"
+        android:icon="@mipmap/point_of_sale"
+        android:title="@string/point_of_sale" />
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@mipmap/user"
+        android:title="@string/profile" />
+
+</menu>
