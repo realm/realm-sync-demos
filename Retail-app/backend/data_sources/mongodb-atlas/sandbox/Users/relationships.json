@@ -1,0 +1,8 @@
+{
+    "stores": {
+        "ref": "#/relationship/mongodb-atlas/sandbox/Stores",
+        "source_key": "stores",
+        "foreign_key": "_id",
+        "is_list": true
+    }
+}

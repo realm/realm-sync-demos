@@ -1,0 +1,66 @@
+{
+    "bsonType": "object",
+    "properties": {
+        "_id": {
+            "bsonType": "objectId"
+        },
+        "_partition": {
+            "bsonType": "string"
+        },
+        "assignedTo": {
+            "bsonType": "objectId"
+        },
+        "createdBy": {
+            "bsonType": "objectId"
+        },
+        "datetime": {
+            "bsonType": "date"
+        },
+        "destinationStore": {
+            "bsonType": "objectId"
+        },
+        "location": {
+            "bsonType": "object",
+            "properties": {
+                "latitude": {
+                    "bsonType": "double"
+                },
+                "longitude": {
+                    "bsonType": "double"
+                }
+            },
+            "required": [
+                "latitude",
+                "longitude"
+            ],
+            "title": "Job_Location"
+        },
+        "order": {
+            "bsonType": "objectId"
+        },
+        "products": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "objectId"
+            }
+        },
+        "receivedBy": {
+            "bsonType": "string"
+        },
+        "sourceStore": {
+            "bsonType": "objectId"
+        },
+        "status": {
+            "bsonType": "string"
+        },
+        "type": {
+            "bsonType": "string"
+        }
+    },
+    "required": [
+        "_id",
+        "_partition",
+        "status"
+    ],
+    "title": "Jobs"
+}

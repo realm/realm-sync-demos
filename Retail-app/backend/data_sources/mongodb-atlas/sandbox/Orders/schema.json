@@ -1,0 +1,80 @@
+{
+    "bsonType": "object",
+    "properties": {
+        "_id": {
+            "bsonType": "objectId"
+        },
+        "_partition": {
+            "bsonType": "string"
+        },
+        "createdBy": {
+            "bsonType": "objectId"
+        },
+        "createdDate": {
+            "bsonType": "date"
+        },
+        "customerEmail": {
+            "bsonType": "string"
+        },
+        "customerName": {
+            "bsonType": "string"
+        },
+        "location": {
+            "bsonType": "object",
+            "properties": {
+                "latitude": {
+                    "bsonType": "double"
+                },
+                "longitude": {
+                    "bsonType": "double"
+                }
+            },
+            "required": [
+                "latitude",
+                "longitude"
+            ],
+            "title": "Order_Location"
+        },
+        "orderId": {
+            "bsonType": "string"
+        },
+        "paymentStatus": {
+            "bsonType": "string"
+        },
+        "paymentType": {
+            "bsonType": "string"
+        },
+        "products": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "objectId"
+            }
+        },
+        "type": {
+            "bsonType": "object",
+            "properties": {
+                "address": {
+                    "bsonType": "string"
+                },
+                "name": {
+                    "bsonType": "string"
+                }
+            },
+            "required": [
+                "name"
+            ]
+        }
+    },
+    "required": [
+        "_id",
+        "_partition",
+        "createdDate",
+        "orderId",
+        "customerName",
+        "customerEmail",
+        "type.name",
+        "status",
+        "paymentType"
+    ],
+    "title": "Orders"
+}

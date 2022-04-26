@@ -1,0 +1,14 @@
+{
+    "createdBy": {
+        "ref": "#/relationship/mongodb-atlas/sandbox/Users",
+        "source_key": "createdBy",
+        "foreign_key": "_id",
+        "is_list": false
+    },
+    "products": {
+        "ref": "#/relationship/mongodb-atlas/sandbox/ProductQuantity",
+        "source_key": "products",
+        "foreign_key": "_id",
+        "is_list": true
+    }
+}
