@@ -1,0 +1,25 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'AppShowcase' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for AppShowcase
+   pod 'RealmSwift'
+   pod 'IQKeyboardManager'
+   pod 'AlamofireImage'
+   pod 'SwiftLint'
+   pod 'NVActivityIndicatorView', '5.0.0'
+   pod 'GooglePlaces', '6.0.0'
+
+  target 'AppShowcaseTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'AppShowcaseUITests' do
+    # Pods for testing
+  end
+
+end
