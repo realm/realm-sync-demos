@@ -2,7 +2,7 @@
     "name": "mongodb-atlas",
     "type": "mongodb-atlas",
     "config": {
-        "clusterName": "phase2-test-cluster",
+        "clusterName": "App-Showcase-v2",
         "readPreference": "primary",
         "wireProtocolEnabled": false
     }

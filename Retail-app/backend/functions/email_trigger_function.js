@@ -1,6 +1,7 @@
 
 exports = async function (changeEvent) {
   const { EMAIL_APP_API_KEY } = context.environment.values;
+  const { WEBAPP_ENDPOINT } = context.environment.values;
   if (!EMAIL_APP_API_KEY) {
     return null;
   }
@@ -22,7 +23,7 @@ exports = async function (changeEvent) {
     const orderInfo = await collection.findOne({ _id: order });
     if (orderInfo) {
       const { customerEmail, customerName, orderId, emailSent } = orderInfo;
-      const link = `phase-2-sandbox-vikjc.mongodbstitch.com/${assignedTo}`
+      const link = `${WEBAPP_ENDPOINT}/${assignedTo}`
       if (!emailSent) {
         await collection.findOneAndUpdate({ _id: order },{$set:{emailSent:true}});
         const http = context.http;
