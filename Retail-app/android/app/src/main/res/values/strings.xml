@@ -113,5 +113,5 @@
     <string name="update_status">Update Status</string>
     <string name="job_status_is_updated">Job status is updated</string>
     <string name="ok">ok</string>
-    <string name="api_key">AIzaSyBuxSBaCpdovgHKLwPzC4UD_9RzK7NrTyk</string>
+    <string name="api_key"></string>
 </resources>
