@@ -1,21 +1,17 @@
-# Retail App
+# Retail Solution
 
-With the help of Realm's Ecosystem and MongoDB, this Inventory app showcases the Inventory & Delivery operations of a mid/large store chain.
+The solution showcases how MongoDB Realm and MongoDB Atlas can help address key usecases for the retail space.
 
 ## Features
 
-- Manage Products inventory across a store chain. 
-- Manage active stores and their inventory.
-- Assign a store manager to a store to manage its realtime inventory.
-- Create a delivery user to fullfil the delivery jobs.
-- Alert store users to inventory shortage.
-- Store users can create a job request to topup inventory.
-- Delivery users can perform jobs assigned to them.
+- Inventory Management
+- Point of Sale (POS)
+- Order Management
+- Delivery Management and Tracking (Field force management)
 
-- Store user can create order.
-- Store user will create job for order and assign it to delivery user.
-- Store user can swap btween stores.
-- Customer can track the location of the delivery person thru a web app.
+## Key Technical Highlights
+- Offline use of mobile applications by the Retail Stores and Delivery Staff
+- Real time sync of data 
 
 ## Tech
 
@@ -30,8 +26,8 @@ This app uses a number of tools and services to work properly:
 
 The project has multiple elementd in it, each works as a seperate project.
 
- - backend - The Realm project which has the realm config and schema's for this project.
- - android - The Store/Delivery User app.
- - iOS - The Store/Delivery User app.
+ - Backend - The Realm project which has the realm config and schema's for this project. The hosted folder hosts the web tracking React.Js application.
+ - Android - Mobile app for Store Managers and Delivery workforce
+ - iOS - Mobile app for Store Managers and Delivery workforce.
  
 Each of these sub-folders has required documentation and step-by-step installation and usage guides.
