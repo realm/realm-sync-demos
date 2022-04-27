@@ -49,26 +49,26 @@ Note: Repalce google api key in string.xml for address search feature.
 
 # Screens
 
-## Splash screen <br><img src="./ScreenShots/1_Splash.jpg" width="400" height="700">
-## Login screen <br><img src="./ScreenShots/2_Login.jpg" width="400" height="700">
-## SignUp screen <br><img src="./ScreenShots/3_Signup.jpg" width="400" height="700">
-## Store Admin Dashboard screen <br><img src="./4_Admin_Dashboard/3store_admin_dash.jpg" width="400" height="700">
-## Product Details screen <br><img src="./ScreenShots/5_Product_Details.jpg" width="400" height="700">
-## Swap Store screen <br><img src="./ScreenShots/6_Swap_store.jpg" width="400" height="700">
-## Create Job screen <br><img src="./ScreenShots/7_Create_job.jpg" width="400" height="700">
-## Date Pick screen <br><img src="./ScreenShots/8_date_picker.jpg" width="400" height="700">
-## Time Pick screen <br><img src="./ScreenShots/9_time_picker.jpg" width="400" height="700">
-## Jobs List screen <br><img src="./ScreenShots/10_Jobs_list.jpg" width="400" height="700">
-## Edit Job screen <br><img src="./ScreenShots/11_Edit_job.jpg" width="400" height="700">
-## Create Order for store screen <br><img src="./ScreenShots/12_Create_Order.jpg" width="400" height="700">
-## Create Order for Home delivery screen <br><img src="./ScreenShots/13_Create_Order_Delivery_user.jpg" width="400" height="700">
-## Order List screen <br><img src="./ScreenShots/14_Order_list.jpg" width="400" height="700">
-## Order summary screen <br><img src="./ScreenShots/14_Order_summary.jpg" width="400" height="700">
-## Filter Job screen <br><img src="./ScreenShots/15_Filter_job.jpg" width="400" height="700">
-## Admin profile screen <br><img src="./ScreenShots/16_Profile.jpg" width="400" height="700">
-## Delivery User TO-Do list screen <br><img src="./ScreenShots/17_Delivery_user_todo.jpg" width="400" height="700">
-## Delivery User Job details screen <br><img src="./ScreenShots/18_Job_details.jpg" width="400" height="700">
-## Delivery User In-Progress screen <br><img src="./ScreenShots/19_progress.jpg" width="400" height="700">
-## Delivery User Update status screen <br><img src="./ScreenShots/20_change_job_status.jpg" width="400" height="700">
-## Delivery User Completed job screen <br><img src="./ScreenShots/21_completed_job.jpg" width="400" height="700">
+## Splash screen <br><img src="./ScreenShots/1_Splash.png" width="400" height="700">
+## Login screen <br><img src="./ScreenShots/2_Login.png" width="400" height="700">
+## SignUp screen <br><img src="./ScreenShots/3_Signup.png" width="400" height="700">
+## Store Admin Dashboard screen <br><img src="./ScreenShots/4_Admin_Dashboard.png" width="400" height="700">
+## Product Details screen <br><img src="./ScreenShots/5_Product_Details.png" width="400" height="700">
+## Swap Store screen <br><img src="./ScreenShots/6_Swap_store.png" width="400" height="700">
+## Create Job screen <br><img src="./ScreenShots/7_Create_job.png" width="400" height="700">
+## Date Pick screen <br><img src="./ScreenShots/8_date_picker.png" width="400" height="700">
+## Time Pick screen <br><img src="./ScreenShots/9_time_picker.png" width="400" height="700">
+## Jobs List screen <br><img src="./ScreenShots/10_Jobs_list.png" width="400" height="700">
+## Edit Job screen <br><img src="./ScreenShots/11_Edit_job.png" width="400" height="700">
+## Create Order for store screen <br><img src="./ScreenShots/12_Create_Order.png" width="400" height="700">
+## Create Order for Home delivery screen <br><img src="./ScreenShots/13_Create_Order_Delivery_user.png" width="400" height="700">
+## Order List screen <br><img src="./ScreenShots/14_Order_list.png" width="400" height="700">
+## Order summary screen <br><img src="./ScreenShots/14_Order_summary.png" width="400" height="700">
+## Filter Job screen <br><img src="./ScreenShots/15_Filter_job.png" width="400" height="700">
+## Admin profile screen <br><img src="./ScreenShots/16_Profile.png" width="400" height="700">
+## Delivery User TO-Do list screen <br><img src="./ScreenShots/17_Delivery_user_todo.png" width="400" height="700">
+## Delivery User Job details screen <br><img src="./ScreenShots/18_Job_details.png" width="400" height="700">
+## Delivery User In-Progress screen <br><img src="./ScreenShots/19_progress.png" width="400" height="700">
+## Delivery User Update status screen <br><img src="./ScreenShots/20_change_job_status.png" width="400" height="700">
+## Delivery User Completed job screen <br><img src="./ScreenShots/21_completed_job.png" width="400" height="700">
 
