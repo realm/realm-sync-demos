@@ -35,19 +35,19 @@ Note: Replace the google places api key in AppConfig.swift for address search fe
 
 # Screens
 
-## SignUp screen <br><img src="./ScreenShots/11.png" width="323" height="700">
-## Store Admin Dashboard screen <br><img src="./ScreenShots/1.png" width="323" height="700">
-## Product Details screen <br><img src="./ScreenShots/2.png" width="323" height="700">
-## Swap Store screen <br><img src="./ScreenShots/3.png" width="323" height="700">
-## Create Job screen <br><img src="./ScreenShots/4.png" width="323" height="700">
-## Jobs List screen <br><img src="./ScreenShots/5.png" width="323" height="700">
-## Create Order screen <br><img src="./ScreenShots/6.png" width="323" height="700">
-## Order summary screen <br><img src="./ScreenShots/7.png" width="323" height="700">
-## Orders List screen <br><img src="./ScreenShots/8.png" width="323" height="700">
-## Filter Job screen <br><img src="./ScreenShots/10.png" width="323" height="700">
-## Admin profile screen <br><img src="./ScreenShots/9.png" width="323" height="700">
-## Delivery User TO-Do list screen <br><img src="./ScreenShots/12.png" width="323" height="700">
-## Delivery User Job details screen <br><img src="./ScreenShots/13.png" width="323" height="700">
-## Delivery User Update job status screen <br><img src="./ScreenShots/14.png" width="323" height="700">
-## Delivery User Completed job screen <br><img src="./ScreenShots/15.png" width="323" height="700">
+## SignUp screen <br><img src="./Screenshots/11.png" width="323" height="700">
+## Store Admin Dashboard screen <br><img src="./Screenshots/1.png" width="323" height="700">
+## Product Details screen <br><img src="./Screenshots/2.png" width="323" height="700">
+## Swap Store screen <br><img src="./Screenshots/3.png" width="323" height="700">
+## Create Job screen <br><img src="./Screenshots/4.png" width="323" height="700">
+## Jobs List screen <br><img src="./Screenshots/5.png" width="323" height="700">
+## Create Order screen <br><img src="./Screenshots/6.png" width="323" height="700">
+## Order summary screen <br><img src="./Screenshots/7.png" width="323" height="700">
+## Orders List screen <br><img src="./Screenshots/8.png" width="323" height="700">
+## Filter Job screen <br><img src="./Screenshots/10.png" width="323" height="700">
+## Admin profile screen <br><img src="./Screenshots/9.png" width="323" height="700">
+## Delivery User TO-Do list screen <br><img src="./Screenshots/12.png" width="323" height="700">
+## Delivery User Job details screen <br><img src="./Screenshots/13.png" width="323" height="700">
+## Delivery User Update job status screen <br><img src="./Screenshots/14.png" width="323" height="700">
+## Delivery User Completed job screen <br><img src="./Screenshots/15.png" width="323" height="700">
 
