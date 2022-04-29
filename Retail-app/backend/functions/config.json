@@ -1,1 +1,43 @@
-[]
+[
+    {
+        "name": "resetFunc",
+        "private": true
+    },
+    {
+        "name": "checkEmailExist",
+        "private": false
+    },
+    {
+        "name": "checkPassword",
+        "private": true
+    },
+    {
+        "name": "createNewUser",
+        "private": true
+    },
+    {
+        "name": "customAuthFunction",
+        "private": true
+    },
+    {
+        "name": "hashPassword",
+        "private": true
+    },
+    {
+        "name": "sendEmailToUser",
+        "private": true
+    },
+    {
+        "name": "updateInventory",
+        "private": true
+    },
+    {
+        "name": "updateProductInfo",
+        "private": true
+    },
+    {
+        "name": "email_trigger_function",
+        "private": true,
+        "run_as_system": true
+    }
+]

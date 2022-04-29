@@ -1,3 +1,7 @@
 {
-    "values": {}
+    "values": {
+        "EMAIL_APP_API_KEY": "YOUR_API_KEY",
+        "EMAIL_APP_SECRET_KEY": "YOUR_API_SECRET",
+        "WEBAPP_ENDPOINT":"YOUR_HOSTING_ENDPOINT"
+    }
 }

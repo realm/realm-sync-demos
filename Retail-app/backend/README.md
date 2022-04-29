@@ -7,5 +7,6 @@ The Configurations for the Realm app. Use Realm CLI to configure a new Realm App
 * Create a new Programatic API key - Create a new Programatic API key on the Project Access manager. 
 * Download & Install the Realm CLI using `npm install -g mongodb-realm-cli``
 * Use the above created Public and Private key to login to the Realm CLI using `realm-cli login --api-key <my-api-key> --private-api-key <my-private-api-key>`
-* Create a new the Realm App using `realm-cli push -y --project="<MongoDB Atlas Project ID>"`
-
+* Create a new the Realm App using `realm-cli push -y --project="<MongoDB Atlas Project ID>" --include-hosting`
+* Make sure, Hosting is enabled on Realm UI.
+* Update the SENDGRID_APIKEY, SENDGRID_API_SECRET and WEBAPP_ENDPOINT(from Realm App->Hosting) on the Environment files.
