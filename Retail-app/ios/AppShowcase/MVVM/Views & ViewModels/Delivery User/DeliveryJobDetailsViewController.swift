@@ -71,6 +71,9 @@ class DeliveryJobDetailsViewController: BaseViewController {
     func updateJobStatus(status: String) {
         let currentJobStatus = viewModel.job.status
         RealmManager.shared.updateJobStatus(status: status, receivedBy: viewModel.receivedBy, forJob: viewModel.job) { completed in
+            if completed == false {
+                return
+            }
             DispatchQueue.main.async {
                 self.refreshData()
                 self.showMessage(message: "Job status is updated")
@@ -103,6 +106,7 @@ class DeliveryJobDetailsViewController: BaseViewController {
                                 }
                             }
                         }
+                        return
                     } else if currentJobStatus == JobStatus.inprogress.rawValue && status == JobStatus.todo.rawValue {
                         let productQuantities = self.viewModel.job.products
                         for pQuantity in  productQuantities {
@@ -115,6 +119,7 @@ class DeliveryJobDetailsViewController: BaseViewController {
                                 }
                             }
                         }
+                        return
                     } else if currentJobStatus == JobStatus.inprogress.rawValue && status == JobStatus.done.rawValue {
                         self.showLoader()
                         UserDefaults.standard.setValue(self.viewModel.job.destinationStore?._id.stringValue, forKey: Defaults.stores)
