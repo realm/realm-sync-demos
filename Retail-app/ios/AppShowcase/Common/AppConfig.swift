@@ -9,7 +9,7 @@ class AppConfig: NSObject {
     /** Credentials of frameworks and features used in the app. */
     struct Credentials {
         static let realmAppId   = "phase-2-sandbox-vikjc"
-        static let googlePlacesApiKey   = "AIzaSyAUTXCIZ5RvkWDbbnMJmvJdPuPKOPfjhW4"
+        static let googlePlacesApiKey   = "AIzaSyCoPvfa6m03JI4YtP6kWORfB0QE1UMHDwU"
     }
 } 
 
