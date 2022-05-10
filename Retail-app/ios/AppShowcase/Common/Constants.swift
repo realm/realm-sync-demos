@@ -67,8 +67,8 @@ struct Defaults {
 /// List of all Storyboards used in the app.
 struct Storyboards {
     static let launchScreen = "LaunchScreen"
-    static let main = "Main"
-    static let storeAdmin = "HomePageForAdmin"
+    static let deliveryUser = "DeliveryUser"
+    static let storeAdmin = "StoreAdmin"
     static let authentication = "Authentication"
 }
 

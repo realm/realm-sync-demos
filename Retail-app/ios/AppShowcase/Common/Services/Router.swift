@@ -10,13 +10,13 @@ import UIKit
 
 class Router {
     /**
-     To get viewcontrollers from Main storyboard
-     - get viewcontrollers from main storyboard using their storyboard IDs
+     To get viewcontrollers from deliveryUser storyboard
+     - get viewcontrollers from deliveryUser storyboard using their storyboard IDs
      - Parameter storyboardId: Storyboard ID of the requested viewcontroller
      - returns: the requested viewcontroller in it's file type
      */
-    static func getVCFromMainStoryboard(withId storyboardId: String) -> Any {
-        return self.getVC(withId: storyboardId, fromStoryboard: Storyboards.main)
+    static func getVCFromDeliveryUserStoryboard(withId storyboardId: String) -> Any {
+        return self.getVC(withId: storyboardId, fromStoryboard: Storyboards.deliveryUser)
     }
     /**
      To get viewcontrollers from storeAdmin storyboard
@@ -43,7 +43,7 @@ class Router {
     /// - If already authenticated, will get inside app
     /// - Else will be taken to authentication screen
     static func setRootViewController() {
-        // if realm u=user is logged in and user role available, goto corresponding user's home. Else goto login
+        // if realm user is logged in and user role available, goto corresponding user's home. Else goto login
         if RealmManager.shared.app.currentUser?.isLoggedIn == true {
             let userRole = UserDefaults.standard.value(forKey: Defaults.userRole)
             if userRole as? String != "" && userRole != nil {
@@ -71,7 +71,7 @@ class Router {
                     } else {
                         // goto Delivery user home
                          DispatchQueue.main.async {
-                             let viewC = Router.getVCFromMainStoryboard(withId: "DeliveryHomeNav") as! UINavigationController
+                             let viewC = Router.getVCFromDeliveryUserStoryboard(withId: "DeliveryHomeNav") as! UINavigationController
                              sceneDelegate.window?.rootViewController = viewC
                              return
                          }
@@ -88,7 +88,7 @@ class Router {
     
     static func gotoLogin() {
         DispatchQueue.main.async {
-            let viewC = Router.getVCFromMainStoryboard(withId: "LoginNavController") as! UINavigationController
+            let viewC = Router.getVCFromDeliveryUserStoryboard(withId: "LoginNavController") as! UINavigationController
             sceneDelegate.window?.rootViewController = viewC
         }
     }

@@ -10,7 +10,7 @@ import UIKit
 
 extension UIViewController {
     
-    /// To puus view controller using storyboard id
+    /// To push view controller using storyboard id
     /// - Parameters:
     ///   - storyboardId: storyboard  id  of te viewcontroller to be pushed
     ///   - storyboardName: name of the storyboard  that cointains the pushed view controller 

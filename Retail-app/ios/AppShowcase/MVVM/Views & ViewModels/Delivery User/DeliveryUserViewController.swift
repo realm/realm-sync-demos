@@ -120,7 +120,7 @@ extension DeliveryUserViewController:UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         //Job details page
-        let vc = Router.getVC(withId: StoryboardID.deliveryJobDetailsVC.rawValue, fromStoryboard: Storyboards.main) as? DeliveryJobDetailsViewController
+        let vc = Router.getVC(withId: StoryboardID.deliveryJobDetailsVC.rawValue, fromStoryboard: Storyboards.deliveryUser) as? DeliveryJobDetailsViewController
         vc?.viewModel.job = (viewModel.currentJobs?[indexPath.row])!
         self.navigationController?.pushViewController(vc!, animated: true)
     }

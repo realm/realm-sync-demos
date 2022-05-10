@@ -82,10 +82,9 @@ import RealmSwift
                 print("Successfully logged in as user \(user)")
                 // If the user data has been refreshed recently, you can access the
                 // custom user data directly on the user object
-                print("User custom data: \(user.customData)")
                 let userCustomData = user.customData
-                // Refresh the custom user data
-                // save few data in userdefaults for easy access.
+                print("User custom data: \(userCustomData)")
+                // saving few user data in userdefaults for easy access.
                 self.saveUserDataToUserDefaults(userDict: userCustomData as [String : Any])
                 success(userCustomData)
             }
@@ -108,7 +107,6 @@ import RealmSwift
     
     /// Reset data stored in Userdefaults
     func clearUserDefaultsData() {
-        print("clearUserDefaultsData")
         UserDefaults.standard.removeObject(forKey: Defaults.userId)
         UserDefaults.standard.removeObject(forKey: Defaults.userRole)
         UserDefaults.standard.removeObject(forKey: Defaults.partition)
@@ -124,7 +122,6 @@ import RealmSwift
                 let realm = try! Realm()
                 try! realm.write {
                     realm.deleteAll()
-                    print("realm.deleteAll")
                     self.clearUserDefaultsData()
                     DispatchQueue.main.async {
                         Router.setRootViewController()
