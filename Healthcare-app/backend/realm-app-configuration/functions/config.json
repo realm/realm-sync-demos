@@ -1,0 +1,14 @@
+[
+    {
+        "name": "createASession",
+        "private": true
+    },
+    {
+        "name": "createProspect",
+        "private": true
+    },
+    {
+        "name": "createUser",
+        "private": true
+    }
+]

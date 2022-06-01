@@ -1,0 +1,14 @@
+{
+    "appointment": {
+        "ref": "#/relationship/mongodb-atlas/refactor/Appointment",
+        "source_key": "appointment",
+        "foreign_key": "_id",
+        "is_list": false
+    },
+    "subject": {
+        "ref": "#/relationship/mongodb-atlas/refactor/Patient",
+        "source_key": "subject",
+        "foreign_key": "_id",
+        "is_list": false
+    }
+}

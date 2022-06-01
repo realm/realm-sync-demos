@@ -1,0 +1,30 @@
+{
+    "bsonType": "object",
+    "properties": {
+        "_id": {
+            "bsonType": "objectId"
+        },
+        "active": {
+            "bsonType": "bool"
+        },
+        "category": {
+            "bsonType": "string"
+        },
+        "code": {
+            "bsonType": "string"
+        },
+        "comments": {
+            "bsonType": "string"
+        },
+        "name": {
+            "bsonType": "string"
+        },
+        "system": {
+            "bsonType": "string"
+        }
+    },
+    "required": [
+        "_id"
+    ],
+    "title": "Code"
+}

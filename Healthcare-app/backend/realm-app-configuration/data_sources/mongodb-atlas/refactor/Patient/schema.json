@@ -1,0 +1,49 @@
+{
+    "bsonType": "object",
+    "properties": {
+        "_id": {
+            "bsonType": "objectId"
+        },
+        "active": {
+            "bsonType": "bool"
+        },
+        "birthDate": {
+            "bsonType": "date"
+        },
+        "gender": {
+            "bsonType": "string"
+        },
+        "identifier": {
+            "bsonType": "string"
+        },
+        "name": {
+            "bsonType": "object",
+            "properties": {
+                "given": {
+                    "bsonType": "string"
+                },
+                "prefix": {
+                    "bsonType": "array",
+                    "items": {
+                        "bsonType": "string"
+                    }
+                },
+                "suffix": {
+                    "bsonType": "array",
+                    "items": {
+                        "bsonType": "string"
+                    }
+                },
+                "text": {
+                    "bsonType": "string"
+                }
+            },
+            "required": [],
+            "title": "Human_Name"
+        }
+    },
+    "required": [
+        "_id"
+    ],
+    "title": "Patient"
+}

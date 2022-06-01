@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/consultation"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:icon="@mipmap/prescribed"
+        android:title="@string/consultation" />
+
+    <item
+        android:id="@+id/profileInfo"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:icon="@mipmap/user_red"
+        android:title="@string/profile" />
+    <item
+        android:id="@+id/addIllness"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:icon="@mipmap/add_icon"
+        android:title="@string/add_illness_condition_menu" />
+    <item
+        android:id="@+id/logout"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:icon="@mipmap/ic_logout"
+        android:title="@string/logout" />
+</menu>

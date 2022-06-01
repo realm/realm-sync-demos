@@ -1,0 +1,20 @@
+{
+    "anon-user": {
+        "name": "anon-user",
+        "type": "anon-user",
+        "disabled": false
+    },
+    "api-key": {
+        "name": "api-key",
+        "type": "api-key",
+        "disabled": true
+    },
+    "custom-function": {
+        "name": "custom-function",
+        "type": "custom-function",
+        "config": {
+            "authFunctionName": "createASession"
+        },
+        "disabled": false
+    }
+}

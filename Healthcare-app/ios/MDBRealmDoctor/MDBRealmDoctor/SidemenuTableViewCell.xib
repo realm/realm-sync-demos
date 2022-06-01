@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="SidemenuTableViewCell" rowHeight="65" id="cmQ-P5-9RO" customClass="SidemenuTableViewCell" customModule="MDBRealmDoctor" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="419" height="65"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cmQ-P5-9RO" id="2tt-UU-m1I">
+                <rect key="frame" x="0.0" y="0.0" width="419" height="65"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Rcg-ck-Mzc">
+                        <rect key="frame" x="74" y="22.5" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="M5n-p5-SCH"/>
+                            <constraint firstAttribute="height" constant="20" id="mZw-nR-Xe4"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="57x-Yb-Dl0">
+                        <rect key="frame" x="109" y="32.5" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="57x-Yb-Dl0" firstAttribute="centerY" secondItem="Rcg-ck-Mzc" secondAttribute="centerY" id="3XP-pP-qaH"/>
+                    <constraint firstItem="57x-Yb-Dl0" firstAttribute="leading" secondItem="Rcg-ck-Mzc" secondAttribute="trailing" constant="15" id="FvK-jF-W0m"/>
+                    <constraint firstItem="Rcg-ck-Mzc" firstAttribute="centerY" secondItem="2tt-UU-m1I" secondAttribute="centerY" id="Sk6-JR-KGi"/>
+                    <constraint firstItem="Rcg-ck-Mzc" firstAttribute="centerX" secondItem="2tt-UU-m1I" secondAttribute="centerX" multiplier="0.4" id="axg-nL-iHN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="menuImageView" destination="Rcg-ck-Mzc" id="rPU-ZE-hi7"/>
+                <outlet property="menuName" destination="57x-Yb-Dl0" id="6xg-ew-QKh"/>
+            </connections>
+            <point key="canvasLocation" x="115.21739130434783" y="157.70089285714286"/>
+        </tableViewCell>
+    </objects>
+</document>

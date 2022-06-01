@@ -1,0 +1,14 @@
+{
+    "organization": {
+        "ref": "#/relationship/mongodb-atlas/refactor/Organization",
+        "source_key": "organization",
+        "foreign_key": "_id",
+        "is_list": false
+    },
+    "practitioner": {
+        "ref": "#/relationship/mongodb-atlas/refactor/Practitioner",
+        "source_key": "practitioner",
+        "foreign_key": "_id",
+        "is_list": false
+    }
+}

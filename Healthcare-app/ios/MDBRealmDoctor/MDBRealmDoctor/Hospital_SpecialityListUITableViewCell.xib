@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="Hospital_SpecialityListUITableViewCell" rowHeight="64" id="f1j-bz-puH" customClass="HospitalListTableViewCell" customModule="MDBRealmDoctor" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="f1j-bz-puH" id="Au7-Sv-Rlx">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVO-gm-F8c">
+                        <rect key="frame" x="10" y="22" width="394" height="20"/>
+                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="bVO-gm-F8c" firstAttribute="centerY" secondItem="Au7-Sv-Rlx" secondAttribute="centerY" id="BMq-zp-Ktt"/>
+                    <constraint firstItem="bVO-gm-F8c" firstAttribute="leading" secondItem="Au7-Sv-Rlx" secondAttribute="leading" constant="10" id="DPF-83-tvk"/>
+                    <constraint firstItem="bVO-gm-F8c" firstAttribute="centerX" secondItem="Au7-Sv-Rlx" secondAttribute="centerX" id="esC-3d-LJb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="hospital_specialistLabel" destination="bVO-gm-F8c" id="G1d-mF-fdB"/>
+            </connections>
+            <point key="canvasLocation" x="114.49275362318842" y="137.27678571428569"/>
+        </tableViewCell>
+    </objects>
+</document>

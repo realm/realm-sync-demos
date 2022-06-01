@@ -1,0 +1,263 @@
+{
+    "bsonType": "object",
+    "properties": {
+        "_id": {
+            "bsonType": "objectId"
+        },
+        "appointment": {
+            "bsonType": "objectId"
+        },
+        "diagnosis": {
+            "bsonType": "object",
+            "properties": {
+                "condition": {
+                    "bsonType": "object",
+                    "properties": {
+                        "coding": {
+                            "bsonType": "array",
+                            "items": {
+                                "bsonType": "object",
+                                "properties": {
+                                    "code": {
+                                        "bsonType": "string"
+                                    },
+                                    "display": {
+                                        "bsonType": "string"
+                                    },
+                                    "system": {
+                                        "bsonType": "string"
+                                    }
+                                },
+                                "required": [],
+                                "title": "Coding"
+                            }
+                        },
+                        "identifier": {
+                            "bsonType": "objectId"
+                        },
+                        "reference": {
+                            "bsonType": "string"
+                        },
+                        "text": {
+                            "bsonType": "string"
+                        },
+                        "type": {
+                            "bsonType": "string"
+                        }
+                    },
+                    "required": [],
+                    "title": "Reference"
+                },
+                "rank": {
+                    "bsonType": "long"
+                },
+                "use": {
+                    "bsonType": "object",
+                    "properties": {
+                        "coding": {
+                            "bsonType": "array",
+                            "items": {
+                                "bsonType": "object",
+                                "properties": {
+                                    "code": {
+                                        "bsonType": "string"
+                                    },
+                                    "display": {
+                                        "bsonType": "string"
+                                    },
+                                    "system": {
+                                        "bsonType": "string"
+                                    }
+                                },
+                                "required": [],
+                                "title": "Coding"
+                            }
+                        },
+                        "text": {
+                            "bsonType": "string"
+                        }
+                    },
+                    "required": [],
+                    "title": "Codable_Concept"
+                }
+            },
+            "required": [],
+            "title": "Diagnosis"
+        },
+        "identifier": {
+            "bsonType": "string"
+        },
+        "nurseIdentifier": {
+            "bsonType": "string"
+        },
+        "participant": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "object",
+                "properties": {
+                    "individual": {
+                        "bsonType": "object",
+                        "properties": {
+                            "coding": {
+                                "bsonType": "array",
+                                "items": {
+                                    "bsonType": "object",
+                                    "properties": {
+                                        "code": {
+                                            "bsonType": "string"
+                                        },
+                                        "display": {
+                                            "bsonType": "string"
+                                        },
+                                        "system": {
+                                            "bsonType": "string"
+                                        }
+                                    },
+                                    "required": [],
+                                    "title": "Coding"
+                                }
+                            },
+                            "identifier": {
+                                "bsonType": "objectId"
+                            },
+                            "reference": {
+                                "bsonType": "string"
+                            },
+                            "text": {
+                                "bsonType": "string"
+                            },
+                            "type": {
+                                "bsonType": "string"
+                            }
+                        },
+                        "required": [],
+                        "title": "Reference"
+                    },
+                    "type": {
+                        "bsonType": "object",
+                        "properties": {
+                            "coding": {
+                                "bsonType": "array",
+                                "items": {
+                                    "bsonType": "object",
+                                    "properties": {
+                                        "code": {
+                                            "bsonType": "string"
+                                        },
+                                        "display": {
+                                            "bsonType": "string"
+                                        },
+                                        "system": {
+                                            "bsonType": "string"
+                                        }
+                                    },
+                                    "required": [],
+                                    "title": "Coding"
+                                }
+                            },
+                            "text": {
+                                "bsonType": "string"
+                            }
+                        },
+                        "required": [],
+                        "title": "Codable_Concept"
+                    }
+                },
+                "required": [],
+                "title": "Encounter_Participant"
+            }
+        },
+        "practitionerIdentifier": {
+            "bsonType": "string"
+        },
+        "reasonReference": {
+            "bsonType": "object",
+            "properties": {
+                "coding": {
+                    "bsonType": "array",
+                    "items": {
+                        "bsonType": "object",
+                        "properties": {
+                            "code": {
+                                "bsonType": "string"
+                            },
+                            "display": {
+                                "bsonType": "string"
+                            },
+                            "system": {
+                                "bsonType": "string"
+                            }
+                        },
+                        "required": [],
+                        "title": "Coding"
+                    }
+                },
+                "identifier": {
+                    "bsonType": "objectId"
+                },
+                "reference": {
+                    "bsonType": "string"
+                },
+                "text": {
+                    "bsonType": "string"
+                },
+                "type": {
+                    "bsonType": "string"
+                }
+            },
+            "required": [],
+            "title": "Reference"
+        },
+        "serviceProvider": {
+            "bsonType": "object",
+            "properties": {
+                "coding": {
+                    "bsonType": "array",
+                    "items": {
+                        "bsonType": "object",
+                        "properties": {
+                            "code": {
+                                "bsonType": "string"
+                            },
+                            "display": {
+                                "bsonType": "string"
+                            },
+                            "system": {
+                                "bsonType": "string"
+                            }
+                        },
+                        "required": [],
+                        "title": "Coding"
+                    }
+                },
+                "identifier": {
+                    "bsonType": "objectId"
+                },
+                "reference": {
+                    "bsonType": "string"
+                },
+                "text": {
+                    "bsonType": "string"
+                },
+                "type": {
+                    "bsonType": "string"
+                }
+            },
+            "required": [],
+            "title": "Reference"
+        },
+        "status": {
+            "bsonType": "string"
+        },
+        "subject": {
+            "bsonType": "objectId"
+        },
+        "subjectIdentifier": {
+            "bsonType": "string"
+        }
+    },
+    "required": [
+        "_id"
+    ],
+    "title": "Encounter"
+}

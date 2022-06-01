@@ -1,0 +1,23 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'MDBRealmPatient' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for MDBRealmPatient
+  pod 'RealmSwift'
+  pod 'TPKeyboardAvoiding'
+  pod 'NVActivityIndicatorView'
+  pod 'SDWebImage'
+
+  target 'MDBRealmPatientTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'MDBRealmPatientUITests' do
+    # Pods for testing
+  end
+
+end

@@ -1,0 +1,629 @@
+[
+    {
+        "_id": {
+            "$oid": "626126de15201160e842c2b2"
+        },
+        "category": "speciality",
+        "code": "394579002",
+        "system": "http://snomed.info/sct",
+        "name": "Cardiology",
+        "comments": "",
+        "active": true
+    },
+    {
+        "_id": {
+            "$oid": "626126de15201160e842c2b3"
+        },
+        "category": "speciality",
+        "code": "394601005",
+        "system": "http://snomed.info/sct",
+        "name": "Clinical physiology",
+        "comments": "",
+        "active": true
+    },
+    {
+        "_id": {
+            "$oid": "626126de15201160e842c2c2"
+        },
+        "category": "conditions",
+        "code": "134006",
+        "system": "http://snomed.info/sct",
+        "name": "Decreased hair growth",
+        "comments": "",
+        "active": true
+    },
+    {
+        "_id": {
+            "$oid": "626126de15201160e842c2c7"
+        },
+        "category": "conditions",
+        "code": "954008",
+        "system": "http://snomed.info/sct",
+        "name": "Renon-Delille syndrome",
+        "comments": "",
+        "active": true
+    },
+    {
+        "_id": {
+            "$oid": "626126de15201160e842c2cd"
+        },
+        "category": "conditions",
+        "code": "1989002",
+        "system": "http://snomed.info/sct",
+        "name": "Burn Sensation",
+        "comments": "",
+        "active": true
+    },
+    {
+        "_id": {
+            "$oid": "626126de15201160e842c2ce"
+        },
+        "category": "conditions",
+        "code": "4414005",
+        "system": "http://snomed.info/sct",
+        "name": "Infection caused by Setaria",
+        "comments": "",
+        "active": true
+    },
+    {
+        "_id": {
+            "$oid": "626126de15201160e842c2cf"
+        },
+        "category": "conditions",
+        "code": "4416007",
+        "system": "http://snomed.info/sct",
+        "name": "Heerfordt syndrome",
+        "comments": "",
+        "active": true
+    },
+    {
+        "_id": {
+            "$oid": "626126de15201160e842c2d0"
+        },
+        "category": "conditions",
+        "code": "4418008",
+        "system": "http://snomed.info/sct",
+        "name": "Gangrenous ergotism",
+        "comments": "",
+        "active": true
+    },
+    {
+        "_id": {
+            "$oid": "626126de15201160e842c2d1"
+        },
+        "category": "org-type",
+        "code": "prov",
+        "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+        "name": "Healthcare Provider",
+        "comments": "An organization that provides healthcare services.",
+        "active": true
+    },
+    {
+        "_id": {
+            "$oid": "626126de15201160e842c2d3"
+        },
+        "category": "org-type",
+        "code": "govt",
+        "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+        "name": "Government",
+        "comments": "A political body, often used when including organization records for government bodies such as a Federal Government, State or Local Government.",
+        "active": true
+    },
+    {
+        "_id": {
+            "$oid": "626126de15201160e842c2da"
+        },
+        "category": "medicine-code",
+        "code": "1368003",
+        "system": "http://snomed.info/sct",
+        "name": "Iodine 131",
+        "comments": "",
+        "active": true
+    },
+    {
+        "_id": {
+            "$oid": "626126de15201160e842c2de"
+        },
+        "category": "medicine-code",
+        "code": "3945007",
+        "system": "http://snomed.info/sct",
+        "name": "Tin isotope",
+        "comments": "",
+        "active": true
+    },
+    {
+        "_id": {
+            "$oid": "626126de15201160e842c2e6"
+        },
+        "category": "medicine-form",
+        "code": "385032004",
+        "system": "http://snomed.info/sct",
+        "name": "Syrup",
+        "comments": "",
+        "active": true
+    },
+    {
+        "_id": {
+            "$oid": "626126de15201160e842c2b7"
+        },
+        "category": "speciality",
+        "code": "394802001",
+        "system": "http://snomed.info/sct",
+        "name": "General medicine",
+        "comments": "",
+        "active": true
+    },
+    {
+        "_id": {
+            "$oid": "626126de15201160e842c2bc"
+        },
+        "category": "speciality",
+        "code": "409968004",
+        "system": "http://snomed.info/sct",
+        "name": "Preventive medicine",
+        "comments": "",
+        "active": true
+    },
+    {
+        "_id": {
+            "$oid": "626126de15201160e842c2bf"
+        },
+        "category": "conditions",
+        "code": "122003",
+        "system": "http://snomed.info/sct",
+        "name": "Choroidal hemorrhage",
+        "comments": "",
+        "active": true
+    },
+    {
+        "_id": {
+            "$oid": "626126de15201160e842c2c3"
+        },
+        "category": "conditions",
+        "code": "140004",
+        "system": "http://snomed.info/sct",
+        "name": "Chronic pharyngitis",
+        "comments": "",
+        "active": true
+    },
+    {
+        "_id": {
+            "$oid": "626126de15201160e842c2c6"
+        },
+        "category": "conditions",
+        "code": "943003",
+        "system": "http://snomed.info/sct",
+        "name": "Congenital retinal aneurysm",
+        "comments": "",
+        "active": true
+    },
+    {
+        "_id": {
+            "$oid": "626126de15201160e842c2ca"
+        },
+        "category": "conditions",
+        "code": "1378000",
+        "system": "http://snomed.info/sct",
+        "name": "Supination-eversion injury of ankle",
+        "comments": "",
+        "active": true
+    },
+    {
+        "_id": {
+            "$oid": "626126de15201160e842c2d2"
+        },
+        "category": "org-type",
+        "code": "dept",
+        "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+        "name": "Hospital Department",
+        "comments": "A department or ward within a hospital (Generally is not applicable to top level organizations)",
+        "active": true
+    },
+    {
+        "_id": {
+            "$oid": "626126de15201160e842c2d7"
+        },
+        "category": "medicine-code",
+        "code": "336001",
+        "system": "http://snomed.info/sct",
+        "name": "Fibrinogen Tokyo II",
+        "comments": "",
+        "active": true
+    },
+    {
+        "_id": {
+            "$oid": "626126de15201160e842c2d8"
+        },
+        "category": "medicine-code",
+        "code": "363000",
+        "system": "http://snomed.info/sct",
+        "name": "Fibrinogen San Juan",
+        "comments": "",
+        "active": true
+    },
+    {
+        "_id": {
+            "$oid": "626126de15201160e842c2d9"
+        },
+        "category": "medicine-code",
+        "code": "519005",
+        "system": "http://snomed.info/sct",
+        "name": "Free protein S",
+        "comments": "",
+        "active": true
+    },
+    {
+        "_id": {
+            "$oid": "626126de15201160e842c2db"
+        },
+        "category": "medicine-code",
+        "code": "2799001",
+        "system": "http://snomed.info/sct",
+        "name": "Methylbenzethonium",
+        "comments": "",
+        "active": true
+    },
+    {
+        "_id": {
+            "$oid": "626126de15201160e842c2dd"
+        },
+        "category": "medicine-code",
+        "code": "3378009",
+        "system": "http://snomed.info/sct",
+        "name": "Imipramine hydrochloride",
+        "comments": "",
+        "active": true
+    },
+    {
+        "_id": {
+            "$oid": "626126de15201160e842c2e8"
+        },
+        "category": "encounter-diagnosis",
+        "code": "post-op",
+        "system": "http://terminology.hl7.org/CodeSystem/diagnosis-role",
+        "name": "post-op diagnosis",
+        "comments": "",
+        "active": true
+    },
+    {
+        "_id": {
+            "$oid": "626126de15201160e842c2b0"
+        },
+        "category": "role",
+        "code": "doctor",
+        "system": "http://terminology.hl7.org/CodeSystem/practitioner-role",
+        "name": "Doctor",
+        "comments": "A qualified/registered medical practitioner",
+        "active": true
+    },
+    {
+        "_id": {
+            "$oid": "626126de15201160e842c2b1"
+        },
+        "category": "role",
+        "code": "nurse",
+        "system": "http://terminology.hl7.org/CodeSystem/practitioner-role",
+        "name": "Nurse",
+        "comments": "A practitioner with nursing experience that may be qualified/registered",
+        "active": true
+    },
+    {
+        "_id": {
+            "$oid": "626126de15201160e842c2b4"
+        },
+        "category": "speciality",
+        "code": "408478003",
+        "system": "http://snomed.info/sct",
+        "name": "Critical care medicine",
+        "comments": "",
+        "active": true
+    },
+    {
+        "_id": {
+            "$oid": "626126de15201160e842c2b5"
+        },
+        "category": "speciality",
+        "code": "394812008",
+        "system": "http://snomed.info/sct",
+        "name": "Dental medicine specialties",
+        "comments": "",
+        "active": true
+    },
+    {
+        "_id": {
+            "$oid": "626126de15201160e842c2b8"
+        },
+        "category": "speciality",
+        "code": "394586005",
+        "system": "http://snomed.info/sct",
+        "name": "Gynecology",
+        "comments": "",
+        "active": true
+    },
+    {
+        "_id": {
+            "$oid": "626126de15201160e842c2ba"
+        },
+        "category": "speciality",
+        "code": "394539006",
+        "system": "http://snomed.info/sct",
+        "name": "Pediatric surgery",
+        "comments": "",
+        "active": true
+    },
+    {
+        "_id": {
+            "$oid": "626126de15201160e842c2bb"
+        },
+        "category": "speciality",
+        "code": "420112009",
+        "system": "http://snomed.info/sct",
+        "name": "Pediatric surgery-bone marrow transplantation",
+        "comments": "",
+        "active": true
+    },
+    {
+        "_id": {
+            "$oid": "626126de15201160e842c2bd"
+        },
+        "category": "speciality",
+        "code": "394609007",
+        "system": "http://snomed.info/sct",
+        "name": "Surgery-general",
+        "comments": "",
+        "active": true
+    },
+    {
+        "_id": {
+            "$oid": "626126de15201160e842c2c4"
+        },
+        "category": "conditions",
+        "code": "144008",
+        "system": "http://snomed.info/sct",
+        "name": "Normal peripheral vision",
+        "comments": "",
+        "active": true
+    },
+    {
+        "_id": {
+            "$oid": "626126de15201160e842c2c5"
+        },
+        "category": "conditions",
+        "code": "443006",
+        "system": "http://snomed.info/sct",
+        "name": "Cystocele affecting pregnancy",
+        "comments": "",
+        "active": true
+    },
+    {
+        "_id": {
+            "$oid": "626126de15201160e842c2d4"
+        },
+        "category": "encounter-participant-type",
+        "code": "SPRF",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+        "name": "secondary performer",
+        "comments": "A person assisting in an act through his substantial presence and involvement This includes: assistants, technicians, associates, or whatever the job titles may be.",
+        "active": true
+    },
+    {
+        "_id": {
+            "$oid": "626126de15201160e842c2d5"
+        },
+        "category": "encounter-participant-type",
+        "code": "PPRF",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+        "name": "primary performer",
+        "comments": "The principal or primary performer of the act.",
+        "active": true
+    },
+    {
+        "_id": {
+            "$oid": "626126de15201160e842c2df"
+        },
+        "category": "medicine-code",
+        "code": "3983008",
+        "system": "http://snomed.info/sct",
+        "name": "N,-N-dimethyltryptamine",
+        "comments": "",
+        "active": true
+    },
+    {
+        "_id": {
+            "$oid": "626126de15201160e842c2e0"
+        },
+        "category": "medicine-code",
+        "code": "5477001",
+        "system": "http://snomed.info/sct",
+        "name": "Ferric subsulfate",
+        "comments": "",
+        "active": true
+    },
+    {
+        "_id": {
+            "$oid": "626126de15201160e842c2e3"
+        },
+        "category": "medicine-code",
+        "code": "7737009",
+        "system": "http://snomed.info/sct",
+        "name": "Chlortetracycline hydrochloride",
+        "comments": "",
+        "active": true
+    },
+    {
+        "_id": {
+            "$oid": "626126de15201160e842c2e4"
+        },
+        "category": "medicine-form",
+        "code": "385049006",
+        "system": "http://snomed.info/sct",
+        "name": "Capsule",
+        "comments": "",
+        "active": true
+    },
+    {
+        "_id": {
+            "$oid": "626126de15201160e842c2e5"
+        },
+        "category": "medicine-form",
+        "code": "17519006",
+        "system": "http://snomed.info/sct",
+        "name": "Lotion",
+        "comments": "",
+        "active": true
+    },
+    {
+        "_id": {
+            "$oid": "626126de15201160e842c2b6"
+        },
+        "category": "speciality",
+        "code": "394582007",
+        "system": "http://snomed.info/sct",
+        "name": "Dermatology",
+        "comments": "",
+        "active": true
+    },
+    {
+        "_id": {
+            "$oid": "626126de15201160e842c2b9"
+        },
+        "category": "speciality",
+        "code": "394591006",
+        "system": "http://snomed.info/sct",
+        "name": "Neurology",
+        "comments": "",
+        "active": true
+    },
+    {
+        "_id": {
+            "$oid": "626126de15201160e842c2be"
+        },
+        "category": "conditions",
+        "code": "109006",
+        "system": "http://snomed.info/sct",
+        "name": "Anxiety disorder of childhood OR adolescence",
+        "comments": "",
+        "active": true
+    },
+    {
+        "_id": {
+            "$oid": "626126de15201160e842c2c0"
+        },
+        "category": "conditions",
+        "code": "127009",
+        "system": "http://snomed.info/sct",
+        "name": "Fever",
+        "comments": "",
+        "active": true
+    },
+    {
+        "_id": {
+            "$oid": "626126de15201160e842c2c1"
+        },
+        "category": "conditions",
+        "code": "129007",
+        "system": "http://snomed.info/sct",
+        "name": "Homoiothermia",
+        "comments": "",
+        "active": true
+    },
+    {
+        "_id": {
+            "$oid": "626126de15201160e842c2c8"
+        },
+        "category": "conditions",
+        "code": "961007",
+        "system": "http://snomed.info/sct",
+        "name": "Erythema nodosum, acute form",
+        "comments": "",
+        "active": true
+    },
+    {
+        "_id": {
+            "$oid": "626126de15201160e842c2c9"
+        },
+        "category": "conditions",
+        "code": "1376001",
+        "system": "http://snomed.info/sct",
+        "name": "Obsessive compulsive personality disorder",
+        "comments": "",
+        "active": true
+    },
+    {
+        "_id": {
+            "$oid": "626126de15201160e842c2cb"
+        },
+        "category": "conditions",
+        "code": "1981004",
+        "system": "http://snomed.info/sct",
+        "name": "Urhidrosis",
+        "comments": "",
+        "active": true
+    },
+    {
+        "_id": {
+            "$oid": "626126de15201160e842c2cc"
+        },
+        "category": "conditions",
+        "code": "1988005",
+        "system": "http://snomed.info/sct",
+        "name": "Late effect of injury to nerve roots, spinal plexus AND/OR other nerves of trunk",
+        "comments": "",
+        "active": true
+    },
+    {
+        "_id": {
+            "$oid": "626126de15201160e842c2d6"
+        },
+        "category": "medicine-code",
+        "code": "261000",
+        "system": "http://snomed.info/sct",
+        "name": "Codeine phosphate",
+        "comments": "",
+        "active": true
+    },
+    {
+        "_id": {
+            "$oid": "626126de15201160e842c2dc"
+        },
+        "category": "medicine-code",
+        "code": "3342004",
+        "system": "http://snomed.info/sct",
+        "name": "Copper isotope",
+        "comments": "",
+        "active": true
+    },
+    {
+        "_id": {
+            "$oid": "626126de15201160e842c2e1"
+        },
+        "category": "medicine-code",
+        "code": "6717002",
+        "system": "http://snomed.info/sct",
+        "name": "Nifuroxime",
+        "comments": "",
+        "active": true
+    },
+    {
+        "_id": {
+            "$oid": "626126de15201160e842c2e2"
+        },
+        "category": "medicine-code",
+        "code": "6790004",
+        "system": "http://snomed.info/sct",
+        "name": "Aminopterin",
+        "comments": "",
+        "active": true
+    },
+    {
+        "_id": {
+            "$oid": "626126de15201160e842c2e7"
+        },
+        "category": "medicine-form",
+        "code": "385055001",
+        "system": "http://snomed.info/sct",
+        "name": "Tablet",
+        "comments": "",
+        "active": true
+    }
+]

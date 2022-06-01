@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ConsultationSessionTableViewCell" rowHeight="157" id="RJJ-OI-7E2" customClass="ConsultationSessionTableViewCell" customModule="MDBRealmDoctor" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="549" height="157"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RJJ-OI-7E2" id="neN-pN-XxC">
+                <rect key="frame" x="0.0" y="0.0" width="549" height="157"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vsf-os-lIW">
+                        <rect key="frame" x="10" y="10" width="529" height="137"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="d4V-a9-Tdi">
+                                <rect key="frame" x="10" y="11.5" width="20" height="17.5"/>
+                                <color key="tintColor" red="0.94509803920000002" green="0.35294117650000001" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="Sxe-J2-zjB"/>
+                                    <constraint firstAttribute="height" constant="20" id="gts-br-8rz"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABC hospital" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EYb-Ne-lnh">
+                                <rect key="frame" x="40" y="10" width="91.5" height="20"/>
+                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="14"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABC hospital" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="517-HW-VeI">
+                                <rect key="frame" x="40" y="60.5" width="484" height="15.5"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="11"/>
+                                <color key="textColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABC hospital" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iP2-mG-hm6">
+                                <rect key="frame" x="40" y="35" width="484" height="15.5"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="11"/>
+                                <color key="textColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABC hospital" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cXR-tJ-rSb">
+                                <rect key="frame" x="40" y="111.5" width="484" height="15.5"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="11"/>
+                                <color key="textColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABC hospital" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k2y-aj-p4L">
+                                <rect key="frame" x="40" y="86" width="484" height="15.5"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="11"/>
+                                <color key="textColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.02" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="d4V-a9-Tdi" firstAttribute="top" secondItem="Vsf-os-lIW" secondAttribute="top" constant="10" id="AKa-K7-Hkd"/>
+                            <constraint firstItem="iP2-mG-hm6" firstAttribute="leading" secondItem="EYb-Ne-lnh" secondAttribute="leading" id="GMk-uc-zuq"/>
+                            <constraint firstItem="cXR-tJ-rSb" firstAttribute="top" secondItem="k2y-aj-p4L" secondAttribute="bottom" constant="10" id="IRr-fe-z0h"/>
+                            <constraint firstAttribute="trailing" secondItem="517-HW-VeI" secondAttribute="trailing" constant="5" id="K4k-xT-jBq"/>
+                            <constraint firstItem="EYb-Ne-lnh" firstAttribute="leading" secondItem="d4V-a9-Tdi" secondAttribute="trailing" constant="10" id="KB9-nR-IMq"/>
+                            <constraint firstAttribute="trailing" secondItem="k2y-aj-p4L" secondAttribute="trailing" constant="5" id="PSg-4s-lTB"/>
+                            <constraint firstItem="iP2-mG-hm6" firstAttribute="top" secondItem="EYb-Ne-lnh" secondAttribute="bottom" constant="5" id="TOr-IH-R5V"/>
+                            <constraint firstItem="EYb-Ne-lnh" firstAttribute="centerY" secondItem="d4V-a9-Tdi" secondAttribute="centerY" id="WsG-B1-vHZ"/>
+                            <constraint firstItem="cXR-tJ-rSb" firstAttribute="leading" secondItem="EYb-Ne-lnh" secondAttribute="leading" id="agy-0I-PIj"/>
+                            <constraint firstItem="517-HW-VeI" firstAttribute="leading" secondItem="iP2-mG-hm6" secondAttribute="leading" id="l7m-go-K7Y"/>
+                            <constraint firstAttribute="trailing" secondItem="iP2-mG-hm6" secondAttribute="trailing" constant="5" id="t8S-re-YUg"/>
+                            <constraint firstItem="k2y-aj-p4L" firstAttribute="top" secondItem="517-HW-VeI" secondAttribute="bottom" constant="10" id="vfz-Z4-wAr"/>
+                            <constraint firstItem="d4V-a9-Tdi" firstAttribute="leading" secondItem="Vsf-os-lIW" secondAttribute="leading" constant="10" id="wef-0Y-iFz"/>
+                            <constraint firstItem="517-HW-VeI" firstAttribute="top" secondItem="iP2-mG-hm6" secondAttribute="bottom" constant="10" id="x9L-hQ-M3P"/>
+                            <constraint firstAttribute="trailing" secondItem="cXR-tJ-rSb" secondAttribute="trailing" constant="5" id="yrc-SY-1k4"/>
+                            <constraint firstItem="k2y-aj-p4L" firstAttribute="leading" secondItem="517-HW-VeI" secondAttribute="leading" id="zgd-O4-kvA"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Vsf-os-lIW" firstAttribute="leading" secondItem="neN-pN-XxC" secondAttribute="leading" constant="10" id="4mb-Jd-L2L"/>
+                    <constraint firstAttribute="trailing" secondItem="Vsf-os-lIW" secondAttribute="trailing" constant="10" id="7Ft-sD-YRN"/>
+                    <constraint firstAttribute="bottom" secondItem="Vsf-os-lIW" secondAttribute="bottom" constant="10" id="AUl-3D-HPS"/>
+                    <constraint firstItem="Vsf-os-lIW" firstAttribute="top" secondItem="neN-pN-XxC" secondAttribute="top" constant="10" id="WTh-A8-T5k"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="concern" destination="k2y-aj-p4L" id="1Po-fg-VTG"/>
+                <outlet property="current_Medication" destination="517-HW-VeI" id="7LO-xq-Tee"/>
+                <outlet property="doctorName_hospital" destination="cXR-tJ-rSb" id="HN4-Op-61W"/>
+                <outlet property="illness_Condition" destination="iP2-mG-hm6" id="S5i-vQ-4zy"/>
+                <outlet property="outerView" destination="Vsf-os-lIW" id="hkv-xL-BjD"/>
+                <outlet property="patientName" destination="EYb-Ne-lnh" id="EY0-vN-GDQ"/>
+            </connections>
+            <point key="canvasLocation" x="77.536231884057983" y="148.32589285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="person" catalog="system" width="128" height="117"/>
+    </resources>
+</document>

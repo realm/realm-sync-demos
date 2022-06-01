@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="patientInfoViewModel"
+            type="com.wekanmdb.storeinventory.ui.patientBasicInfo.PatientInfoViewModel" />
+
+    </data>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:text=""
+        android:src="@drawable/ic_baseline_menu_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <include
+        android:id="@+id/include"
+        layout="@layout/common_toolbar"
+        android:layout_width="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/title"
+        style="@style/text_style_bold_large_title"
+        android:textSize="17sp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center_horizontal|top"
+        android:lineSpacingExtra="-4sp"
+        android:text="@string/basic_patient_info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textview_illness_title"
+        style="@style/text_style_bold_medium_title"
+        android:layout_width="0dp"
+        android:layout_height="22dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:gravity="top"
+        android:lineSpacingExtra="1sp"
+        android:text="@string/illness"
+        android:textSize="14sp"
+        android:translationY="-0.5sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <TextView
+        android:id="@+id/spinner_illness"
+        style="@style/signup_edittext_style"
+
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:hint="@string/select"
+        android:gravity="center|start"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:drawableEnd="@mipmap/down_arrow"
+        android:padding="6dp"
+        android:drawablePadding="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_illness_title" />
+
+    <TextView
+        android:id="@+id/textview_title_medic"
+        style="@style/text_style_bold_medium_title"
+        android:layout_width="0dp"
+        android:layout_height="22dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:gravity="top"
+        android:lineSpacingExtra="1sp"
+        android:text="@string/medications_currently_taking"
+        android:textSize="14sp"
+        android:translationY="-0.5sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_illness" />
+
+    <EditText
+        android:id="@+id/textview_medic_names"
+        android:layout_width="0dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:textSize="14sp"
+        android:gravity="top"
+        android:hint="@string/medication_names"
+        style="@style/signup_edittext_style"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_title_medic"
+        android:autofillHints="Enter Medication"
+        android:inputType="textMultiLine" />
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_signup_back"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center"
+        android:onClick="@{()->patientInfoViewModel.addIllnessClick()}"
+
+        android:padding="6dp"
+        android:text="@string/add_illness_condition"
+        android:textColor="@color/app_new_color"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_medic_names" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_illnessList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/textCreate"
+        app:layout_constraintTop_toBottomOf="@+id/label"
+        tools:layout_editor_absoluteX="0dp"
+        tools:listitem="@layout/item_patient_illness_list" />
+
+    <TextView
+        android:id="@+id/textCreate"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/button_bg"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:text="@string/next"
+        android:onClick="@{()->patientInfoViewModel.nextClick()}"
+
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

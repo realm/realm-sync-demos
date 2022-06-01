@@ -1,0 +1,100 @@
+{
+    "bsonType": "object",
+    "properties": {
+        "_id": {
+            "bsonType": "objectId"
+        },
+        "active": {
+            "bsonType": "bool"
+        },
+        "address": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "object",
+                "properties": {
+                    "city": {
+                        "bsonType": "string"
+                    },
+                    "country": {
+                        "bsonType": "string"
+                    },
+                    "line": {
+                        "bsonType": "array",
+                        "items": {
+                            "bsonType": "string"
+                        }
+                    },
+                    "postalCode": {
+                        "bsonType": "string"
+                    },
+                    "state": {
+                        "bsonType": "string"
+                    }
+                },
+                "required": [],
+                "title": "Address"
+            }
+        },
+        "identifier": {
+            "bsonType": "string"
+        },
+        "name": {
+            "bsonType": "string"
+        },
+        "photo": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "object",
+                "properties": {
+                    "creation": {
+                        "bsonType": "date"
+                    },
+                    "data": {
+                        "bsonType": "string"
+                    },
+                    "title": {
+                        "bsonType": "string"
+                    },
+                    "url": {
+                        "bsonType": "string"
+                    }
+                },
+                "required": [],
+                "title": "Attachment"
+            }
+        },
+        "type": {
+            "bsonType": "object",
+            "properties": {
+                "coding": {
+                    "bsonType": "array",
+                    "items": {
+                        "bsonType": "object",
+                        "properties": {
+                            "code": {
+                                "bsonType": "string"
+                            },
+                            "display": {
+                                "bsonType": "string"
+                            },
+                            "system": {
+                                "bsonType": "string"
+                            }
+                        },
+                        "required": [],
+                        "title": "Coding"
+                    }
+                },
+                "text": {
+                    "bsonType": "string"
+                }
+            },
+            "required": [],
+            "title": "Codable_Concept"
+        }
+    },
+    "required": [
+        "_id"
+    ],
+    "title": "Organization"
+}

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Doctor Prescription View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="DoctorPrescriptionVCID" id="Y6W-OH-hqX" customClass="DoctorPrescriptionViewController" customModule="MDBRealmDoctor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="jzn-eL-Wf8">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="jzn-eL-Wf8" secondAttribute="trailing" id="81Q-Tl-jyG"/>
+                            <constraint firstItem="jzn-eL-Wf8" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="C1N-7U-NID"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="jzn-eL-Wf8" secondAttribute="bottom" id="b60-M3-K7g"/>
+                            <constraint firstItem="jzn-eL-Wf8" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="gEv-lm-BSH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="doctorPrescriptionTableView" destination="jzn-eL-Wf8" id="jyj-m7-W9I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="120" y="115"/>
+        </scene>
+        <!--Edit Medication Doctor Notes View Controller-->
+        <scene sceneID="Lei-wG-sh1">
+            <objects>
+                <viewController storyboardIdentifier="EditMedication_DoctorNotesVCID" id="gYb-vv-VoW" customClass="EditMedication_DoctorNotesViewController" customModule="MDBRealmDoctor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5DV-ve-SQj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SUu-aX-rnq">
+                                <rect key="frame" x="34" y="666" width="346" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="DqQ-Hd-6hs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="14"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didClickAddmedication:" destination="gYb-vv-VoW" eventType="touchUpInside" id="IY1-KD-5T6"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No medication found" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gG0-bv-grF">
+                                <rect key="frame" x="133" y="358" width="148" height="20"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="6ny-cP-b5f">
+                                <rect key="frame" x="34" y="10" width="346" height="646"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Xqh-Q2-cER"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Xqh-Q2-cER" firstAttribute="trailing" secondItem="SUu-aX-rnq" secondAttribute="trailing" constant="34" id="7gO-vi-lag"/>
+                            <constraint firstItem="6ny-cP-b5f" firstAttribute="top" secondItem="Xqh-Q2-cER" secondAttribute="top" constant="10" id="CqG-rW-CaT"/>
+                            <constraint firstItem="SUu-aX-rnq" firstAttribute="top" secondItem="6ny-cP-b5f" secondAttribute="bottom" constant="10" id="GfH-ph-qB9"/>
+                            <constraint firstItem="6ny-cP-b5f" firstAttribute="trailing" secondItem="SUu-aX-rnq" secondAttribute="trailing" id="GvO-I5-Asz"/>
+                            <constraint firstItem="Xqh-Q2-cER" firstAttribute="bottom" secondItem="SUu-aX-rnq" secondAttribute="bottom" constant="20" id="STr-Ab-56j"/>
+                            <constraint firstItem="SUu-aX-rnq" firstAttribute="leading" secondItem="Xqh-Q2-cER" secondAttribute="leading" constant="34" id="Xtl-Vb-dcn"/>
+                            <constraint firstItem="6ny-cP-b5f" firstAttribute="leading" secondItem="SUu-aX-rnq" secondAttribute="leading" id="bGb-1r-kmO"/>
+                            <constraint firstItem="gG0-bv-grF" firstAttribute="centerX" secondItem="5DV-ve-SQj" secondAttribute="centerX" id="n1d-7h-32g"/>
+                            <constraint firstItem="gG0-bv-grF" firstAttribute="centerY" secondItem="5DV-ve-SQj" secondAttribute="centerY" id="rcV-a1-RB6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="listTableView" destination="6ny-cP-b5f" id="FMP-K1-eH0"/>
+                        <outlet property="saveButton" destination="SUu-aX-rnq" id="LZL-jt-d28"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zxM-k1-1WA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1114.4927536231885" y="114.94565217391305"/>
+        </scene>
+        <!--Edit Notes View Controller-->
+        <scene sceneID="WWi-py-YQV">
+            <objects>
+                <viewController storyboardIdentifier="EditNotesViewControllerVCID" id="Lt3-jL-gwP" customClass="EditNotesViewController" customModule="MDBRealmDoctor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nSv-VV-maA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTo-OL-Iry">
+                                <rect key="frame" x="34" y="20" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zzp-uR-LD0">
+                                <rect key="frame" x="34" y="40" width="350" height="361"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Zzp-uR-LD0" secondAttribute="height" multiplier="354:205" constant="-273.38536585365853" id="Hfl-Xj-hfm"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oFg-kP-Rpv">
+                                <rect key="frame" x="34" y="676" width="350" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="2xT-0T-8y7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="14"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didClickSaveButton:" destination="Lt3-jL-gwP" eventType="touchUpInside" id="4xd-dn-G88"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tOq-UF-3ei"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eTo-OL-Iry" firstAttribute="top" secondItem="tOq-UF-3ei" secondAttribute="top" constant="20" id="2n3-v3-B2H"/>
+                            <constraint firstItem="Zzp-uR-LD0" firstAttribute="top" secondItem="eTo-OL-Iry" secondAttribute="bottom" constant="20" id="KhU-KD-O5M"/>
+                            <constraint firstItem="tOq-UF-3ei" firstAttribute="trailing" secondItem="oFg-kP-Rpv" secondAttribute="trailing" constant="30" id="VED-gU-2Ey"/>
+                            <constraint firstItem="tOq-UF-3ei" firstAttribute="trailing" secondItem="Zzp-uR-LD0" secondAttribute="trailing" constant="30" id="c8V-pF-FeV"/>
+                            <constraint firstItem="eTo-OL-Iry" firstAttribute="leading" secondItem="tOq-UF-3ei" secondAttribute="leading" constant="34" id="cPo-LE-MLr"/>
+                            <constraint firstItem="tOq-UF-3ei" firstAttribute="bottom" secondItem="oFg-kP-Rpv" secondAttribute="bottom" constant="10" id="ftb-4E-Pe9"/>
+                            <constraint firstItem="oFg-kP-Rpv" firstAttribute="leading" secondItem="Zzp-uR-LD0" secondAttribute="leading" id="oJ8-nt-Y2T"/>
+                            <constraint firstItem="Zzp-uR-LD0" firstAttribute="leading" secondItem="eTo-OL-Iry" secondAttribute="leading" id="uLv-Gc-kXr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="notesDescTitle" destination="eTo-OL-Iry" id="dhH-Bb-Ep6"/>
+                        <outlet property="notesTextField" destination="Zzp-uR-LD0" id="MGx-wT-G7T"/>
+                        <outlet property="saveButton" destination="oFg-kP-Rpv" id="GAK-kn-r3Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pUP-ye-Z5Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2163.768115942029" y="114.94565217391305"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
