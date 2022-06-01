@@ -1,0 +1,88 @@
+{
+    "bsonType": "object",
+    "properties": {
+        "_id": {
+            "bsonType": "objectId"
+        },
+        "active": {
+            "bsonType": "bool"
+        },
+        "code": {
+            "bsonType": "object",
+            "properties": {
+                "coding": {
+                    "bsonType": "array",
+                    "items": {
+                        "bsonType": "object",
+                        "properties": {
+                            "code": {
+                                "bsonType": "string"
+                            },
+                            "display": {
+                                "bsonType": "string"
+                            },
+                            "system": {
+                                "bsonType": "string"
+                            }
+                        },
+                        "required": [],
+                        "title": "Coding"
+                    }
+                },
+                "text": {
+                    "bsonType": "string"
+                }
+            },
+            "required": [],
+            "title": "Codable_Concept"
+        },
+        "notes": {
+            "bsonType": "string"
+        },
+        "subject": {
+            "bsonType": "object",
+            "properties": {
+                "coding": {
+                    "bsonType": "array",
+                    "items": {
+                        "bsonType": "object",
+                        "properties": {
+                            "code": {
+                                "bsonType": "string"
+                            },
+                            "display": {
+                                "bsonType": "string"
+                            },
+                            "system": {
+                                "bsonType": "string"
+                            }
+                        },
+                        "required": [],
+                        "title": "Coding"
+                    }
+                },
+                "identifier": {
+                    "bsonType": "objectId"
+                },
+                "reference": {
+                    "bsonType": "string"
+                },
+                "text": {
+                    "bsonType": "string"
+                },
+                "type": {
+                    "bsonType": "string"
+                }
+            },
+            "required": [],
+            "title": "Reference"
+        },
+        "subjectIdentifier": {
+            "bsonType": "string"
+        }
+    },
+    "required": [
+        "_id"
+    ],
+    "title": "Condition"
+}

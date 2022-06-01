@@ -1,0 +1,158 @@
+{
+    "bsonType": "object",
+    "properties": {
+        "_id": {
+            "bsonType": "objectId"
+        },
+        "encounter": {
+            "bsonType": "objectId"
+        },
+        "identifier": {
+            "bsonType": "string"
+        },
+        "note": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "object",
+                "properties": {
+                    "author": {
+                        "bsonType": "object",
+                        "properties": {
+                            "coding": {
+                                "bsonType": "array",
+                                "items": {
+                                    "bsonType": "object",
+                                    "properties": {
+                                        "code": {
+                                            "bsonType": "string"
+                                        },
+                                        "display": {
+                                            "bsonType": "string"
+                                        },
+                                        "system": {
+                                            "bsonType": "string"
+                                        }
+                                    },
+                                    "required": [],
+                                    "title": "Coding"
+                                }
+                            },
+                            "identifier": {
+                                "bsonType": "objectId"
+                            },
+                            "reference": {
+                                "bsonType": "string"
+                            },
+                            "text": {
+                                "bsonType": "string"
+                            },
+                            "type": {
+                                "bsonType": "string"
+                            }
+                        },
+                        "required": [],
+                        "title": "Reference"
+                    },
+                    "text": {
+                        "bsonType": "string"
+                    },
+                    "time": {
+                        "bsonType": "date"
+                    }
+                },
+                "required": [],
+                "title": "Procedure_Notes"
+            }
+        },
+        "nurseIdentifier": {
+            "bsonType": "string"
+        },
+        "patientIdentifier": {
+            "bsonType": "string"
+        },
+        "practitionerIdentifier": {
+            "bsonType": "string"
+        },
+        "status": {
+            "bsonType": "string"
+        },
+        "subject": {
+            "bsonType": "objectId"
+        },
+        "usedReference": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "object",
+                "properties": {
+                    "amount": {
+                        "bsonType": "long"
+                    },
+                    "code": {
+                        "bsonType": "object",
+                        "properties": {
+                            "coding": {
+                                "bsonType": "array",
+                                "items": {
+                                    "bsonType": "object",
+                                    "properties": {
+                                        "code": {
+                                            "bsonType": "string"
+                                        },
+                                        "display": {
+                                            "bsonType": "string"
+                                        },
+                                        "system": {
+                                            "bsonType": "string"
+                                        }
+                                    },
+                                    "required": [],
+                                    "title": "Coding"
+                                }
+                            },
+                            "text": {
+                                "bsonType": "string"
+                            }
+                        },
+                        "required": [],
+                        "title": "Codable_Concept"
+                    },
+                    "form": {
+                        "bsonType": "object",
+                        "properties": {
+                            "coding": {
+                                "bsonType": "array",
+                                "items": {
+                                    "bsonType": "object",
+                                    "properties": {
+                                        "code": {
+                                            "bsonType": "string"
+                                        },
+                                        "display": {
+                                            "bsonType": "string"
+                                        },
+                                        "system": {
+                                            "bsonType": "string"
+                                        }
+                                    },
+                                    "required": [],
+                                    "title": "Coding"
+                                }
+                            },
+                            "text": {
+                                "bsonType": "string"
+                            }
+                        },
+                        "required": [],
+                        "title": "Codable_Concept"
+                    }
+                },
+                "required": [],
+                "title": "Medication"
+            }
+        }
+    },
+    "required": [
+        "_id"
+    ],
+    "title": "Procedure"
+}

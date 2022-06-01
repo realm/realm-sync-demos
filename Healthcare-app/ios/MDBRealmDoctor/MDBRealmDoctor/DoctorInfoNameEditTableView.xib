@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="DoctorInfoNameEditTableView" rowHeight="96" id="ebR-lc-Sut" customClass="DoctorInfoNameEditTableView" customModule="Practitioner" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="448" height="96"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ebR-lc-Sut" id="d6O-UB-Nhb">
+                <rect key="frame" x="0.0" y="0.0" width="448" height="96"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w5l-ed-qbK">
+                        <rect key="frame" x="30" y="10" width="37.5" height="16.5"/>
+                        <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d6R-5a-4h2">
+                        <rect key="frame" x="30" y="41.5" width="388" height="34"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="d6R-5a-4h2" firstAttribute="leading" secondItem="w5l-ed-qbK" secondAttribute="leading" id="8jp-JD-mSX"/>
+                    <constraint firstAttribute="trailing" secondItem="d6R-5a-4h2" secondAttribute="trailing" constant="30" id="R8e-SZ-DfC"/>
+                    <constraint firstItem="d6R-5a-4h2" firstAttribute="top" secondItem="w5l-ed-qbK" secondAttribute="bottom" constant="15" id="UZW-TZ-PFp"/>
+                    <constraint firstItem="w5l-ed-qbK" firstAttribute="leading" secondItem="d6O-UB-Nhb" secondAttribute="leading" constant="30" id="XPF-tK-Mbj"/>
+                    <constraint firstItem="w5l-ed-qbK" firstAttribute="top" secondItem="d6O-UB-Nhb" secondAttribute="top" constant="10" id="wWg-Zu-TL9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="nameLabel" destination="w5l-ed-qbK" id="mTZ-3w-zPB"/>
+                <outlet property="nameTextField" destination="d6R-5a-4h2" id="AxB-sv-uw0"/>
+            </connections>
+            <point key="canvasLocation" x="-65.217391304347828" y="306.69642857142856"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,131 @@
+{
+    "bsonType": "object",
+    "properties": {
+        "_id": {
+            "bsonType": "objectId"
+        },
+        "end": {
+            "bsonType": "date"
+        },
+        "identifier": {
+            "bsonType": "string"
+        },
+        "nurseIdentifier": {
+            "bsonType": "string"
+        },
+        "participant": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "object",
+                "properties": {
+                    "actor": {
+                        "bsonType": "object",
+                        "properties": {
+                            "coding": {
+                                "bsonType": "array",
+                                "items": {
+                                    "bsonType": "object",
+                                    "properties": {
+                                        "code": {
+                                            "bsonType": "string"
+                                        },
+                                        "display": {
+                                            "bsonType": "string"
+                                        },
+                                        "system": {
+                                            "bsonType": "string"
+                                        }
+                                    },
+                                    "required": [],
+                                    "title": "Coding"
+                                }
+                            },
+                            "identifier": {
+                                "bsonType": "objectId"
+                            },
+                            "reference": {
+                                "bsonType": "string"
+                            },
+                            "text": {
+                                "bsonType": "string"
+                            },
+                            "type": {
+                                "bsonType": "string"
+                            }
+                        },
+                        "required": [],
+                        "title": "Reference"
+                    },
+                    "required": {
+                        "bsonType": "bool"
+                    },
+                    "status": {
+                        "bsonType": "string"
+                    }
+                },
+                "required": [],
+                "title": "Appointment_Participant"
+            }
+        },
+        "patientIdentifier": {
+            "bsonType": "string"
+        },
+        "patientInstruction": {
+            "bsonType": "string"
+        },
+        "practitionerIdentifier": {
+            "bsonType": "string"
+        },
+        "reasonReference": {
+            "bsonType": "object",
+            "properties": {
+                "coding": {
+                    "bsonType": "array",
+                    "items": {
+                        "bsonType": "object",
+                        "properties": {
+                            "code": {
+                                "bsonType": "string"
+                            },
+                            "display": {
+                                "bsonType": "string"
+                            },
+                            "system": {
+                                "bsonType": "string"
+                            }
+                        },
+                        "required": [],
+                        "title": "Coding"
+                    }
+                },
+                "identifier": {
+                    "bsonType": "objectId"
+                },
+                "reference": {
+                    "bsonType": "string"
+                },
+                "text": {
+                    "bsonType": "string"
+                },
+                "type": {
+                    "bsonType": "string"
+                }
+            },
+            "required": [],
+            "title": "Reference"
+        },
+        "slot": {
+            "bsonType": "long"
+        },
+        "start": {
+            "bsonType": "date"
+        },
+        "status": {
+            "bsonType": "string"
+        }
+    },
+    "required": [
+        "_id"
+    ],
+    "title": "Appointment"
+}

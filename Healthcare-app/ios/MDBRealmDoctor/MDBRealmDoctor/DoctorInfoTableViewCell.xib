@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="imageLoadCellID" rowHeight="186" id="4EH-2h-aDs" customClass="DoctorInfoTableViewCell" customModule="MDBRealmDoctor" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="448" height="186"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4EH-2h-aDs" id="UYh-Kn-zg5">
+                <rect key="frame" x="0.0" y="0.0" width="448" height="186"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ycf-80-Uob">
+                        <rect key="frame" x="149" y="18" width="150" height="150"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="0.23472045068027211" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="150" id="d1I-di-z7a"/>
+                            <constraint firstAttribute="width" constant="150" id="gjb-oj-thF"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eUX-qw-kgs">
+                        <rect key="frame" x="149" y="134" width="150" height="34"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.94509803920000002" green="0.35294117650000001" blue="0.33725490200000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="camera.fill" catalog="system" imagePlacement="top"/>
+                        <connections>
+                            <action selector="didClickAddPhoto:" destination="4EH-2h-aDs" eventType="touchUpInside" id="ggO-Ql-BkQ"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Ycf-80-Uob" firstAttribute="centerY" secondItem="UYh-Kn-zg5" secondAttribute="centerY" id="0QO-Yi-aOQ"/>
+                    <constraint firstItem="eUX-qw-kgs" firstAttribute="width" secondItem="Ycf-80-Uob" secondAttribute="width" multiplier="0.446667" constant="83" id="51Y-xj-vxe"/>
+                    <constraint firstItem="eUX-qw-kgs" firstAttribute="centerX" secondItem="Ycf-80-Uob" secondAttribute="centerX" id="ObU-IJ-S6O"/>
+                    <constraint firstItem="Ycf-80-Uob" firstAttribute="centerX" secondItem="UYh-Kn-zg5" secondAttribute="centerX" id="QhC-RF-tb7"/>
+                    <constraint firstItem="eUX-qw-kgs" firstAttribute="centerY" secondItem="Ycf-80-Uob" secondAttribute="centerY" constant="58" id="dIv-xS-ccx"/>
+                    <constraint firstItem="eUX-qw-kgs" firstAttribute="height" secondItem="Ycf-80-Uob" secondAttribute="height" multiplier="0.206667" constant="2.9999500000000019" id="ps3-MJ-ev2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imageAddButton" destination="eUX-qw-kgs" id="Wp5-zf-dwJ"/>
+                <outlet property="imageLoadImageView" destination="Ycf-80-Uob" id="GXw-v1-JDL"/>
+            </connections>
+            <point key="canvasLocation" x="-65.217391304347828" y="106.47321428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="camera.fill" catalog="system" width="128" height="94"/>
+    </resources>
+</document>

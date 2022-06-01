@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="PrescriptionType3TableViewCell" rowHeight="194" id="JiQ-lr-6gV" customClass="PrescriptionType3TableViewCell" customModule="MDBRealmDoctor" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="578" height="194"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JiQ-lr-6gV" id="bi5-Ho-7Fq">
+                <rect key="frame" x="0.0" y="0.0" width="578" height="194"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vBH-Mc-zox">
+                        <rect key="frame" x="30" y="10" width="20" height="20"/>
+                        <color key="tintColor" red="0.94509803920000002" green="0.35294117650000001" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="MS7-Ey-OTo"/>
+                            <constraint firstAttribute="width" constant="20" id="gDf-g3-wYe"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PF6-Z1-6nG">
+                        <rect key="frame" x="60" y="7.5" width="35.5" height="25.5"/>
+                        <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="18"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aci-0a-QyT">
+                        <rect key="frame" x="30" y="53" width="528" height="131"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <string key="text">Select NurseSelect NurseSelect NurseSelect NurseSelect NurseSelect NurseSelect NurseSelect NurseSelect NurseSelect NurseSelect NurseSelect Nurse</string>
+                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uau-cC-Vcc">
+                        <rect key="frame" x="538" y="10" width="20" height="20"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="72g-cI-rt2"/>
+                            <constraint firstAttribute="height" constant="20" id="7dJ-Q4-js0"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain"/>
+                        <connections>
+                            <action selector="didClickeditButton:" destination="JiQ-lr-6gV" eventType="touchUpInside" id="Y7g-gS-fti"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Aci-0a-QyT" firstAttribute="trailing" secondItem="uau-cC-Vcc" secondAttribute="trailing" id="3FJ-Qe-TRs"/>
+                    <constraint firstAttribute="trailing" secondItem="uau-cC-Vcc" secondAttribute="trailing" constant="20" id="7XY-MD-Rot"/>
+                    <constraint firstAttribute="bottom" secondItem="Aci-0a-QyT" secondAttribute="bottom" constant="10" id="7k9-Ky-CFt"/>
+                    <constraint firstItem="Aci-0a-QyT" firstAttribute="leading" secondItem="vBH-Mc-zox" secondAttribute="leading" id="Hor-AP-fHw"/>
+                    <constraint firstItem="uau-cC-Vcc" firstAttribute="centerY" secondItem="PF6-Z1-6nG" secondAttribute="centerY" id="LQs-iV-SGJ"/>
+                    <constraint firstItem="vBH-Mc-zox" firstAttribute="top" secondItem="bi5-Ho-7Fq" secondAttribute="top" constant="10" id="QEr-z7-1fh"/>
+                    <constraint firstItem="Aci-0a-QyT" firstAttribute="top" secondItem="PF6-Z1-6nG" secondAttribute="bottom" constant="20" id="Rs0-a1-Dc0"/>
+                    <constraint firstItem="uau-cC-Vcc" firstAttribute="top" secondItem="bi5-Ho-7Fq" secondAttribute="top" constant="10" id="ldR-yj-vZC"/>
+                    <constraint firstItem="PF6-Z1-6nG" firstAttribute="centerY" secondItem="vBH-Mc-zox" secondAttribute="centerY" id="pnM-q9-fLb"/>
+                    <constraint firstItem="PF6-Z1-6nG" firstAttribute="leading" secondItem="vBH-Mc-zox" secondAttribute="trailing" constant="10" id="qyY-Lj-GNX"/>
+                    <constraint firstItem="vBH-Mc-zox" firstAttribute="leading" secondItem="bi5-Ho-7Fq" secondAttribute="leading" constant="30" id="rgM-Vd-o9j"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="descContent" destination="Aci-0a-QyT" id="6Bl-Vf-Yty"/>
+                <outlet property="editButton" destination="uau-cC-Vcc" id="k2w-s8-Kg3"/>
+                <outlet property="titleImageView" destination="vBH-Mc-zox" id="Wpp-yS-xXl"/>
+                <outlet property="titleTxt" destination="PF6-Z1-6nG" id="ean-Qd-qOG"/>
+            </connections>
+            <point key="canvasLocation" x="152.17391304347828" y="190.17857142857142"/>
+        </tableViewCell>
+    </objects>
+</document>

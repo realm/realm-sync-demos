@@ -1,0 +1,74 @@
+{
+    "bsonType": "object",
+    "properties": {
+        "_id": {
+            "bsonType": "objectId"
+        },
+        "about": {
+            "bsonType": "string"
+        },
+        "active": {
+            "bsonType": "bool"
+        },
+        "birthDate": {
+            "bsonType": "date"
+        },
+        "gender": {
+            "bsonType": "string"
+        },
+        "identifier": {
+            "bsonType": "string"
+        },
+        "name": {
+            "bsonType": "object",
+            "properties": {
+                "given": {
+                    "bsonType": "string"
+                },
+                "prefix": {
+                    "bsonType": "array",
+                    "items": {
+                        "bsonType": "string"
+                    }
+                },
+                "suffix": {
+                    "bsonType": "array",
+                    "items": {
+                        "bsonType": "string"
+                    }
+                },
+                "text": {
+                    "bsonType": "string"
+                }
+            },
+            "required": [],
+            "title": "Human_Name"
+        },
+        "photo": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "object",
+                "properties": {
+                    "creation": {
+                        "bsonType": "date"
+                    },
+                    "data": {
+                        "bsonType": "string"
+                    },
+                    "title": {
+                        "bsonType": "string"
+                    },
+                    "url": {
+                        "bsonType": "string"
+                    }
+                },
+                "required": [],
+                "title": "Attachment"
+            }
+        }
+    },
+    "required": [
+        "_id"
+    ],
+    "title": "Practitioner"
+}

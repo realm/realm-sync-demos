@@ -1,0 +1,1477 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0405522F281FCBFB000B49B4 /* Code.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0405522E281FCBFA000B49B4 /* Code.swift */; };
+		04055233281FF506000B49B4 /* ConditionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04055232281FF506000B49B4 /* ConditionViewController.swift */; };
+		04055236281FFC1C000B49B4 /* ConditionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04055235281FFC1C000B49B4 /* ConditionViewModel.swift */; };
+		0405523928225EA7000B49B4 /* Condition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0405523828225EA7000B49B4 /* Condition.swift */; };
+		0468F5AF2812759100A1D018 /* DoctorDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0468F5AE2812759100A1D018 /* DoctorDetailsViewController.swift */; };
+		0468F5B22812821B00A1D018 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0468F5B12812821B00A1D018 /* ViewExtension.swift */; };
+		046AB5F82812AF990099BE9C /* FilledButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046AB5F72812AF990099BE9C /* FilledButton.swift */; };
+		046AB5FC2812B0330099BE9C /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046AB5FB2812B0330099BE9C /* FontExtension.swift */; };
+		046BD224281C0D70007A6059 /* GenderSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046BD223281C0D6F007A6059 /* GenderSelectionViewController.swift */; };
+		046C8B4D281BBC4800A37608 /* PractitionerRole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046C8B4C281BBC4800A37608 /* PractitionerRole.swift */; };
+		046C8B4F281BBDCB00A37608 /* HospitalPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046C8B4E281BBDCB00A37608 /* HospitalPageViewModel.swift */; };
+		046C94BC2816A6B1002ABD03 /* BookingSlotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046C94BB2816A6B1002ABD03 /* BookingSlotViewController.swift */; };
+		046C94BF2816ABFB002ABD03 /* BookingHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046C94BE2816ABFB002ABD03 /* BookingHistoryViewController.swift */; };
+		046C94C22816B2F9002ABD03 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046C94C12816B2F9002ABD03 /* MenuViewController.swift */; };
+		046C94C42816B4B6002ABD03 /* LocalStorage.plist in Resources */ = {isa = PBXBuildFile; fileRef = 046C94C32816B4B6002ABD03 /* LocalStorage.plist */; };
+		046C94C62816B5D0002ABD03 /* LocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046C94C52816B5D0002ABD03 /* LocalStorage.swift */; };
+		046C94CA2816CF4D002ABD03 /* BookingHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046C94C82816CF4D002ABD03 /* BookingHistoryTableViewCell.swift */; };
+		046C94CB2816CF4D002ABD03 /* BookingHistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 046C94C92816CF4D002ABD03 /* BookingHistoryTableViewCell.xib */; };
+		046C94CF28179614002ABD03 /* BookingDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046C94CE28179614002ABD03 /* BookingDetailsViewController.swift */; };
+		048AD5CA2817B3AC00D3AE93 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048AD5C92817B3AC00D3AE93 /* BaseViewController.swift */; };
+		048F1EAD2817C1D200188F4F /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048F1EAC2817C1D200188F4F /* LoginViewModel.swift */; };
+		048F1EAF2817C29B00188F4F /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048F1EAE2817C29B00188F4F /* StringExtension.swift */; };
+		048F1EB22817C60C00188F4F /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048F1EB12817C60C00188F4F /* RealmManager.swift */; };
+		048F1F032818467F00188F4F /* HomePageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048F1F022818467F00188F4F /* HomePageViewModel.swift */; };
+		048F1F0628184C5000188F4F /* Organization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048F1F0528184C5000188F4F /* Organization.swift */; };
+		048F1F09281907F200188F4F /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048F1F08281907F200188F4F /* SignUpViewModel.swift */; };
+		0491EDE0281BE28D001A9795 /* DOBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0491EDDF281BE28D001A9795 /* DOBViewController.swift */; };
+		04920A8A2812D1D10057CC67 /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04920A892812D1D10057CC67 /* HeaderTableViewCell.swift */; };
+		04920A8C2812D1E20057CC67 /* HeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04920A8B2812D1E20057CC67 /* HeaderTableViewCell.xib */; };
+		04956A4D28168D2100E5E24C /* DoctotAboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04956A4C28168D2100E5E24C /* DoctotAboutUsViewController.swift */; };
+		049921C628115BE200AF8769 /* Poppins-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 049921B328115BDD00AF8769 /* Poppins-ThinItalic.ttf */; };
+		049921C728115BE200AF8769 /* Poppins-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 049921B428115BDD00AF8769 /* Poppins-BlackItalic.ttf */; };
+		049921C828115BE200AF8769 /* Poppins-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 049921B528115BDD00AF8769 /* Poppins-MediumItalic.ttf */; };
+		049921C928115BE200AF8769 /* Poppins-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 049921B628115BDE00AF8769 /* Poppins-LightItalic.ttf */; };
+		049921CA28115BE200AF8769 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 049921B728115BDE00AF8769 /* Poppins-Light.ttf */; };
+		049921CB28115BE200AF8769 /* Poppins-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 049921B828115BDE00AF8769 /* Poppins-BoldItalic.ttf */; };
+		049921CC28115BE200AF8769 /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 049921B928115BDF00AF8769 /* Poppins-ExtraBold.ttf */; };
+		049921CD28115BE200AF8769 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 049921BA28115BDF00AF8769 /* OFL.txt */; };
+		049921CE28115BE200AF8769 /* Poppins-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 049921BB28115BDF00AF8769 /* Poppins-ExtraBoldItalic.ttf */; };
+		049921CF28115BE200AF8769 /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 049921BC28115BE000AF8769 /* Poppins-Italic.ttf */; };
+		049921D028115BE200AF8769 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 049921BD28115BE000AF8769 /* Poppins-Regular.ttf */; };
+		049921D128115BE200AF8769 /* Poppins-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 049921BE28115BE000AF8769 /* Poppins-SemiBoldItalic.ttf */; };
+		049921D228115BE200AF8769 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 049921BF28115BE000AF8769 /* Poppins-SemiBold.ttf */; };
+		049921D328115BE200AF8769 /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 049921C028115BE100AF8769 /* Poppins-ExtraLight.ttf */; };
+		049921D428115BE200AF8769 /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 049921C128115BE100AF8769 /* Poppins-Thin.ttf */; };
+		049921D528115BE200AF8769 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 049921C228115BE100AF8769 /* Poppins-Medium.ttf */; };
+		049921D628115BE200AF8769 /* Poppins-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 049921C328115BE200AF8769 /* Poppins-ExtraLightItalic.ttf */; };
+		049921D728115BE200AF8769 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 049921C428115BE200AF8769 /* Poppins-Bold.ttf */; };
+		049921D828115BE200AF8769 /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 049921C528115BE200AF8769 /* Poppins-Black.ttf */; };
+		049921E4281178AD00AF8769 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049921E3281178AD00AF8769 /* SignupViewController.swift */; };
+		049921E62811862300AF8769 /* BasicPatientInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049921E52811862300AF8769 /* BasicPatientInfoViewController.swift */; };
+		049921E92811876400AF8769 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049921E82811876400AF8769 /* Constants.swift */; };
+		049921EB28118F1200AF8769 /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049921EA28118F1100AF8769 /* Dashboard.storyboard */; };
+		049921EE28119DE300AF8769 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049921ED28119DE300AF8769 /* DashboardViewController.swift */; };
+		049921F22811C6C900AF8769 /* DashboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049921F02811C6C900AF8769 /* DashboardTableViewCell.swift */; };
+		049921F32811C6C900AF8769 /* DashboardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049921F12811C6C900AF8769 /* DashboardTableViewCell.xib */; };
+		04E017A1281B812300C737A3 /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E017A0281B812300C737A3 /* Patient.swift */; };
+		167053C9E8F68864959EEF6F /* Pods_MDBRealmPatientTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E217FA66E7877B7CC0C89432 /* Pods_MDBRealmPatientTests.framework */; };
+		2221E19271C51BDF05F02F54 /* Pods_MDBRealmPatient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42A67C00C988DE0752AF774F /* Pods_MDBRealmPatient.framework */; };
+		8439E7D92847BDA2007B9533 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8439E7D82847BDA2007B9533 /* ColorExtension.swift */; };
+		888159E3EEA6060B17C2B982 /* Pods_MDBRealmPatient_MDBRealmPatientUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2FE17F087AB573AF73B40F2 /* Pods_MDBRealmPatient_MDBRealmPatientUITests.framework */; };
+		9F9F137D280FFE0600C67E25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9F137C280FFE0600C67E25 /* AppDelegate.swift */; };
+		9F9F137F280FFE0600C67E25 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9F137E280FFE0600C67E25 /* SceneDelegate.swift */; };
+		9F9F1381280FFE0600C67E25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9F1380280FFE0600C67E25 /* ViewController.swift */; };
+		9F9F1384280FFE0600C67E25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F9F1382280FFE0600C67E25 /* Main.storyboard */; };
+		9F9F1386280FFE0900C67E25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F9F1385280FFE0900C67E25 /* Assets.xcassets */; };
+		9F9F1389280FFE0900C67E25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F9F1387280FFE0900C67E25 /* LaunchScreen.storyboard */; };
+		9F9F1394280FFE0900C67E25 /* MDBRealmPatientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9F1393280FFE0900C67E25 /* MDBRealmPatientTests.swift */; };
+		9F9F139E280FFE0900C67E25 /* MDBRealmPatientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9F139D280FFE0900C67E25 /* MDBRealmPatientUITests.swift */; };
+		9F9F13A0280FFE0900C67E25 /* MDBRealmPatientUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9F139F280FFE0900C67E25 /* MDBRealmPatientUITestsLaunchTests.swift */; };
+		DE7CC32F2823F83700C38AFE /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7CC32D2823F83700C38AFE /* CollectionViewCell.swift */; };
+		DE7CC3312823F83700C38AFE /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE7CC32E2823F83700C38AFE /* CollectionViewCell.xib */; };
+		DE7CC3342824FCB900C38AFE /* BasicPatientInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7CC3332824FCB900C38AFE /* BasicPatientInfoViewModel.swift */; };
+		DE7CC3592825488B00C38AFE /* FSCalendarCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7CC3502825488A00C38AFE /* FSCalendarCollectionView.m */; };
+		DE7CC35A2825488B00C38AFE /* FSCalendarDelegationProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7CC3512825488A00C38AFE /* FSCalendarDelegationProxy.m */; };
+		DE7CC35B2825488B00C38AFE /* FSCalendarDelegationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7CC3572825488B00C38AFE /* FSCalendarDelegationFactory.m */; };
+		DE7CC3722825489D00C38AFE /* FSCalendarCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7CC35D2825489A00C38AFE /* FSCalendarCollectionViewLayout.m */; };
+		DE7CC3732825489D00C38AFE /* FSCalendarAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7CC3602825489A00C38AFE /* FSCalendarAppearance.m */; };
+		DE7CC3742825489D00C38AFE /* FSCalendarCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7CC3612825489A00C38AFE /* FSCalendarCalculator.m */; };
+		DE7CC3752825489D00C38AFE /* FSCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7CC3622825489A00C38AFE /* FSCalendar.m */; };
+		DE7CC3762825489D00C38AFE /* FSCalendarHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7CC3632825489B00C38AFE /* FSCalendarHeaderView.m */; };
+		DE7CC3772825489D00C38AFE /* FSCalendarSeparatorDecorationView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7CC3642825489B00C38AFE /* FSCalendarSeparatorDecorationView.m */; };
+		DE7CC3782825489D00C38AFE /* FSCalendarExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7CC3652825489B00C38AFE /* FSCalendarExtensions.m */; };
+		DE7CC3792825489D00C38AFE /* FSCalendarStickyHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7CC3662825489B00C38AFE /* FSCalendarStickyHeader.m */; };
+		DE7CC37A2825489D00C38AFE /* FSCalendarTransitionCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7CC3682825489B00C38AFE /* FSCalendarTransitionCoordinator.m */; };
+		DE7CC37B2825489D00C38AFE /* FSCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7CC36A2825489C00C38AFE /* FSCalendarCell.m */; };
+		DE7CC37C2825489D00C38AFE /* FSCalendarWeekdayView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7CC36E2825489C00C38AFE /* FSCalendarWeekdayView.m */; };
+		DE7CC37D2825489D00C38AFE /* FSCalendarConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7CC3702825489C00C38AFE /* FSCalendarConstants.m */; };
+		DE7CC3922825567700C38AFE /* TimeSlotCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE7CC3902825567700C38AFE /* TimeSlotCollectionViewCell.xib */; };
+		DE7CC3932825567700C38AFE /* TimeSlotCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7CC3912825567700C38AFE /* TimeSlotCollectionViewCell.swift */; };
+		DE8CBB44283B927C00320668 /* DoctotAboutUsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8CBB43283B927C00320668 /* DoctotAboutUsModel.swift */; };
+		DEA033AC2845298700ABC712 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA033AB2845298700ABC712 /* ViewControllerExtension.swift */; };
+		DEA4347A282646E4002E1C93 /* BookingSlotViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA43479282646E4002E1C93 /* BookingSlotViewModel.swift */; };
+		DEA4347D282660AD002E1C93 /* ConditionBookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA4347C282660AD002E1C93 /* ConditionBookingViewController.swift */; };
+		DEA4347F2826625C002E1C93 /* ConditionBookingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA4347E2826625C002E1C93 /* ConditionBookingViewModel.swift */; };
+		DEA434812826834F002E1C93 /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA434802826834F002E1C93 /* Appointment.swift */; };
+		DEA434832826A04B002E1C93 /* Procedure.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA434822826A04B002E1C93 /* Procedure.swift */; };
+		DEA434852826A0ED002E1C93 /* Encounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA434842826A0ED002E1C93 /* Encounter.swift */; };
+		DEA4348728283AAA002E1C93 /* BookingHistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA4348628283AAA002E1C93 /* BookingHistoryModel.swift */; };
+		DEA43489282A1861002E1C93 /* BookingDetailHistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA43488282A1861002E1C93 /* BookingDetailHistoryModel.swift */; };
+		DEA4348B282B7A74002E1C93 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA4348A282B7A74002E1C93 /* AppConfig.swift */; };
+		DEA4348E282B7C18002E1C93 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA4348D282B7C18002E1C93 /* ProfileViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9F9F1390280FFE0900C67E25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F9F1371280FFE0600C67E25 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F9F1378280FFE0600C67E25;
+			remoteInfo = MDBRealmPatient;
+		};
+		9F9F139A280FFE0900C67E25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F9F1371280FFE0600C67E25 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F9F1378280FFE0600C67E25;
+			remoteInfo = MDBRealmPatient;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0405522E281FCBFA000B49B4 /* Code.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Code.swift; sourceTree = "<group>"; };
+		04055232281FF506000B49B4 /* ConditionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionViewController.swift; sourceTree = "<group>"; };
+		04055235281FFC1C000B49B4 /* ConditionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionViewModel.swift; sourceTree = "<group>"; };
+		0405523828225EA7000B49B4 /* Condition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Condition.swift; sourceTree = "<group>"; };
+		04095DC61DAFE2CF686B539E /* Pods-MDBRealmPatient-MDBRealmPatientUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDBRealmPatient-MDBRealmPatientUITests.debug.xcconfig"; path = "Target Support Files/Pods-MDBRealmPatient-MDBRealmPatientUITests/Pods-MDBRealmPatient-MDBRealmPatientUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		0468F5AE2812759100A1D018 /* DoctorDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorDetailsViewController.swift; sourceTree = "<group>"; };
+		0468F5B12812821B00A1D018 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		046AB5F72812AF990099BE9C /* FilledButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilledButton.swift; sourceTree = "<group>"; };
+		046AB5FB2812B0330099BE9C /* FontExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
+		046BD223281C0D6F007A6059 /* GenderSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderSelectionViewController.swift; sourceTree = "<group>"; };
+		046C8B4C281BBC4800A37608 /* PractitionerRole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PractitionerRole.swift; sourceTree = "<group>"; };
+		046C8B4E281BBDCB00A37608 /* HospitalPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalPageViewModel.swift; sourceTree = "<group>"; };
+		046C94BB2816A6B1002ABD03 /* BookingSlotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingSlotViewController.swift; sourceTree = "<group>"; };
+		046C94BE2816ABFB002ABD03 /* BookingHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingHistoryViewController.swift; sourceTree = "<group>"; };
+		046C94C12816B2F9002ABD03 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		046C94C32816B4B6002ABD03 /* LocalStorage.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LocalStorage.plist; sourceTree = "<group>"; };
+		046C94C52816B5D0002ABD03 /* LocalStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalStorage.swift; sourceTree = "<group>"; };
+		046C94C82816CF4D002ABD03 /* BookingHistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingHistoryTableViewCell.swift; sourceTree = "<group>"; };
+		046C94C92816CF4D002ABD03 /* BookingHistoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookingHistoryTableViewCell.xib; sourceTree = "<group>"; };
+		046C94CE28179614002ABD03 /* BookingDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingDetailsViewController.swift; sourceTree = "<group>"; };
+		048AD5C92817B3AC00D3AE93 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		048F1EAC2817C1D200188F4F /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		048F1EAE2817C29B00188F4F /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		048F1EB12817C60C00188F4F /* RealmManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		048F1F022818467F00188F4F /* HomePageViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewModel.swift; sourceTree = "<group>"; };
+		048F1F0528184C5000188F4F /* Organization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Organization.swift; sourceTree = "<group>"; };
+		048F1F08281907F200188F4F /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		0491EDDF281BE28D001A9795 /* DOBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DOBViewController.swift; sourceTree = "<group>"; };
+		04920A892812D1D10057CC67 /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTableViewCell.swift; sourceTree = "<group>"; };
+		04920A8B2812D1E20057CC67 /* HeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderTableViewCell.xib; sourceTree = "<group>"; };
+		04956A4C28168D2100E5E24C /* DoctotAboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctotAboutUsViewController.swift; sourceTree = "<group>"; };
+		049921B328115BDD00AF8769 /* Poppins-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ThinItalic.ttf"; sourceTree = "<group>"; };
+		049921B428115BDD00AF8769 /* Poppins-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BlackItalic.ttf"; sourceTree = "<group>"; };
+		049921B528115BDD00AF8769 /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-MediumItalic.ttf"; sourceTree = "<group>"; };
+		049921B628115BDE00AF8769 /* Poppins-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-LightItalic.ttf"; sourceTree = "<group>"; };
+		049921B728115BDE00AF8769 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
+		049921B828115BDE00AF8769 /* Poppins-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BoldItalic.ttf"; sourceTree = "<group>"; };
+		049921B928115BDF00AF8769 /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBold.ttf"; sourceTree = "<group>"; };
+		049921BA28115BDF00AF8769 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		049921BB28115BDF00AF8769 /* Poppins-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		049921BC28115BE000AF8769 /* Poppins-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Italic.ttf"; sourceTree = "<group>"; };
+		049921BD28115BE000AF8769 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		049921BE28115BE000AF8769 /* Poppins-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		049921BF28115BE000AF8769 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		049921C028115BE100AF8769 /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
+		049921C128115BE100AF8769 /* Poppins-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Thin.ttf"; sourceTree = "<group>"; };
+		049921C228115BE100AF8769 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		049921C328115BE200AF8769 /* Poppins-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		049921C428115BE200AF8769 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		049921C528115BE200AF8769 /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.ttf"; sourceTree = "<group>"; };
+		049921E3281178AD00AF8769 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		049921E52811862300AF8769 /* BasicPatientInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicPatientInfoViewController.swift; sourceTree = "<group>"; };
+		049921E82811876400AF8769 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		049921EA28118F1100AF8769 /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
+		049921ED28119DE300AF8769 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		049921F02811C6C900AF8769 /* DashboardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTableViewCell.swift; sourceTree = "<group>"; };
+		049921F12811C6C900AF8769 /* DashboardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardTableViewCell.xib; sourceTree = "<group>"; };
+		04E017A0281B812300C737A3 /* Patient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
+		053FCA1E9D4BEBED328B3529 /* Pods-MDBRealmPatient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDBRealmPatient.debug.xcconfig"; path = "Target Support Files/Pods-MDBRealmPatient/Pods-MDBRealmPatient.debug.xcconfig"; sourceTree = "<group>"; };
+		09A7E27865C3E0996739A413 /* Pods-MDBRealmPatient-MDBRealmPatientUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDBRealmPatient-MDBRealmPatientUITests.release.xcconfig"; path = "Target Support Files/Pods-MDBRealmPatient-MDBRealmPatientUITests/Pods-MDBRealmPatient-MDBRealmPatientUITests.release.xcconfig"; sourceTree = "<group>"; };
+		42A67C00C988DE0752AF774F /* Pods_MDBRealmPatient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MDBRealmPatient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52C0329C2202A6C38B8B6320 /* Pods-MDBRealmPatientTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDBRealmPatientTests.release.xcconfig"; path = "Target Support Files/Pods-MDBRealmPatientTests/Pods-MDBRealmPatientTests.release.xcconfig"; sourceTree = "<group>"; };
+		6BEFE14DFD83A3031EA9B17E /* Pods-MDBRealmPatientTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDBRealmPatientTests.debug.xcconfig"; path = "Target Support Files/Pods-MDBRealmPatientTests/Pods-MDBRealmPatientTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8439E7D82847BDA2007B9533 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		9F9F1379280FFE0600C67E25 /* MDBRealmPatient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MDBRealmPatient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F9F137C280FFE0600C67E25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9F9F137E280FFE0600C67E25 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9F9F1380280FFE0600C67E25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9F9F1383280FFE0600C67E25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9F9F1385280FFE0900C67E25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9F9F1388280FFE0900C67E25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9F9F138A280FFE0900C67E25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F9F138F280FFE0900C67E25 /* MDBRealmPatientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MDBRealmPatientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F9F1393280FFE0900C67E25 /* MDBRealmPatientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDBRealmPatientTests.swift; sourceTree = "<group>"; };
+		9F9F1399280FFE0900C67E25 /* MDBRealmPatientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MDBRealmPatientUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F9F139D280FFE0900C67E25 /* MDBRealmPatientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDBRealmPatientUITests.swift; sourceTree = "<group>"; };
+		9F9F139F280FFE0900C67E25 /* MDBRealmPatientUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDBRealmPatientUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C1832A7F07AA22D85BEA1A89 /* Pods_MDBRealmPatientDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MDBRealmPatientDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE9F5E9FA2D737227E6C5087 /* Pods-MDBRealmPatient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDBRealmPatient.release.xcconfig"; path = "Target Support Files/Pods-MDBRealmPatient/Pods-MDBRealmPatient.release.xcconfig"; sourceTree = "<group>"; };
+		D2FE17F087AB573AF73B40F2 /* Pods_MDBRealmPatient_MDBRealmPatientUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MDBRealmPatient_MDBRealmPatientUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE7CC32D2823F83700C38AFE /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		DE7CC32E2823F83700C38AFE /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		DE7CC3332824FCB900C38AFE /* BasicPatientInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicPatientInfoViewModel.swift; sourceTree = "<group>"; };
+		DE7CC3372825479C00C38AFE /* MDBRealmPatient-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MDBRealmPatient-Bridging-Header.h"; sourceTree = "<group>"; };
+		DE7CC3502825488A00C38AFE /* FSCalendarCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarCollectionView.m; sourceTree = "<group>"; };
+		DE7CC3512825488A00C38AFE /* FSCalendarDelegationProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarDelegationProxy.m; sourceTree = "<group>"; };
+		DE7CC3522825488A00C38AFE /* FSCalendarSeparatorDecorationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarSeparatorDecorationView.h; sourceTree = "<group>"; };
+		DE7CC3532825488A00C38AFE /* FSCalendarCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarCollectionViewLayout.h; sourceTree = "<group>"; };
+		DE7CC3542825488B00C38AFE /* FSCalendarHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarHeaderView.h; sourceTree = "<group>"; };
+		DE7CC3552825488B00C38AFE /* FSCalendarCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarCalculator.h; sourceTree = "<group>"; };
+		DE7CC3562825488B00C38AFE /* FSCalendarWeekdayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarWeekdayView.h; sourceTree = "<group>"; };
+		DE7CC3572825488B00C38AFE /* FSCalendarDelegationFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarDelegationFactory.m; sourceTree = "<group>"; };
+		DE7CC3582825488B00C38AFE /* FSCalendarExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarExtensions.h; sourceTree = "<group>"; };
+		DE7CC35C2825489A00C38AFE /* FSCalendarDelegationProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarDelegationProxy.h; sourceTree = "<group>"; };
+		DE7CC35D2825489A00C38AFE /* FSCalendarCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarCollectionViewLayout.m; sourceTree = "<group>"; };
+		DE7CC35E2825489A00C38AFE /* FSCalendarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarCell.h; sourceTree = "<group>"; };
+		DE7CC35F2825489A00C38AFE /* FSCalendarCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarCollectionView.h; sourceTree = "<group>"; };
+		DE7CC3602825489A00C38AFE /* FSCalendarAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarAppearance.m; sourceTree = "<group>"; };
+		DE7CC3612825489A00C38AFE /* FSCalendarCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarCalculator.m; sourceTree = "<group>"; };
+		DE7CC3622825489A00C38AFE /* FSCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendar.m; sourceTree = "<group>"; };
+		DE7CC3632825489B00C38AFE /* FSCalendarHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarHeaderView.m; sourceTree = "<group>"; };
+		DE7CC3642825489B00C38AFE /* FSCalendarSeparatorDecorationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarSeparatorDecorationView.m; sourceTree = "<group>"; };
+		DE7CC3652825489B00C38AFE /* FSCalendarExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarExtensions.m; sourceTree = "<group>"; };
+		DE7CC3662825489B00C38AFE /* FSCalendarStickyHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarStickyHeader.m; sourceTree = "<group>"; };
+		DE7CC3672825489B00C38AFE /* FSCalendarTransitionCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarTransitionCoordinator.h; sourceTree = "<group>"; };
+		DE7CC3682825489B00C38AFE /* FSCalendarTransitionCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarTransitionCoordinator.m; sourceTree = "<group>"; };
+		DE7CC3692825489B00C38AFE /* FSCalendarDynamicHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarDynamicHeader.h; sourceTree = "<group>"; };
+		DE7CC36A2825489C00C38AFE /* FSCalendarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarCell.m; sourceTree = "<group>"; };
+		DE7CC36B2825489C00C38AFE /* FSCalendarConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarConstants.h; sourceTree = "<group>"; };
+		DE7CC36C2825489C00C38AFE /* FSCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendar.h; sourceTree = "<group>"; };
+		DE7CC36D2825489C00C38AFE /* FSCalendarStickyHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarStickyHeader.h; sourceTree = "<group>"; };
+		DE7CC36E2825489C00C38AFE /* FSCalendarWeekdayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarWeekdayView.m; sourceTree = "<group>"; };
+		DE7CC36F2825489C00C38AFE /* FSCalendarDelegationFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarDelegationFactory.h; sourceTree = "<group>"; };
+		DE7CC3702825489C00C38AFE /* FSCalendarConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarConstants.m; sourceTree = "<group>"; };
+		DE7CC3712825489D00C38AFE /* FSCalendarAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarAppearance.h; sourceTree = "<group>"; };
+		DE7CC37F282548BA00C38AFE /* FSCalendarAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSCalendarAppearance.h; path = "../../../dfs-small-fleet-ios/SmallFleet/SmallFleet/Classes/Common/Libraries/FSCalendar/include/FSCalendarAppearance.h"; sourceTree = "<group>"; };
+		DE7CC380282548BA00C38AFE /* FSCalendarCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSCalendarCollectionViewLayout.h; path = "../../../dfs-small-fleet-ios/SmallFleet/SmallFleet/Classes/Common/Libraries/FSCalendar/include/FSCalendarCollectionViewLayout.h"; sourceTree = "<group>"; };
+		DE7CC381282548BA00C38AFE /* FSCalendarCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSCalendarCalculator.h; path = "../../../dfs-small-fleet-ios/SmallFleet/SmallFleet/Classes/Common/Libraries/FSCalendar/include/FSCalendarCalculator.h"; sourceTree = "<group>"; };
+		DE7CC382282548BA00C38AFE /* FSCalendarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSCalendarCell.h; path = "../../../dfs-small-fleet-ios/SmallFleet/SmallFleet/Classes/Common/Libraries/FSCalendar/include/FSCalendarCell.h"; sourceTree = "<group>"; };
+		DE7CC383282548BA00C38AFE /* FSCalendarExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSCalendarExtensions.h; path = "../../../dfs-small-fleet-ios/SmallFleet/SmallFleet/Classes/Common/Libraries/FSCalendar/include/FSCalendarExtensions.h"; sourceTree = "<group>"; };
+		DE7CC384282548BA00C38AFE /* FSCalendarCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSCalendarCollectionView.h; path = "../../../dfs-small-fleet-ios/SmallFleet/SmallFleet/Classes/Common/Libraries/FSCalendar/include/FSCalendarCollectionView.h"; sourceTree = "<group>"; };
+		DE7CC385282548BA00C38AFE /* FSCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSCalendar.h; path = "../../../dfs-small-fleet-ios/SmallFleet/SmallFleet/Classes/Common/Libraries/FSCalendar/include/FSCalendar.h"; sourceTree = "<group>"; };
+		DE7CC386282548BA00C38AFE /* FSCalendarDynamicHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSCalendarDynamicHeader.h; path = "../../../dfs-small-fleet-ios/SmallFleet/SmallFleet/Classes/Common/Libraries/FSCalendar/include/FSCalendarDynamicHeader.h"; sourceTree = "<group>"; };
+		DE7CC387282548BA00C38AFE /* FSCalendarHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSCalendarHeaderView.h; path = "../../../dfs-small-fleet-ios/SmallFleet/SmallFleet/Classes/Common/Libraries/FSCalendar/include/FSCalendarHeaderView.h"; sourceTree = "<group>"; };
+		DE7CC388282548BB00C38AFE /* FSCalendarDelegationFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSCalendarDelegationFactory.h; path = "../../../dfs-small-fleet-ios/SmallFleet/SmallFleet/Classes/Common/Libraries/FSCalendar/include/FSCalendarDelegationFactory.h"; sourceTree = "<group>"; };
+		DE7CC389282548BB00C38AFE /* FSCalendarStickyHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSCalendarStickyHeader.h; path = "../../../dfs-small-fleet-ios/SmallFleet/SmallFleet/Classes/Common/Libraries/FSCalendar/include/FSCalendarStickyHeader.h"; sourceTree = "<group>"; };
+		DE7CC38A282548BB00C38AFE /* FSCalendarSeparatorDecorationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSCalendarSeparatorDecorationView.h; path = "../../../dfs-small-fleet-ios/SmallFleet/SmallFleet/Classes/Common/Libraries/FSCalendar/include/FSCalendarSeparatorDecorationView.h"; sourceTree = "<group>"; };
+		DE7CC38B282548BB00C38AFE /* FSCalendarWeekdayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSCalendarWeekdayView.h; path = "../../../dfs-small-fleet-ios/SmallFleet/SmallFleet/Classes/Common/Libraries/FSCalendar/include/FSCalendarWeekdayView.h"; sourceTree = "<group>"; };
+		DE7CC38C282548BB00C38AFE /* FSCalendarDelegationProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSCalendarDelegationProxy.h; path = "../../../dfs-small-fleet-ios/SmallFleet/SmallFleet/Classes/Common/Libraries/FSCalendar/include/FSCalendarDelegationProxy.h"; sourceTree = "<group>"; };
+		DE7CC38D282548BB00C38AFE /* FSCalendarConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSCalendarConstants.h; path = "../../../dfs-small-fleet-ios/SmallFleet/SmallFleet/Classes/Common/Libraries/FSCalendar/include/FSCalendarConstants.h"; sourceTree = "<group>"; };
+		DE7CC38E282548BB00C38AFE /* FSCalendarTransitionCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSCalendarTransitionCoordinator.h; path = "../../../dfs-small-fleet-ios/SmallFleet/SmallFleet/Classes/Common/Libraries/FSCalendar/include/FSCalendarTransitionCoordinator.h"; sourceTree = "<group>"; };
+		DE7CC3902825567700C38AFE /* TimeSlotCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimeSlotCollectionViewCell.xib; sourceTree = "<group>"; };
+		DE7CC3912825567700C38AFE /* TimeSlotCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeSlotCollectionViewCell.swift; sourceTree = "<group>"; };
+		DE8CBB43283B927C00320668 /* DoctotAboutUsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctotAboutUsModel.swift; sourceTree = "<group>"; };
+		DEA033AB2845298700ABC712 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
+		DEA43479282646E4002E1C93 /* BookingSlotViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingSlotViewModel.swift; sourceTree = "<group>"; };
+		DEA4347C282660AD002E1C93 /* ConditionBookingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionBookingViewController.swift; sourceTree = "<group>"; };
+		DEA4347E2826625C002E1C93 /* ConditionBookingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionBookingViewModel.swift; sourceTree = "<group>"; };
+		DEA434802826834F002E1C93 /* Appointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
+		DEA434822826A04B002E1C93 /* Procedure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Procedure.swift; sourceTree = "<group>"; };
+		DEA434842826A0ED002E1C93 /* Encounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encounter.swift; sourceTree = "<group>"; };
+		DEA4348628283AAA002E1C93 /* BookingHistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingHistoryModel.swift; sourceTree = "<group>"; };
+		DEA43488282A1861002E1C93 /* BookingDetailHistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingDetailHistoryModel.swift; sourceTree = "<group>"; };
+		DEA4348A282B7A74002E1C93 /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		DEA4348D282B7C18002E1C93 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		E217FA66E7877B7CC0C89432 /* Pods_MDBRealmPatientTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MDBRealmPatientTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9F9F1376280FFE0600C67E25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2221E19271C51BDF05F02F54 /* Pods_MDBRealmPatient.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F9F138C280FFE0900C67E25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				167053C9E8F68864959EEF6F /* Pods_MDBRealmPatientTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F9F1396280FFE0900C67E25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				888159E3EEA6060B17C2B982 /* Pods_MDBRealmPatient_MDBRealmPatientUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00A31E5A9249B8D651167086 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42A67C00C988DE0752AF774F /* Pods_MDBRealmPatient.framework */,
+				D2FE17F087AB573AF73B40F2 /* Pods_MDBRealmPatient_MDBRealmPatientUITests.framework */,
+				E217FA66E7877B7CC0C89432 /* Pods_MDBRealmPatientTests.framework */,
+				C1832A7F07AA22D85BEA1A89 /* Pods_MDBRealmPatientDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		04055231281FDDAA000B49B4 /* BasicPatientInfo */ = {
+			isa = PBXGroup;
+			children = (
+				049921E52811862300AF8769 /* BasicPatientInfoViewController.swift */,
+				04055232281FF506000B49B4 /* ConditionViewController.swift */,
+				04055235281FFC1C000B49B4 /* ConditionViewModel.swift */,
+				DE7CC3332824FCB900C38AFE /* BasicPatientInfoViewModel.swift */,
+			);
+			name = BasicPatientInfo;
+			sourceTree = "<group>";
+		};
+		0468F5AD28126F6700A1D018 /* HospitalDetails */ = {
+			isa = PBXGroup;
+			children = (
+				DE7CC32C2823F7DC00C38AFE /* CollectionViewCell */,
+				046AB5FD2812CA450099BE9C /* HeaderCell */,
+				0468F5AE2812759100A1D018 /* DoctorDetailsViewController.swift */,
+				046C8B4E281BBDCB00A37608 /* HospitalPageViewModel.swift */,
+			);
+			name = HospitalDetails;
+			sourceTree = "<group>";
+		};
+		0468F5B0281281FF00A1D018 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				048F1EAE2817C29B00188F4F /* StringExtension.swift */,
+				0468F5B12812821B00A1D018 /* ViewExtension.swift */,
+				046AB5FB2812B0330099BE9C /* FontExtension.swift */,
+				DEA033AB2845298700ABC712 /* ViewControllerExtension.swift */,
+				8439E7D82847BDA2007B9533 /* ColorExtension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		046AB5F62812AF880099BE9C /* UIKit Subclasses */ = {
+			isa = PBXGroup;
+			children = (
+				046AB5F72812AF990099BE9C /* FilledButton.swift */,
+			);
+			name = "UIKit Subclasses";
+			sourceTree = "<group>";
+		};
+		046AB5FD2812CA450099BE9C /* HeaderCell */ = {
+			isa = PBXGroup;
+			children = (
+				04920A892812D1D10057CC67 /* HeaderTableViewCell.swift */,
+				04920A8B2812D1E20057CC67 /* HeaderTableViewCell.xib */,
+			);
+			name = HeaderCell;
+			sourceTree = "<group>";
+		};
+		046C94BA2816A688002ABD03 /* BookingSlot */ = {
+			isa = PBXGroup;
+			children = (
+				DE7CC38F2825565F00C38AFE /* BookingCollectionCell */,
+				046C94BB2816A6B1002ABD03 /* BookingSlotViewController.swift */,
+				DEA43479282646E4002E1C93 /* BookingSlotViewModel.swift */,
+			);
+			name = BookingSlot;
+			sourceTree = "<group>";
+		};
+		046C94BD2816ABD8002ABD03 /* BookingHistory */ = {
+			isa = PBXGroup;
+			children = (
+				046C94CC2816CF54002ABD03 /* BookingHistoryCell */,
+				046C94BE2816ABFB002ABD03 /* BookingHistoryViewController.swift */,
+				DEA4348628283AAA002E1C93 /* BookingHistoryModel.swift */,
+			);
+			name = BookingHistory;
+			sourceTree = "<group>";
+		};
+		046C94C02816B2E4002ABD03 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				046C94C12816B2F9002ABD03 /* MenuViewController.swift */,
+				046C94C52816B5D0002ABD03 /* LocalStorage.swift */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		046C94CC2816CF54002ABD03 /* BookingHistoryCell */ = {
+			isa = PBXGroup;
+			children = (
+				046C94C82816CF4D002ABD03 /* BookingHistoryTableViewCell.swift */,
+				046C94C92816CF4D002ABD03 /* BookingHistoryTableViewCell.xib */,
+			);
+			name = BookingHistoryCell;
+			sourceTree = "<group>";
+		};
+		046C94CD281795E6002ABD03 /* BookingDetails */ = {
+			isa = PBXGroup;
+			children = (
+				046C94CE28179614002ABD03 /* BookingDetailsViewController.swift */,
+				DEA43488282A1861002E1C93 /* BookingDetailHistoryModel.swift */,
+			);
+			name = BookingDetails;
+			sourceTree = "<group>";
+		};
+		048AD5C82817B36D00D3AE93 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				048AD5C92817B3AC00D3AE93 /* BaseViewController.swift */,
+			);
+			name = BaseViewController;
+			sourceTree = "<group>";
+		};
+		048F1EAA2817C17F00188F4F /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				04055231281FDDAA000B49B4 /* BasicPatientInfo */,
+				048F1EAB2817C18D00188F4F /* Register */,
+				049921E22811780400AF8769 /* Login */,
+			);
+			name = Auth;
+			sourceTree = "<group>";
+		};
+		048F1EAB2817C18D00188F4F /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				049921E3281178AD00AF8769 /* SignupViewController.swift */,
+				048F1F08281907F200188F4F /* SignUpViewModel.swift */,
+				0491EDDF281BE28D001A9795 /* DOBViewController.swift */,
+				046BD223281C0D6F007A6059 /* GenderSelectionViewController.swift */,
+			);
+			name = Register;
+			sourceTree = "<group>";
+		};
+		048F1EB02817C5FE00188F4F /* Singletons */ = {
+			isa = PBXGroup;
+			children = (
+				048F1EB12817C60C00188F4F /* RealmManager.swift */,
+			);
+			name = Singletons;
+			sourceTree = "<group>";
+		};
+		048F1EFC2817FD4D00188F4F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				048F1F0528184C5000188F4F /* Organization.swift */,
+				04E017A0281B812300C737A3 /* Patient.swift */,
+				046C8B4C281BBC4800A37608 /* PractitionerRole.swift */,
+				0405522E281FCBFA000B49B4 /* Code.swift */,
+				0405523828225EA7000B49B4 /* Condition.swift */,
+				DEA434802826834F002E1C93 /* Appointment.swift */,
+				DEA434822826A04B002E1C93 /* Procedure.swift */,
+				DEA434842826A0ED002E1C93 /* Encounter.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		04956A4B28168CED00E5E24C /* DoctorDetails */ = {
+			isa = PBXGroup;
+			children = (
+				04956A4C28168D2100E5E24C /* DoctotAboutUsViewController.swift */,
+				DE8CBB43283B927C00320668 /* DoctotAboutUsModel.swift */,
+			);
+			name = DoctorDetails;
+			sourceTree = "<group>";
+		};
+		049921B228115BC900AF8769 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				049921BA28115BDF00AF8769 /* OFL.txt */,
+				049921C528115BE200AF8769 /* Poppins-Black.ttf */,
+				049921B428115BDD00AF8769 /* Poppins-BlackItalic.ttf */,
+				049921C428115BE200AF8769 /* Poppins-Bold.ttf */,
+				049921B828115BDE00AF8769 /* Poppins-BoldItalic.ttf */,
+				049921B928115BDF00AF8769 /* Poppins-ExtraBold.ttf */,
+				049921BB28115BDF00AF8769 /* Poppins-ExtraBoldItalic.ttf */,
+				049921C028115BE100AF8769 /* Poppins-ExtraLight.ttf */,
+				049921C328115BE200AF8769 /* Poppins-ExtraLightItalic.ttf */,
+				049921BC28115BE000AF8769 /* Poppins-Italic.ttf */,
+				049921B728115BDE00AF8769 /* Poppins-Light.ttf */,
+				049921B628115BDE00AF8769 /* Poppins-LightItalic.ttf */,
+				049921C228115BE100AF8769 /* Poppins-Medium.ttf */,
+				049921B528115BDD00AF8769 /* Poppins-MediumItalic.ttf */,
+				049921BD28115BE000AF8769 /* Poppins-Regular.ttf */,
+				049921BF28115BE000AF8769 /* Poppins-SemiBold.ttf */,
+				049921BE28115BE000AF8769 /* Poppins-SemiBoldItalic.ttf */,
+				049921C128115BE100AF8769 /* Poppins-Thin.ttf */,
+				049921B328115BDD00AF8769 /* Poppins-ThinItalic.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		049921D92811739F00AF8769 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				049921E0281177DA00AF8769 /* MVVM */,
+				049921DA281173A900AF8769 /* Common */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		049921DA281173A900AF8769 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				DEA4348A282B7A74002E1C93 /* AppConfig.swift */,
+				DE7CC3362825477000C38AFE /* FSCalendar */,
+				046AB5F62812AF880099BE9C /* UIKit Subclasses */,
+				0468F5B0281281FF00A1D018 /* Extensions */,
+				049921E72811875900AF8769 /* Constants */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		049921E0281177DA00AF8769 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				048F1EFC2817FD4D00188F4F /* Models */,
+				048F1EB02817C5FE00188F4F /* Singletons */,
+				049921E1281177FE00AF8769 /* Views ViewModels */,
+			);
+			name = MVVM;
+			sourceTree = "<group>";
+		};
+		049921E1281177FE00AF8769 /* Views ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				DEA4348C282B7BD6002E1C93 /* ProfileView */,
+				DEA4347B28266058002E1C93 /* Condition */,
+				048F1EAA2817C17F00188F4F /* Auth */,
+				048AD5C82817B36D00D3AE93 /* BaseViewController */,
+				046C94C02816B2E4002ABD03 /* Menu */,
+				046C94CD281795E6002ABD03 /* BookingDetails */,
+				046C94BD2816ABD8002ABD03 /* BookingHistory */,
+				046C94BA2816A688002ABD03 /* BookingSlot */,
+				04956A4B28168CED00E5E24C /* DoctorDetails */,
+				0468F5AD28126F6700A1D018 /* HospitalDetails */,
+				049921EC28119DC400AF8769 /* Dashboard */,
+			);
+			name = "Views ViewModels";
+			sourceTree = "<group>";
+		};
+		049921E22811780400AF8769 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				048F1EAC2817C1D200188F4F /* LoginViewModel.swift */,
+				9F9F1380280FFE0600C67E25 /* ViewController.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		049921E72811875900AF8769 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				049921E82811876400AF8769 /* Constants.swift */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		049921EC28119DC400AF8769 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				049921EF2811C69A00AF8769 /* DashboardCell */,
+				049921ED28119DE300AF8769 /* DashboardViewController.swift */,
+				048F1F022818467F00188F4F /* HomePageViewModel.swift */,
+			);
+			name = Dashboard;
+			sourceTree = "<group>";
+		};
+		049921EF2811C69A00AF8769 /* DashboardCell */ = {
+			isa = PBXGroup;
+			children = (
+				049921F02811C6C900AF8769 /* DashboardTableViewCell.swift */,
+				049921F12811C6C900AF8769 /* DashboardTableViewCell.xib */,
+			);
+			name = DashboardCell;
+			sourceTree = "<group>";
+		};
+		2590550EF4AE3292527FDD29 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				053FCA1E9D4BEBED328B3529 /* Pods-MDBRealmPatient.debug.xcconfig */,
+				CE9F5E9FA2D737227E6C5087 /* Pods-MDBRealmPatient.release.xcconfig */,
+				04095DC61DAFE2CF686B539E /* Pods-MDBRealmPatient-MDBRealmPatientUITests.debug.xcconfig */,
+				09A7E27865C3E0996739A413 /* Pods-MDBRealmPatient-MDBRealmPatientUITests.release.xcconfig */,
+				6BEFE14DFD83A3031EA9B17E /* Pods-MDBRealmPatientTests.debug.xcconfig */,
+				52C0329C2202A6C38B8B6320 /* Pods-MDBRealmPatientTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9F9F1370280FFE0600C67E25 = {
+			isa = PBXGroup;
+			children = (
+				9F9F137B280FFE0600C67E25 /* MDBRealmPatient */,
+				9F9F1392280FFE0900C67E25 /* MDBRealmPatientTests */,
+				9F9F139C280FFE0900C67E25 /* MDBRealmPatientUITests */,
+				9F9F137A280FFE0600C67E25 /* Products */,
+				00A31E5A9249B8D651167086 /* Frameworks */,
+				2590550EF4AE3292527FDD29 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		9F9F137A280FFE0600C67E25 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F9F1379280FFE0600C67E25 /* MDBRealmPatient.app */,
+				9F9F138F280FFE0900C67E25 /* MDBRealmPatientTests.xctest */,
+				9F9F1399280FFE0900C67E25 /* MDBRealmPatientUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9F9F137B280FFE0600C67E25 /* MDBRealmPatient */ = {
+			isa = PBXGroup;
+			children = (
+				9F9F137C280FFE0600C67E25 /* AppDelegate.swift */,
+				9F9F137E280FFE0600C67E25 /* SceneDelegate.swift */,
+				049921D92811739F00AF8769 /* Classes */,
+				9F9F13AD280FFE2F00C67E25 /* Storyboards */,
+				9F9F13AC280FFE2000C67E25 /* Supporting Files */,
+			);
+			path = MDBRealmPatient;
+			sourceTree = "<group>";
+		};
+		9F9F1392280FFE0900C67E25 /* MDBRealmPatientTests */ = {
+			isa = PBXGroup;
+			children = (
+				9F9F1393280FFE0900C67E25 /* MDBRealmPatientTests.swift */,
+			);
+			path = MDBRealmPatientTests;
+			sourceTree = "<group>";
+		};
+		9F9F139C280FFE0900C67E25 /* MDBRealmPatientUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9F9F139D280FFE0900C67E25 /* MDBRealmPatientUITests.swift */,
+				9F9F139F280FFE0900C67E25 /* MDBRealmPatientUITestsLaunchTests.swift */,
+			);
+			path = MDBRealmPatientUITests;
+			sourceTree = "<group>";
+		};
+		9F9F13AC280FFE2000C67E25 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				049921B228115BC900AF8769 /* Fonts */,
+				9F9F1385280FFE0900C67E25 /* Assets.xcassets */,
+				9F9F138A280FFE0900C67E25 /* Info.plist */,
+				046C94C32816B4B6002ABD03 /* LocalStorage.plist */,
+				DE7CC3372825479C00C38AFE /* MDBRealmPatient-Bridging-Header.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9F9F13AD280FFE2F00C67E25 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				9F9F1387280FFE0900C67E25 /* LaunchScreen.storyboard */,
+				9F9F1382280FFE0600C67E25 /* Main.storyboard */,
+				049921EA28118F1100AF8769 /* Dashboard.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		DE7CC32C2823F7DC00C38AFE /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				DE7CC32D2823F83700C38AFE /* CollectionViewCell.swift */,
+				DE7CC32E2823F83700C38AFE /* CollectionViewCell.xib */,
+			);
+			name = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		DE7CC3362825477000C38AFE /* FSCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				DE7CC37E2825489F00C38AFE /* include */,
+				DE7CC3552825488B00C38AFE /* FSCalendarCalculator.h */,
+				DE7CC3502825488A00C38AFE /* FSCalendarCollectionView.m */,
+				DE7CC3532825488A00C38AFE /* FSCalendarCollectionViewLayout.h */,
+				DE7CC3572825488B00C38AFE /* FSCalendarDelegationFactory.m */,
+				DE7CC3512825488A00C38AFE /* FSCalendarDelegationProxy.m */,
+				DE7CC3582825488B00C38AFE /* FSCalendarExtensions.h */,
+				DE7CC3542825488B00C38AFE /* FSCalendarHeaderView.h */,
+				DE7CC3522825488A00C38AFE /* FSCalendarSeparatorDecorationView.h */,
+				DE7CC3562825488B00C38AFE /* FSCalendarWeekdayView.h */,
+				DE7CC36C2825489C00C38AFE /* FSCalendar.h */,
+				DE7CC3622825489A00C38AFE /* FSCalendar.m */,
+				DE7CC3712825489D00C38AFE /* FSCalendarAppearance.h */,
+				DE7CC3602825489A00C38AFE /* FSCalendarAppearance.m */,
+				DE7CC3612825489A00C38AFE /* FSCalendarCalculator.m */,
+				DE7CC35E2825489A00C38AFE /* FSCalendarCell.h */,
+				DE7CC36A2825489C00C38AFE /* FSCalendarCell.m */,
+				DE7CC35F2825489A00C38AFE /* FSCalendarCollectionView.h */,
+				DE7CC35D2825489A00C38AFE /* FSCalendarCollectionViewLayout.m */,
+				DE7CC36B2825489C00C38AFE /* FSCalendarConstants.h */,
+				DE7CC3702825489C00C38AFE /* FSCalendarConstants.m */,
+				DE7CC36F2825489C00C38AFE /* FSCalendarDelegationFactory.h */,
+				DE7CC35C2825489A00C38AFE /* FSCalendarDelegationProxy.h */,
+				DE7CC3692825489B00C38AFE /* FSCalendarDynamicHeader.h */,
+				DE7CC3652825489B00C38AFE /* FSCalendarExtensions.m */,
+				DE7CC3632825489B00C38AFE /* FSCalendarHeaderView.m */,
+				DE7CC3642825489B00C38AFE /* FSCalendarSeparatorDecorationView.m */,
+				DE7CC36D2825489C00C38AFE /* FSCalendarStickyHeader.h */,
+				DE7CC3662825489B00C38AFE /* FSCalendarStickyHeader.m */,
+				DE7CC3672825489B00C38AFE /* FSCalendarTransitionCoordinator.h */,
+				DE7CC3682825489B00C38AFE /* FSCalendarTransitionCoordinator.m */,
+				DE7CC36E2825489C00C38AFE /* FSCalendarWeekdayView.m */,
+			);
+			name = FSCalendar;
+			sourceTree = "<group>";
+		};
+		DE7CC37E2825489F00C38AFE /* include */ = {
+			isa = PBXGroup;
+			children = (
+				DE7CC385282548BA00C38AFE /* FSCalendar.h */,
+				DE7CC37F282548BA00C38AFE /* FSCalendarAppearance.h */,
+				DE7CC381282548BA00C38AFE /* FSCalendarCalculator.h */,
+				DE7CC382282548BA00C38AFE /* FSCalendarCell.h */,
+				DE7CC384282548BA00C38AFE /* FSCalendarCollectionView.h */,
+				DE7CC380282548BA00C38AFE /* FSCalendarCollectionViewLayout.h */,
+				DE7CC38D282548BB00C38AFE /* FSCalendarConstants.h */,
+				DE7CC388282548BB00C38AFE /* FSCalendarDelegationFactory.h */,
+				DE7CC38C282548BB00C38AFE /* FSCalendarDelegationProxy.h */,
+				DE7CC386282548BA00C38AFE /* FSCalendarDynamicHeader.h */,
+				DE7CC383282548BA00C38AFE /* FSCalendarExtensions.h */,
+				DE7CC387282548BA00C38AFE /* FSCalendarHeaderView.h */,
+				DE7CC38A282548BB00C38AFE /* FSCalendarSeparatorDecorationView.h */,
+				DE7CC389282548BB00C38AFE /* FSCalendarStickyHeader.h */,
+				DE7CC38E282548BB00C38AFE /* FSCalendarTransitionCoordinator.h */,
+				DE7CC38B282548BB00C38AFE /* FSCalendarWeekdayView.h */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		DE7CC38F2825565F00C38AFE /* BookingCollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				DE7CC3912825567700C38AFE /* TimeSlotCollectionViewCell.swift */,
+				DE7CC3902825567700C38AFE /* TimeSlotCollectionViewCell.xib */,
+			);
+			name = BookingCollectionCell;
+			sourceTree = "<group>";
+		};
+		DEA4347B28266058002E1C93 /* Condition */ = {
+			isa = PBXGroup;
+			children = (
+				DEA4347C282660AD002E1C93 /* ConditionBookingViewController.swift */,
+				DEA4347E2826625C002E1C93 /* ConditionBookingViewModel.swift */,
+			);
+			name = Condition;
+			sourceTree = "<group>";
+		};
+		DEA4348C282B7BD6002E1C93 /* ProfileView */ = {
+			isa = PBXGroup;
+			children = (
+				DEA4348D282B7C18002E1C93 /* ProfileViewController.swift */,
+			);
+			name = ProfileView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9F9F1378280FFE0600C67E25 /* MDBRealmPatient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F9F13A3280FFE0900C67E25 /* Build configuration list for PBXNativeTarget "MDBRealmPatient" */;
+			buildPhases = (
+				85567034CFC1131FDF5ADCA6 /* [CP] Check Pods Manifest.lock */,
+				9F9F1375280FFE0600C67E25 /* Sources */,
+				9F9F1376280FFE0600C67E25 /* Frameworks */,
+				9F9F1377280FFE0600C67E25 /* Resources */,
+				1FB89A686B47A8E4DAFBBF35 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MDBRealmPatient;
+			productName = MDBRealmPatient;
+			productReference = 9F9F1379280FFE0600C67E25 /* MDBRealmPatient.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9F9F138E280FFE0900C67E25 /* MDBRealmPatientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F9F13A6280FFE0900C67E25 /* Build configuration list for PBXNativeTarget "MDBRealmPatientTests" */;
+			buildPhases = (
+				18B0897355E1C03658CABEF0 /* [CP] Check Pods Manifest.lock */,
+				9F9F138B280FFE0900C67E25 /* Sources */,
+				9F9F138C280FFE0900C67E25 /* Frameworks */,
+				9F9F138D280FFE0900C67E25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F9F1391280FFE0900C67E25 /* PBXTargetDependency */,
+			);
+			name = MDBRealmPatientTests;
+			productName = MDBRealmPatientTests;
+			productReference = 9F9F138F280FFE0900C67E25 /* MDBRealmPatientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9F9F1398280FFE0900C67E25 /* MDBRealmPatientUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F9F13A9280FFE0900C67E25 /* Build configuration list for PBXNativeTarget "MDBRealmPatientUITests" */;
+			buildPhases = (
+				844343F9CB988ADF7CF90AAD /* [CP] Check Pods Manifest.lock */,
+				9F9F1395280FFE0900C67E25 /* Sources */,
+				9F9F1396280FFE0900C67E25 /* Frameworks */,
+				9F9F1397280FFE0900C67E25 /* Resources */,
+				F99609BAB9E1B6D355C2C212 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F9F139B280FFE0900C67E25 /* PBXTargetDependency */,
+			);
+			name = MDBRealmPatientUITests;
+			productName = MDBRealmPatientUITests;
+			productReference = 9F9F1399280FFE0900C67E25 /* MDBRealmPatientUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9F9F1371280FFE0600C67E25 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					9F9F1378280FFE0600C67E25 = {
+						CreatedOnToolsVersion = 13.3;
+						LastSwiftMigration = 1330;
+					};
+					9F9F138E280FFE0900C67E25 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 9F9F1378280FFE0600C67E25;
+					};
+					9F9F1398280FFE0900C67E25 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 9F9F1378280FFE0600C67E25;
+					};
+				};
+			};
+			buildConfigurationList = 9F9F1374280FFE0600C67E25 /* Build configuration list for PBXProject "MDBRealmPatient" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9F9F1370280FFE0600C67E25;
+			productRefGroup = 9F9F137A280FFE0600C67E25 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9F9F1378280FFE0600C67E25 /* MDBRealmPatient */,
+				9F9F138E280FFE0900C67E25 /* MDBRealmPatientTests */,
+				9F9F1398280FFE0900C67E25 /* MDBRealmPatientUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9F9F1377280FFE0600C67E25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				049921CE28115BE200AF8769 /* Poppins-ExtraBoldItalic.ttf in Resources */,
+				049921D328115BE200AF8769 /* Poppins-ExtraLight.ttf in Resources */,
+				046C94CB2816CF4D002ABD03 /* BookingHistoryTableViewCell.xib in Resources */,
+				DE7CC3922825567700C38AFE /* TimeSlotCollectionViewCell.xib in Resources */,
+				049921CB28115BE200AF8769 /* Poppins-BoldItalic.ttf in Resources */,
+				046C94C42816B4B6002ABD03 /* LocalStorage.plist in Resources */,
+				049921D428115BE200AF8769 /* Poppins-Thin.ttf in Resources */,
+				049921CD28115BE200AF8769 /* OFL.txt in Resources */,
+				049921F32811C6C900AF8769 /* DashboardTableViewCell.xib in Resources */,
+				9F9F1389280FFE0900C67E25 /* LaunchScreen.storyboard in Resources */,
+				049921C828115BE200AF8769 /* Poppins-MediumItalic.ttf in Resources */,
+				049921D228115BE200AF8769 /* Poppins-SemiBold.ttf in Resources */,
+				049921D828115BE200AF8769 /* Poppins-Black.ttf in Resources */,
+				049921D128115BE200AF8769 /* Poppins-SemiBoldItalic.ttf in Resources */,
+				049921C928115BE200AF8769 /* Poppins-LightItalic.ttf in Resources */,
+				049921CA28115BE200AF8769 /* Poppins-Light.ttf in Resources */,
+				049921CF28115BE200AF8769 /* Poppins-Italic.ttf in Resources */,
+				049921D628115BE200AF8769 /* Poppins-ExtraLightItalic.ttf in Resources */,
+				049921C628115BE200AF8769 /* Poppins-ThinItalic.ttf in Resources */,
+				DE7CC3312823F83700C38AFE /* CollectionViewCell.xib in Resources */,
+				049921D028115BE200AF8769 /* Poppins-Regular.ttf in Resources */,
+				049921D528115BE200AF8769 /* Poppins-Medium.ttf in Resources */,
+				049921D728115BE200AF8769 /* Poppins-Bold.ttf in Resources */,
+				04920A8C2812D1E20057CC67 /* HeaderTableViewCell.xib in Resources */,
+				049921EB28118F1200AF8769 /* Dashboard.storyboard in Resources */,
+				049921CC28115BE200AF8769 /* Poppins-ExtraBold.ttf in Resources */,
+				049921C728115BE200AF8769 /* Poppins-BlackItalic.ttf in Resources */,
+				9F9F1386280FFE0900C67E25 /* Assets.xcassets in Resources */,
+				9F9F1384280FFE0600C67E25 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F9F138D280FFE0900C67E25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F9F1397280FFE0900C67E25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18B0897355E1C03658CABEF0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MDBRealmPatientTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1FB89A686B47A8E4DAFBBF35 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MDBRealmPatient/Pods-MDBRealmPatient-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MDBRealmPatient/Pods-MDBRealmPatient-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MDBRealmPatient/Pods-MDBRealmPatient-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		844343F9CB988ADF7CF90AAD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MDBRealmPatient-MDBRealmPatientUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85567034CFC1131FDF5ADCA6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MDBRealmPatient-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F99609BAB9E1B6D355C2C212 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MDBRealmPatient-MDBRealmPatientUITests/Pods-MDBRealmPatient-MDBRealmPatientUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MDBRealmPatient-MDBRealmPatientUITests/Pods-MDBRealmPatient-MDBRealmPatientUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MDBRealmPatient-MDBRealmPatientUITests/Pods-MDBRealmPatient-MDBRealmPatientUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9F9F1375280FFE0600C67E25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE7CC3772825489D00C38AFE /* FSCalendarSeparatorDecorationView.m in Sources */,
+				9F9F1381280FFE0600C67E25 /* ViewController.swift in Sources */,
+				046C94BF2816ABFB002ABD03 /* BookingHistoryViewController.swift in Sources */,
+				04055236281FFC1C000B49B4 /* ConditionViewModel.swift in Sources */,
+				04956A4D28168D2100E5E24C /* DoctotAboutUsViewController.swift in Sources */,
+				046BD224281C0D70007A6059 /* GenderSelectionViewController.swift in Sources */,
+				DEA4348E282B7C18002E1C93 /* ProfileViewController.swift in Sources */,
+				DE7CC37D2825489D00C38AFE /* FSCalendarConstants.m in Sources */,
+				048AD5CA2817B3AC00D3AE93 /* BaseViewController.swift in Sources */,
+				DE7CC3342824FCB900C38AFE /* BasicPatientInfoViewModel.swift in Sources */,
+				046C94CA2816CF4D002ABD03 /* BookingHistoryTableViewCell.swift in Sources */,
+				04920A8A2812D1D10057CC67 /* HeaderTableViewCell.swift in Sources */,
+				0405523928225EA7000B49B4 /* Condition.swift in Sources */,
+				DE7CC3782825489D00C38AFE /* FSCalendarExtensions.m in Sources */,
+				049921E62811862300AF8769 /* BasicPatientInfoViewController.swift in Sources */,
+				0491EDE0281BE28D001A9795 /* DOBViewController.swift in Sources */,
+				048F1F09281907F200188F4F /* SignUpViewModel.swift in Sources */,
+				DEA434812826834F002E1C93 /* Appointment.swift in Sources */,
+				DE7CC3742825489D00C38AFE /* FSCalendarCalculator.m in Sources */,
+				048F1EAF2817C29B00188F4F /* StringExtension.swift in Sources */,
+				0405522F281FCBFB000B49B4 /* Code.swift in Sources */,
+				DE7CC37B2825489D00C38AFE /* FSCalendarCell.m in Sources */,
+				046AB5FC2812B0330099BE9C /* FontExtension.swift in Sources */,
+				8439E7D92847BDA2007B9533 /* ColorExtension.swift in Sources */,
+				9F9F137D280FFE0600C67E25 /* AppDelegate.swift in Sources */,
+				049921E4281178AD00AF8769 /* SignupViewController.swift in Sources */,
+				DEA4347F2826625C002E1C93 /* ConditionBookingViewModel.swift in Sources */,
+				DEA4347A282646E4002E1C93 /* BookingSlotViewModel.swift in Sources */,
+				DEA43489282A1861002E1C93 /* BookingDetailHistoryModel.swift in Sources */,
+				046C94C62816B5D0002ABD03 /* LocalStorage.swift in Sources */,
+				048F1F032818467F00188F4F /* HomePageViewModel.swift in Sources */,
+				DEA434852826A0ED002E1C93 /* Encounter.swift in Sources */,
+				046C8B4F281BBDCB00A37608 /* HospitalPageViewModel.swift in Sources */,
+				DE7CC35A2825488B00C38AFE /* FSCalendarDelegationProxy.m in Sources */,
+				DE7CC3722825489D00C38AFE /* FSCalendarCollectionViewLayout.m in Sources */,
+				048F1EB22817C60C00188F4F /* RealmManager.swift in Sources */,
+				DEA434832826A04B002E1C93 /* Procedure.swift in Sources */,
+				DEA4348B282B7A74002E1C93 /* AppConfig.swift in Sources */,
+				046AB5F82812AF990099BE9C /* FilledButton.swift in Sources */,
+				DE7CC3932825567700C38AFE /* TimeSlotCollectionViewCell.swift in Sources */,
+				0468F5AF2812759100A1D018 /* DoctorDetailsViewController.swift in Sources */,
+				049921E92811876400AF8769 /* Constants.swift in Sources */,
+				DE7CC3792825489D00C38AFE /* FSCalendarStickyHeader.m in Sources */,
+				DE7CC37C2825489D00C38AFE /* FSCalendarWeekdayView.m in Sources */,
+				DE7CC35B2825488B00C38AFE /* FSCalendarDelegationFactory.m in Sources */,
+				0468F5B22812821B00A1D018 /* ViewExtension.swift in Sources */,
+				046C94CF28179614002ABD03 /* BookingDetailsViewController.swift in Sources */,
+				9F9F137F280FFE0600C67E25 /* SceneDelegate.swift in Sources */,
+				DEA033AC2845298700ABC712 /* ViewControllerExtension.swift in Sources */,
+				046C94C22816B2F9002ABD03 /* MenuViewController.swift in Sources */,
+				046C8B4D281BBC4800A37608 /* PractitionerRole.swift in Sources */,
+				DE7CC37A2825489D00C38AFE /* FSCalendarTransitionCoordinator.m in Sources */,
+				049921F22811C6C900AF8769 /* DashboardTableViewCell.swift in Sources */,
+				048F1EAD2817C1D200188F4F /* LoginViewModel.swift in Sources */,
+				DE7CC32F2823F83700C38AFE /* CollectionViewCell.swift in Sources */,
+				DEA4348728283AAA002E1C93 /* BookingHistoryModel.swift in Sources */,
+				DE7CC3592825488B00C38AFE /* FSCalendarCollectionView.m in Sources */,
+				046C94BC2816A6B1002ABD03 /* BookingSlotViewController.swift in Sources */,
+				DE7CC3732825489D00C38AFE /* FSCalendarAppearance.m in Sources */,
+				DE7CC3752825489D00C38AFE /* FSCalendar.m in Sources */,
+				DEA4347D282660AD002E1C93 /* ConditionBookingViewController.swift in Sources */,
+				DE8CBB44283B927C00320668 /* DoctotAboutUsModel.swift in Sources */,
+				04055233281FF506000B49B4 /* ConditionViewController.swift in Sources */,
+				DE7CC3762825489D00C38AFE /* FSCalendarHeaderView.m in Sources */,
+				04E017A1281B812300C737A3 /* Patient.swift in Sources */,
+				048F1F0628184C5000188F4F /* Organization.swift in Sources */,
+				049921EE28119DE300AF8769 /* DashboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F9F138B280FFE0900C67E25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F9F1394280FFE0900C67E25 /* MDBRealmPatientTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F9F1395280FFE0900C67E25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F9F13A0280FFE0900C67E25 /* MDBRealmPatientUITestsLaunchTests.swift in Sources */,
+				9F9F139E280FFE0900C67E25 /* MDBRealmPatientUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9F9F1391280FFE0900C67E25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F9F1378280FFE0600C67E25 /* MDBRealmPatient */;
+			targetProxy = 9F9F1390280FFE0900C67E25 /* PBXContainerItemProxy */;
+		};
+		9F9F139B280FFE0900C67E25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F9F1378280FFE0600C67E25 /* MDBRealmPatient */;
+			targetProxy = 9F9F139A280FFE0900C67E25 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9F9F1382280FFE0600C67E25 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F9F1383280FFE0600C67E25 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9F9F1387280FFE0900C67E25 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F9F1388280FFE0900C67E25 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9F9F13A1280FFE0900C67E25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9F9F13A2280FFE0900C67E25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9F9F13A4280FFE0900C67E25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 053FCA1E9D4BEBED328B3529 /* Pods-MDBRealmPatient.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = H972GMBYZ9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MDBRealmPatient/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Patient;
+				INFOPLIST_KEY_NSCameraUsageDescription = "App uses Photo Library when you choose to set your profile image from photo library";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "App Uses Location to track  delivery";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "App uses Photo Library when you choose to set your profile image from photo library";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.wekan.patient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "MDBRealmPatient/MDBRealmPatient-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9F9F13A5280FFE0900C67E25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE9F5E9FA2D737227E6C5087 /* Pods-MDBRealmPatient.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = H972GMBYZ9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MDBRealmPatient/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Patient;
+				INFOPLIST_KEY_NSCameraUsageDescription = "App uses Photo Library when you choose to set your profile image from photo library";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "App Uses Location to track  delivery";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "App uses Photo Library when you choose to set your profile image from photo library";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.wekan.patient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "MDBRealmPatient/MDBRealmPatient-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9F9F13A7280FFE0900C67E25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BEFE14DFD83A3031EA9B17E /* Pods-MDBRealmPatientTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H972GMBYZ9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wekan.MDBRealmPatientTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MDBRealmPatient.app/MDBRealmPatient";
+			};
+			name = Debug;
+		};
+		9F9F13A8280FFE0900C67E25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52C0329C2202A6C38B8B6320 /* Pods-MDBRealmPatientTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H972GMBYZ9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wekan.MDBRealmPatientTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MDBRealmPatient.app/MDBRealmPatient";
+			};
+			name = Release;
+		};
+		9F9F13AA280FFE0900C67E25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04095DC61DAFE2CF686B539E /* Pods-MDBRealmPatient-MDBRealmPatientUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H972GMBYZ9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wekan.MDBRealmPatientUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MDBRealmPatient;
+			};
+			name = Debug;
+		};
+		9F9F13AB280FFE0900C67E25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09A7E27865C3E0996739A413 /* Pods-MDBRealmPatient-MDBRealmPatientUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H972GMBYZ9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wekan.MDBRealmPatientUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MDBRealmPatient;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9F9F1374280FFE0600C67E25 /* Build configuration list for PBXProject "MDBRealmPatient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F9F13A1280FFE0900C67E25 /* Debug */,
+				9F9F13A2280FFE0900C67E25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F9F13A3280FFE0900C67E25 /* Build configuration list for PBXNativeTarget "MDBRealmPatient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F9F13A4280FFE0900C67E25 /* Debug */,
+				9F9F13A5280FFE0900C67E25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F9F13A6280FFE0900C67E25 /* Build configuration list for PBXNativeTarget "MDBRealmPatientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F9F13A7280FFE0900C67E25 /* Debug */,
+				9F9F13A8280FFE0900C67E25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F9F13A9280FFE0900C67E25 /* Build configuration list for PBXNativeTarget "MDBRealmPatientUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F9F13AA280FFE0900C67E25 /* Debug */,
+				9F9F13AB280FFE0900C67E25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9F9F1371280FFE0600C67E25 /* Project object */;
+}

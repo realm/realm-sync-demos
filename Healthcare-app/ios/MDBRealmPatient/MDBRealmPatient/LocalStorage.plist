@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>menu</key>
+	<array>
+		<dict>
+			<key>menuName</key>
+			<string>Consultations</string>
+			<key>menuIcon</key>
+			<string>consultations</string>
+			<key>menuId</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>menuName</key>
+			<string>Patient Info</string>
+			<key>menuIcon</key>
+			<string>patient_info</string>
+			<key>menuId</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>menuName</key>
+			<string>Logout</string>
+			<key>menuIcon</key>
+			<string>logout</string>
+			<key>menuId</key>
+			<integer>3</integer>
+		</dict>
+	</array>
+</dict>
+</plist>

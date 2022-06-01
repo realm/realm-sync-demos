@@ -1,0 +1,151 @@
+{
+    "bsonType": "object",
+    "properties": {
+        "_id": {
+            "bsonType": "objectId"
+        },
+        "about": {
+            "bsonType": "string"
+        },
+        "active": {
+            "bsonType": "bool"
+        },
+        "availableTime": {
+            "bsonType": "object",
+            "properties": {
+                "allDay": {
+                    "bsonType": "bool"
+                },
+                "availableEndTime": {
+                    "bsonType": "string"
+                },
+                "availableStartTime": {
+                    "bsonType": "string"
+                },
+                "daysOfWeek": {
+                    "bsonType": "string"
+                }
+            },
+            "required": [],
+            "title": "Availability"
+        },
+        "code": {
+            "bsonType": "object",
+            "properties": {
+                "coding": {
+                    "bsonType": "array",
+                    "items": {
+                        "bsonType": "object",
+                        "properties": {
+                            "code": {
+                                "bsonType": "string"
+                            },
+                            "display": {
+                                "bsonType": "string"
+                            },
+                            "system": {
+                                "bsonType": "string"
+                            }
+                        },
+                        "required": [],
+                        "title": "Coding"
+                    }
+                },
+                "text": {
+                    "bsonType": "string"
+                }
+            },
+            "required": [],
+            "title": "Codable_Concept"
+        },
+        "identifier": {
+            "bsonType": "string"
+        },
+        "name": {
+            "bsonType": "object",
+            "properties": {
+                "given": {
+                    "bsonType": "string"
+                },
+                "prefix": {
+                    "bsonType": "array",
+                    "items": {
+                        "bsonType": "string"
+                    }
+                },
+                "suffix": {
+                    "bsonType": "array",
+                    "items": {
+                        "bsonType": "string"
+                    }
+                },
+                "text": {
+                    "bsonType": "string"
+                }
+            },
+            "required": [],
+            "title": "Human_Name"
+        },
+        "organization": {
+            "bsonType": "objectId"
+        },
+        "photo": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "object",
+                "properties": {
+                    "creation": {
+                        "bsonType": "date"
+                    },
+                    "data": {
+                        "bsonType": "string"
+                    },
+                    "title": {
+                        "bsonType": "string"
+                    },
+                    "url": {
+                        "bsonType": "string"
+                    }
+                },
+                "required": [],
+                "title": "Attachment"
+            }
+        },
+        "practitioner": {
+            "bsonType": "objectId"
+        },
+        "specialty": {
+            "bsonType": "object",
+            "properties": {
+                "coding": {
+                    "bsonType": "array",
+                    "items": {
+                        "bsonType": "object",
+                        "properties": {
+                            "code": {
+                                "bsonType": "string"
+                            },
+                            "display": {
+                                "bsonType": "string"
+                            },
+                            "system": {
+                                "bsonType": "string"
+                            }
+                        },
+                        "required": [],
+                        "title": "Coding"
+                    }
+                },
+                "text": {
+                    "bsonType": "string"
+                }
+            },
+            "required": [],
+            "title": "Codable_Concept"
+        }
+    },
+    "required": [
+        "_id"
+    ],
+    "title": "PractitionerRole"
+}

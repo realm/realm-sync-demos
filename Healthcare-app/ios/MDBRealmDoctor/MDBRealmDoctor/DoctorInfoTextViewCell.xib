@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="DoctorInfoTextViewCell" rowHeight="244" id="bfj-iY-ybh" customClass="DoctorInfoTextViewCell" customModule="Practitioner" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="501" height="244"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bfj-iY-ybh" id="yCy-Nd-dQA">
+                <rect key="frame" x="0.0" y="0.0" width="501" height="244"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bc9-WH-LrD">
+                        <rect key="frame" x="30" y="10" width="43.5" height="20"/>
+                        <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aEd-Zj-dky">
+                        <rect key="frame" x="30" y="40" width="441" height="184"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="textColor" systemColor="labelColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="aEd-Zj-dky" firstAttribute="leading" secondItem="bc9-WH-LrD" secondAttribute="leading" id="5iI-9N-bgr"/>
+                    <constraint firstItem="bc9-WH-LrD" firstAttribute="leading" secondItem="yCy-Nd-dQA" secondAttribute="leading" constant="30" id="Ec1-PA-wRR"/>
+                    <constraint firstItem="bc9-WH-LrD" firstAttribute="top" secondItem="yCy-Nd-dQA" secondAttribute="top" constant="10" id="It5-gH-lo2"/>
+                    <constraint firstItem="aEd-Zj-dky" firstAttribute="top" secondItem="bc9-WH-LrD" secondAttribute="bottom" constant="10" id="QE0-xO-ZZc"/>
+                    <constraint firstAttribute="bottom" secondItem="aEd-Zj-dky" secondAttribute="bottom" constant="20" id="aXt-xE-ybn"/>
+                    <constraint firstAttribute="trailing" secondItem="aEd-Zj-dky" secondAttribute="trailing" constant="30" id="wnI-ZF-4Yf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="descTextView" destination="aEd-Zj-dky" id="8v1-QO-6ku"/>
+                <outlet property="nameTitle" destination="bc9-WH-LrD" id="5z2-cG-p0p"/>
+            </connections>
+            <point key="canvasLocation" x="168.84057971014494" y="196.875"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
