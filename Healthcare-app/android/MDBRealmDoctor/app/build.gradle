@@ -1,0 +1,141 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-android-extensions'
+    id 'org.jetbrains.kotlin.kapt'
+}
+apply plugin: 'realm-android'
+def appId = "REALM_APP_ID"
+
+android {
+    compileSdkVersion 30
+
+    defaultConfig {
+        applicationId "com.wekanmdb.practitioner"
+        minSdkVersion 23
+        targetSdkVersion 30
+        versionCode 1
+        versionName "3.0"
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        debug {
+            buildConfigField "String", "MONGODB_REALM_APP_ID", "\"${appId}\""
+        }
+        release {
+            buildConfigField "String", "MONGODB_REALM_APP_ID", "\"${appId}\""
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    realm {
+        syncEnabled = true
+    }
+
+    buildFeatures {
+
+        dataBinding = true
+    }
+    androidExtensions {
+        experimental = true
+    }
+    testOptions.unitTests {
+        includeAndroidResources = true
+    }
+
+    lintOptions {
+        quiet true
+        abortOnError false
+        ignoreWarnings false
+        disable 'MissingTranslation'
+    }
+}
+
+dependencies {
+    /*Kotlin Support*/
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$CoroutinesCoreVersion"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutines"
+
+    /*Android Support*/
+    implementation "androidx.core:core-ktx:$core"
+    implementation "androidx.appcompat:appcompat:$appcompatVersion"
+    implementation "com.google.android.material:material:$material"
+    implementation "androidx.constraintlayout:constraintlayout:$constraintlayoutVersion"
+    androidTestImplementation "androidx.test:runner:$runnerVersion"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$espressoCoreVersion"
+    implementation "androidx.recyclerview:recyclerview:$recyclerviewVersion"
+    implementation "androidx.legacy:legacy-support-v4:$legacy"
+
+    /*Android Testing*/
+    testImplementation "junit:junit:$junitVersion"
+    androidTestImplementation "androidx.test.ext:junit:$junit"
+    testImplementation "com.google.truth:truth:$truth"
+    androidTestImplementation "com.google.truth:truth:$truth"
+    androidTestImplementation "androidx.arch.core:core-testing:$testing"
+    testImplementation "android.arch.core:core-testing:$core_testing"
+
+    /*Android Arch Lifecycle*/
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$databindingViewModel"
+    implementation "androidx.lifecycle:lifecycle-common-java8:$java8"
+    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycleversion"
+    //noinspection LifecycleAnnotationProcessorWithJava8
+    annotationProcessor "androidx.lifecycle:lifecycle-compiler:$lifecycompiler"
+    implementation "androidx.lifecycle:lifecycle-reactivestreams:$reactivestreams"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycleruntime"
+    implementation "androidx.fragment:fragment-ktx:$fragmentCompileVersion"
+
+    /*Data Binding*/
+    implementation "androidx.vectordrawable:vectordrawable:$vectordrawable"
+    kapt "com.android.databinding:compiler:$compiler"
+    annotationProcessor "androidx.databinding:databinding-compiler:$databindingCompilerVersion"
+
+    /*For Dagger*/
+    implementation "com.google.dagger:dagger:$daggerVersion"
+    implementation "com.google.dagger:dagger-android-support:$daggerSupportVersions"
+    kapt "com.google.dagger:dagger-compiler:$daggerCompileVersion"
+    kapt "com.google.dagger:dagger-android-processor:$daggerProcessorVersion"
+
+    /*For Navigation*/
+    implementation "androidx.navigation:navigation-fragment:$navigationfragmentVersion"
+    implementation "androidx.navigation:navigation-ui:$navigationuiVersion"
+    implementation "androidx.navigation:navigation-fragment-ktx:$navigationfragmentktxVersion"
+    implementation "androidx.navigation:navigation-ui-ktx:$navigationuiktxVersion"
+    /*Glide*/
+    implementation "com.github.bumptech.glide:okhttp3-integration:$glideOkHttpVersion"
+    implementation "com.github.bumptech.glide:glide:$glideVersion"
+    annotationProcessor "com.github.bumptech.glide:compiler:$glideVersion"
+
+    /*Multidex*/
+    implementation "androidx.multidex:multidex:$multidexVersion"
+
+    /*Showhidepasswordedittext*/
+    implementation "com.github.scottyab:showhidepasswordedittext:$showhidepasswordedittextVersion"
+
+    /*Gson*/
+    implementation "com.squareup.retrofit2:converter-gson:$gsonVersion"
+    implementation "android.arch.lifecycle:extensions:1.1.1"
+    kapt "android.arch.lifecycle:compiler:1.1.1"
+
+    /*crash analytics  */
+    implementation 'com.bugfender.sdk:android:3.+'
+
+
+    //Google Place autocomplete
+    implementation 'com.google.android.libraries.places:places:2.5.0'
+    implementation 'com.google.android.gms:play-services-location:19.0.1'
+}
+
+

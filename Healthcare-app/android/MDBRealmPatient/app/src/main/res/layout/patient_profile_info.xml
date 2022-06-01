@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="profileViewModel"
+            type="com.wekanmdb.storeinventory.ui.profile.ProfileViewModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5"/>
+
+        <TextView
+            android:id="@+id/textView39"
+            style="@style/text_style_semibold_24sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView33" />
+
+
+        <TextView
+            android:id="@+id/textview_name"
+            style="@style/text_style_regular_14sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="50dp"
+            android:text="@string/user_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView39" />
+
+        <TextView
+            android:id="@+id/textView_username"
+            style="@style/text_style_semibold_14sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/textview_name"
+            app:layout_constraintStart_toStartOf="@+id/textview_name"
+            app:layout_constraintTop_toBottomOf="@+id/textview_name" />
+
+
+        <TextView
+            android:id="@+id/textview_gendertitle"
+            style="@style/text_style_regular_14sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/gender"
+            app:layout_constraintEnd_toEndOf="@+id/textView_username"
+            app:layout_constraintStart_toStartOf="@+id/textView_username"
+            app:layout_constraintTop_toBottomOf="@+id/textView_username" />
+
+        <TextView
+            android:id="@+id/textview_gender"
+            style="@style/text_style_semibold_14sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/textview_gendertitle"
+            app:layout_constraintStart_toStartOf="@+id/textview_gendertitle"
+            app:layout_constraintTop_toBottomOf="@+id/textview_gendertitle" />
+
+        <TextView
+            android:id="@+id/textview_dobtitle"
+            style="@style/text_style_regular_14sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/dob"
+            app:layout_constraintEnd_toEndOf="@+id/textview_gender"
+            app:layout_constraintStart_toStartOf="@+id/textview_gender"
+            app:layout_constraintTop_toBottomOf="@+id/textview_gender" />
+
+        <TextView
+            android:id="@+id/textview_dob"
+            style="@style/text_style_semibold_14sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/textview_dobtitle"
+            app:layout_constraintStart_toStartOf="@+id/textview_dobtitle"
+            app:layout_constraintTop_toBottomOf="@+id/textview_dobtitle" />
+        <TextView
+            android:id="@+id/textView48"
+            style="@style/text_style_semibold_16sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/my_profile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <include
+            android:id="@+id/include"
+            layout="@layout/common_toolbar"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView33"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView48"
+            app:srcCompat="@mipmap/avatar" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

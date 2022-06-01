@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
+
+        <item name="colorPrimary">@color/app_new_color</item>
+        <item name="colorPrimaryVariant">@color/app_new_color</item>
+        <item name="colorAccent">#ff00ff</item>
+        <item name="android:buttonBarNegativeButtonStyle" >@style/NegativeButtonStyle</item>
+        <item name="android:buttonBarPositiveButtonStyle">@style/NegativeButtonStyle</item>
+    </style>
+    <style name="NegativeButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">#ff00ff</item>
+    </style>
+
+    <style name="CustomCalenderTheme" parent="Theme.AppCompat.Light.Dialog">
+
+        <item name="colorPrimary">#00ffff</item>
+        <item name="colorPrimaryDark">#987654</item>
+        <item name="colorAccent">#EE4557</item>
+        <item name="android:buttonBarNegativeButtonStyle" >@style/NegativeButtonCalender</item>
+        <item name="android:buttonBarPositiveButtonStyle">@style/NegativeButtonCalender</item>
+
+    </style>
+    <style name="NegativeButtonCalender" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">#EE4557</item>
+    </style>
+    <style name="Widget.ActionButton.Overflow" parent="@android:style/Widget.Holo.ActionButton.Overflow">
+        <item name="android:src">@mipmap/menu</item>
+    </style>
+    <style name="signup_edittext_style">
+        <item name="android:height">
+            32dp
+        </item>
+        <item name="android:textSize">
+            12sp
+        </item>
+        <item name="android:ems">
+            10
+        </item>
+
+        <item name="android:paddingStart">
+            8dp
+        </item>
+        <item name="android:fontFamily">
+            @font/poppins_semibold
+        </item>
+        <item name="android:background">
+            @drawable/edittext_bg_gray
+        </item>
+    </style>
+    <style name="signup_text_style">
+
+        <item name="android:textSize">
+            14sp
+        </item>
+
+
+        <item name="android:fontFamily">
+            @font/poppins_semibold
+        </item>
+
+        <item name="android:textColor">
+            @color/black
+        </item>
+
+    </style>
+    <style name="semiBold" parent="@android:style/TextAppearance.Small">
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+        <style name="text_style_normal_very_small_title">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="text_style_bold_very_small_title">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="text_style_bold_very_small_title_white_text">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+
+    <style name="text_style_normal_small_title">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+
+    <style name="text_style_bold_small_title">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+
+
+    <style name="text_style_bold_small_title_regular">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+
+
+    <style name="text_style_bold_small_title_gray">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/gray_product_color</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+
+    <style name="text_style_bold_medium_title">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="text_style_bold_large_title">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_style_normal_large_title">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="text_style_bold_large_toolbar_title">
+        <item name="android:textSize">21sp</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_style_bold_large_white_title">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="background_white_Button">
+       <item name="backgroundColor">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="background_create_job_Button">
+        <item name="backgroundColor">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="colorPrimary">@color/color_createJob_screen</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_style_bold_small_white_title">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="text_style_bold_very_small_white_title">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="editText_style_bold_small_title">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:textColorHint">@color/text_hint_color</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:ems">10</item>
+    </style>
+
+    <style name="dialog_center" parent="android:Theme.Holo.Light">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:screenOrientation">portrait</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="outlineBox" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="AppSearchView" parent="Widget.AppCompat.SearchView" >
+        <item name="android:padding">0dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@drawable/edittext_bg_gray</item>
+        <item name="android:editTextColor">@color/text_color</item>
+        <item name="android:textColorHint">@color/text_hint_color</item>
+    </style>
+
+    <style name="text_style_medium_10sp">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="text_regular_11sp">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+    <style name="text_regular_11sp_gray">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/gray_lite_2</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+    <style name="text_regular_11sp_green">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/green_dark</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+
+    <style name="text_style_semibold_11sp">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+
+    <style name="text_style_semibold_green_12sp">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/green</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+
+
+    <style name="text_style_semibold_12sp_gray">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/gray_lite_4</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+
+    <style name="text_regular_12sp_gray">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/gray_lite_2</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="text_style_semibold_12sp">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+
+    <style name="text_style_regular_12sp">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="text_style_semibold_13sp">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+
+    <style name="text_style_regular_14sp">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="text_style_regular_14sp_gray">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/gray_lite_4</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="text_style_medium_14sp">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="text_style_semibold_14sp">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+
+
+    <style name="text_style_semibold_14sp_green">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/green</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+
+
+    <style name="text_style_semibold_14sp_white">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+
+
+    <style name="text_style_semibold_16sp">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+
+    <style name="text_style_semibold_17sp">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+
+    <style name="text_style_semibold_18sp_greentext">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/green_dark</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+
+    <style name="text_style_semibold_18sp">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+
+
+    <style name="text_style_semibold_24sp">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+
+
+
+</resources>

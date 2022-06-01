@@ -35,7 +35,7 @@ class enumDeclarations {
 //MARK: - Realm sync ID's
 class RealmConstants {
     struct iOS_realmID {
-        static let realmAppID                  = "phase3-refactor-sspmp"
+        static let realmAppID                  = "REALM_APP_ID"
     }
     
     struct objects {

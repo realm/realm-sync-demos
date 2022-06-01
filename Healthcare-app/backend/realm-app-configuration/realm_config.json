@@ -1,7 +1,7 @@
 {
-    "app_id": "phase3-refactor-sspmp",
+    "app_id": "REALM_APP_ID",
     "config_version": 20210101,
-    "name": "phase3-refactor",
+    "name": "healthcare-app",
     "location": "US-VA",
     "deployment_model": "LOCAL"
 }

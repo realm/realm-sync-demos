@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.computingforgeeks.trucksend.MainActivity">
+
+    <item
+        android:id="@+id/doctor_info"
+        android:icon="@mipmap/notes"
+        android:title="@string/doctor_info" />
+    <item
+        android:id="@+id/logout"
+        android:icon="@mipmap/logout"
+        android:title="@string/logout" />
+</menu>
