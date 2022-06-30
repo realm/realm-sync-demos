@@ -44,6 +44,7 @@ class EditNotesViewController: UIViewController {
         super.viewDidLoad()
         //navigation controller set
         setNavBar()
+        self.setUserRoleAndNameOnNavBar()
         
         //hide the keyboard
         self.setupHideKeyboardOnTap()
@@ -81,7 +82,7 @@ class EditNotesViewController: UIViewController {
             //get the procedure list
             guard let procedureList = RealmManager.shared.getProcedureDetails(encounterID: receivedEnounterID ?? "") else {return}
             
-            RealmManager.shared.getTheProcedureList(listProcedure: procedureList, noteReceived: self.notesTextField.text, receivedObj: UserDefaults.standard.value(forKey: userDefaultsConstants.userD.referenceId) as? String ?? "", success: { [weak self] status in
+            RealmManager.shared.updateNotesToAProcedure(listProcedure: procedureList, noteReceived: self.notesTextField.text, receivedObj: UserDefaults.standard.value(forKey: userDefaultsConstants.userD.referenceId) as? String ?? "", success: { [weak self] status in
                 guard let self = self else {return}
                 if status {
                     self.navigationController?.popViewController(animated: true)

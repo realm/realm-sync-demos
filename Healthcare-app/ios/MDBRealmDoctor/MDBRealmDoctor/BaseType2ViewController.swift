@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 import NVActivityIndicatorView
+import RealmSwift
 
 class BaseType2ViewController : UIViewController {
     
@@ -21,6 +22,7 @@ class BaseType2ViewController : UIViewController {
         super.viewDidLoad()
         //hide keyboard when clicked outside
         self.setupHideKeyboardOnTap()
+        self.setUserRoleAndNameOnNavBar()
         
         self.navigationItem.setHidesBackButton(true, animated: true)
     }
@@ -51,7 +53,7 @@ class BaseType2ViewController : UIViewController {
             self.blurView.isHidden = true
         }
     }
-    
+        
     ///function for alert with ok action - Type 2
     func showMessageWithOkActionType2(message: String, title: String? = nil, viewToShow : UIViewController, storyBoardName : String, vcIdentifier : String) {
         if (title?.isEmpty ?? true || title == "Oops!" ) && message.isEmpty == true {

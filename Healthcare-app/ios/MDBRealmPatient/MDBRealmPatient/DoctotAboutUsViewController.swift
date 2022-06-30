@@ -28,6 +28,7 @@ class DoctotAboutUsViewController: BaseViewController {
         super.viewDidLoad()
         self.addBackButtonToNav()
         self.title = "Doctor Information"
+        self.setUserRoleAndNameOnNavBar()
         self.viewModel.getPratitioner()
         self.practionerData()
         self.observeRealmChanges() 

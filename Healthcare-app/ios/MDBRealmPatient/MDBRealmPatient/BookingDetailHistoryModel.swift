@@ -13,6 +13,6 @@ class BookingDetailsHistoryModel: NSObject {
     var notificationToken: NotificationToken?
     
     func setProcedureObject(procedure: ObjectId) {
-        procedureDetailsObject = RealmManager.shared.getProcedureById(procedureId: procedure)
+        procedureDetailsObject = RealmManager.shared.getProcedureById(procedureId: procedure)?.first
     }
 }

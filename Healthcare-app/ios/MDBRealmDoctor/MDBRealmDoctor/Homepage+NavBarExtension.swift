@@ -18,6 +18,7 @@ extension HomePageViewController : UISearchBarDelegate {
     func setTheNavBar() {
         self.navigationController?.navigationBar.tintColor = UIColor.black
         self.title = UIConstants.HomePage.homePageTitle
+        self.setUserRoleAndNameOnNavBar()
         self.navigationItem.setHidesBackButton(true, animated: true)
         navigationController?.navigationBar.prefersLargeTitles = true
         

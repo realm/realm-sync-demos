@@ -46,7 +46,8 @@ class BookingSlotViewController: BaseViewController {
         super.viewDidLoad()
         self.addBackButtonToNav()
         self.title = "Available slots"
-        
+        self.setUserRoleAndNameOnNavBar()
+
         if let urlStr =  self.viewModel.practitionerRole?.practitioner?.photo.first?.data {
             self.doctorImage.image = urlStr.convertBase64ToImage()
         } else {

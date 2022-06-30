@@ -9,13 +9,13 @@ import Foundation
 import RealmSwift
 
 class Organization: Object {
-@Persisted(primaryKey: true) var _id: ObjectId
-@Persisted var active: Bool?
-@Persisted var address: List<Address>
-@Persisted var identifier: String?
-@Persisted var name: String?
-@Persisted var photo: List<Attachment>
-@Persisted var type: Codable_Concept?
+    @Persisted(primaryKey: true) var _id: ObjectId
+    @Persisted var active: Bool?
+    @Persisted var address: List<Address>
+    @Persisted var identifier: String?
+    @Persisted var name: String?
+    @Persisted var photo: List<Attachment>
+    @Persisted var type: Codable_Concept?
     
     convenience init(_id: ObjectId, active: Bool, identifier: String, name: String?, address: List<Address>, photo: List<Attachment>, type: Codable_Concept?) {
         self.init()
@@ -29,26 +29,26 @@ class Organization: Object {
     }
 }
 class Address: EmbeddedObject {
-@Persisted var city: String?
-@Persisted var country: String?
-@Persisted var line: List<String>
-@Persisted var postalCode: String?
-@Persisted var state: String?
+    @Persisted var city: String?
+    @Persisted var country: String?
+    @Persisted var line: List<String>
+    @Persisted var postalCode: String?
+    @Persisted var state: String?
 }
 
 class Attachment: EmbeddedObject {
-@Persisted var creation: Date?
-@Persisted var data: String?
-@Persisted var title: String?
-@Persisted var url: String?
+    @Persisted var creation: Date?
+    @Persisted var data: String?
+    @Persisted var title: String?
+    @Persisted var url: String?
 }
 
 class Codable_Concept: EmbeddedObject {
-@Persisted var coding: List<Coding> = List()
-@Persisted var text: String?
+    @Persisted var coding: RealmSwift.List<Coding> = RealmSwift.List()
+    @Persisted var text: String?
 }
 class Coding: EmbeddedObject {
-@Persisted var code: String?
-@Persisted var display: String?
-@Persisted var system: String?
+    @Persisted var code: String?
+    @Persisted var display: String?
+    @Persisted var system: String?
 }

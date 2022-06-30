@@ -40,7 +40,7 @@ class DoctorInfoViewController: BaseType2ViewController {
         
         //Set up the navigation controller
         self.setUpNavController()
-        
+                
         //register the cells
         self.registerCellsForTableView()
         
@@ -141,6 +141,7 @@ extension DoctorInfoViewController  {
     func setUpNavController() {
         self.navigationController?.navigationBar.tintColor = UIColor.black
         self.title = UIConstants.doctorInfo.pageTitle
+        self.setUserRoleAndNameOnNavBar()
         self.navigationItem.setHidesBackButton(true, animated: true)
         navigationController?.navigationBar.prefersLargeTitles = false
         

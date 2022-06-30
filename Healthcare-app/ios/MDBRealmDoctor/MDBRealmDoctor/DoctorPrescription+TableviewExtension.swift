@@ -109,7 +109,7 @@ extension DoctorPrescriptionViewController : UITableViewDelegate, UITableViewDat
             cell.editButton.isHidden = RealmManager.shared.findUserType() == "doctor" ? true : false
             
             cell.selectNurseTextField.text = RealmManager.shared.showSelectedNurse(encounter_ID: self.encounter_ID)
-            
+            cell.isNurseAssigned =  !cell.selectNurseTextField.text!.isEmpty
             //nurse seletion
             if RealmManager.shared.findUserType() == "doctor" {
                 //doctor
@@ -117,11 +117,14 @@ extension DoctorPrescriptionViewController : UITableViewDelegate, UITableViewDat
                 
                 cell.selectNurseTextField.isHidden = false
                 
+               
+                
+                cell.parentVC = self;
                 cell.pickerSelectedData = { listData in
                     self.title = UIConstants.doctorPrescription.pageTitle
                     
                     
-                    RealmManager.shared.updateSelectedNurseByDoctor(nurseID: listData.practitioner?._id ?? ObjectId(""), nurseIdentifier: listData.identifier ?? "", encounterID: self.encounter_ID, success: { [weak self] status in
+                    RealmManager.shared.updateSelectedNurseByDoctor(nurseID: listData.practitioner?._id ?? ObjectId(""), nurseIdentifier: listData.practitioner?.identifier ?? "", encounterID: self.encounter_ID, success: { [weak self] status in
                         guard let self = self else {return}
                         if status {
                             self.view.endEditing(true)

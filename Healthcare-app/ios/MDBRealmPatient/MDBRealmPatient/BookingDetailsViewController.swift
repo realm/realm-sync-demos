@@ -9,6 +9,7 @@ import UIKit
 import RealmSwift
 
 class BookingDetailsViewController: BaseViewController {
+    var procedure_id: ObjectId?
     @IBOutlet var viewModel         : BookingDetailsHistoryModel!
     @IBOutlet weak var dateAndTimelbl   : UILabel!
     @IBOutlet weak var hospitalName     : UILabel!
@@ -37,10 +38,19 @@ class BookingDetailsViewController: BaseViewController {
         super.viewDidLoad()
         self.addBackButtonToNav()
         self.title = "Consultations"
-        self.setHeaderHospitalInfo()
-        self.observeRealmChanges()
+        self.setUserRoleAndNameOnNavBar()
+        if(self.procedure_id != nil){
+            let result = RealmManager.shared.getProcedureById(procedureId: self.procedure_id!);
+            viewModel.notificationToken = result?.observe({ [weak self]_ in
+                self?.viewModel.setProcedureObject(procedure: self?.viewModel.procedureDetailsObject?._id ?? ObjectId("00000000000000000000000000"))
+                self?.setHeaderHospitalInfo()
+            })
+            self.viewModel.procedureDetailsObject = result?.first
+        }
     }
     func setHeaderHospitalInfo() {
+        
+        
         
         // Hospital information
         let organizationObject = RealmManager.shared.getOrganizationById(organizationId: viewModel?.procedureDetailsObject?.encounter?.serviceProvider?.identifier ?? RealmManager.shared.defaultObjectId)
@@ -75,16 +85,19 @@ class BookingDetailsViewController: BaseViewController {
         
         self.doctorNotes.text = doctorNotes?.text != nil && doctorNotes?.text != "" ? doctorNotes?.text : "Not Available"
         self.nurseNotes.text = nurseNotes?.text != nil && nurseNotes?.text != "" ? nurseNotes?.text : "Not Available"
+
     }
     // MARK: - Private methods
+//
+//    private func observeRealmChanges()  {
+//        // Observe collection notifications. Keep a strong
+//         // reference to the notification token or the
+//         // observation will stop.
+//
+//        = viewModel.procedureDetailsObject?.observe { [weak self] change in
+//
+//        }
+//    }
+//
     
-    private func observeRealmChanges()  {
-        // Observe collection notifications. Keep a strong
-         // reference to the notification token or the
-         // observation will stop.
-        viewModel.notificationToken = viewModel.procedureDetailsObject?.observe { [weak self] change in
-            self?.viewModel.setProcedureObject(procedure: self?.viewModel.procedureDetailsObject?._id ?? ObjectId("00000000000000000000000000"))
-            self?.setHeaderHospitalInfo()
-        }
-    }
 }

@@ -13,10 +13,11 @@ class HospitalPageViewModel: NSObject {
     var practitionerRoleList = [PractitionerRole]()
     var notificationToken: NotificationToken?
     var practitionerObject: Results<Practitioner>?
+    var practitionerRoleObjects: Results<PractitionerRole>?
     var practitionerId: ObjectId?
     func getPractitionerRole(){
         self.practitionerRoleList = RealmManager.shared.getAllPractitioner(hospitalId: organization!._id)
-        
+        self.practitionerRoleObjects = RealmManager.shared.getAllPractitionerRole()
         self.practitionerObject = RealmManager.shared.getAllPractitioner()
     }
 }

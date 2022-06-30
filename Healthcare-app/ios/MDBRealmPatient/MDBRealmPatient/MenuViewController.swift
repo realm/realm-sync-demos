@@ -12,8 +12,9 @@ class MenuViewController: BaseViewController {
     @IBOutlet var tableView         : UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.addBackButtonToNav()
         self.title = "Menu"
+        self.addBackButtonToNav()
+        self.setUserRoleAndNameOnNavBar()
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
 
     }

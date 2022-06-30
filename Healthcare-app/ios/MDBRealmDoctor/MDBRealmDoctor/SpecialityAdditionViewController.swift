@@ -67,6 +67,9 @@ class SpecialityAdditionViewController: BaseType2ViewController {
         //Set speciality title
         self.specialityTitle.text = UIConstants.signUpView.specialityTitle
         self.specialityTextField.isHidden = false
+        RealmManager.shared.revalidateRealm {
+            print("Master Realm Revalidated")
+        }
     }
     
     // handle notification
