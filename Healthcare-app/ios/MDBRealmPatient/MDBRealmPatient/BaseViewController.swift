@@ -4,6 +4,7 @@
 
 import UIKit
 import NVActivityIndicatorView
+import RealmSwift
 
 class BaseViewController: UIViewController {
     let activityIndicatorView = NVActivityIndicatorView(frame: CGRect(x: 80, y: 80, width: 60, height:60), type: .pacman, color: UIColor.init(hexString: "#EE4557"))
@@ -22,6 +23,16 @@ class BaseViewController: UIViewController {
         image = image?.withRenderingMode(.alwaysOriginal)
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style:.plain, target: nil, action: nil)
     }
+    
+    func setUserRoleAndNameOnNavBar() {
+        // Add patient's name to nav bar for easy identification
+        let user = RealmManager.shared.app.currentUser?.customData as? Dictionary<String, AnyObject>
+        let userRole = user?["userType"] as? RealmSwift.AnyBSON
+        let firstName = user?["firstName"] as? RealmSwift.AnyBSON
+        let lastName = user?["lastName"] as? RealmSwift.AnyBSON
+        self.navigationItem.prompt = "\(userRole?.stringValue?.capitalizingFirstLetter() ?? "Patient") - \(firstName?.stringValue?.capitalizingFirstLetter() ?? "") \(lastName?.stringValue?.capitalizingFirstLetter() ?? "")"
+    }
+    
     // MARK: - Actions
     @IBAction func btnBackAction(_ sender: UIBarButtonItem) {
         self.navigationController?.popViewController(animated: true)

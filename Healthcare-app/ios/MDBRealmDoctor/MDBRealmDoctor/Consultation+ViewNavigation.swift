@@ -13,6 +13,7 @@ extension ConsulatationSelectionViewController : UISearchBarDelegate {
     func setTheNavBar() {
         self.navigationController?.navigationBar.tintColor = UIColor.black
         self.title = self.selectedHospital?.organization?.name
+        self.setUserRoleAndNameOnNavBar()
         self.navigationItem.setHidesBackButton(true, animated: true)
         navigationController?.navigationBar.prefersLargeTitles = false
         

@@ -22,7 +22,8 @@ class DashboardViewController: BaseViewController {
         self.navigationItem.setHidesBackButton(true, animated: true)
         self.addRightButtonToNav()
         self.title = "Hospitals"
-        
+        self.setUserRoleAndNameOnNavBar()
+
         self.tableView.dataSource = self
         self.tableView.delegate = self
         self.tableView.register(UINib(nibName: "DashboardTableViewCell", bundle: nil), forCellReuseIdentifier: "DashboardTableViewCell")

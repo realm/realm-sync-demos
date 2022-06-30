@@ -1,20 +1,22 @@
 # Uncomment the next line to define a global platform for your project
  platform :ios, '13.0'
+    project 'Practitioner.xcodeproj'
 
-target 'MDBRealmDoctor' do
+
+target 'Practitioner' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for MDBRealmDoctor
+  # Pods for Practitioner
 	
    pod 'NVActivityIndicatorView', '5.0.0'
 
-  target 'MDBRealmDoctorTests' do
+  target 'PractitionerTests' do
     inherit! :search_paths
     # Pods for testing
   end
 
-  target 'MDBRealmDoctorUITests' do
+  target 'PractitionerUITests' do
     # Pods for testing
   end
 

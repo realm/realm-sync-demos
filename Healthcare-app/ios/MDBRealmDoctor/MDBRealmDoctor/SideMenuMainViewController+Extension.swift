@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import RealmSwift
 
 extension HomePageViewController {
     
@@ -54,7 +55,6 @@ extension HomePageViewController {
         let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(handlePanGesture))
         panGestureRecognizer.delegate = self
         view.addGestureRecognizer(panGestureRecognizer)
-        
         // Default Main View Controller
         //    self.showViewController(viewController: UINavigationController.self, storyboardId: Storyboard.storyBoardControllerID.homeControllerID, StoryBoardName: Storyboard.storyBoardName.homeBoard)
     }
@@ -161,6 +161,16 @@ extension UIViewController {
         }
         return nil
     }
+    
+    func setUserRoleAndNameOnNavBar() {
+        // Add patient's name to nav bar for easy identification
+        let user = RealmManager.shared.app.currentUser?.customData as? Dictionary<String, AnyObject>
+        let userRole = user?["userType"] as? RealmSwift.AnyBSON
+        let firstName = user?["firstName"] as? RealmSwift.AnyBSON
+        let lastName = user?["lastName"] as? RealmSwift.AnyBSON
+        self.navigationItem.prompt = "\(userRole?.stringValue?.capitalizingFirstLetter() ?? "Practitioner") - \(firstName?.stringValue ?? "") \(lastName?.stringValue ?? "")"
+    }
+
 }
 
 

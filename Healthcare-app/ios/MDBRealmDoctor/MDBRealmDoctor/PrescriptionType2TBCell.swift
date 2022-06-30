@@ -10,6 +10,19 @@ import SwiftUI
 
 class PrescriptionType2TBCell: UITableViewCell, UITextFieldDelegate {
     
+    
+    var parentVC: UIViewController!
+    
+    var isNurseAssigned: Bool! {
+        didSet {
+           
+            if isNurseAssigned {
+                selectNurseTextField.isUserInteractionEnabled = false
+            }
+        }
+    }
+    
+    
     //Type 2
     @IBOutlet weak var titleImageView : UIImageView!
     
@@ -36,9 +49,22 @@ class PrescriptionType2TBCell: UITableViewCell, UITextFieldDelegate {
         didSet {
             self.selectNurseTextField.rightView = self.UserTypeView
             self.selectNurseTextField.rightViewMode = .always
-            self.selectNurseTextField.inputView = thePicker
+           
             self.selectNurseTextField.delegate = self
             self.selectNurseTextField.textColor = UIColor.black
+            
+       
+            if(RealmManager.shared.nurseList?.count == 0) {
+    //            showMessageWithoutAction(message: "No nurse assigned to this hospital.", controllerToPresent:parentVC)
+                selectNurseTextField.alpha = 0
+                selectNurseTextField.isUserInteractionEnabled = false
+                self.selectNurseTextField.inputView = nil
+                selectNurseLabel.text = "No nurse assigned to this hospital."
+                
+            }else{
+                self.selectNurseTextField.inputView = thePicker
+            }
+          
         }
     }
     
@@ -70,6 +96,8 @@ class PrescriptionType2TBCell: UITableViewCell, UITextFieldDelegate {
         thePicker.dataSource = self
         thePicker.backgroundColor = UIColor.textfieldClrSet(alpha: 1)
         toolBarCreation()
+        
+       
     }
     
     func toolBarCreation() {
@@ -82,21 +110,20 @@ class PrescriptionType2TBCell: UITableViewCell, UITextFieldDelegate {
         let cancelButton = UIBarButtonItem(title: UIConstants.signUpView.cancelBtnText, style: UIBarButtonItem.Style.plain, target: self, action: #selector(cancelDatePicker))
         cancelButton.tintColor = UIColor.appGeneralThemeClr()
         toolbar2.setItems([doneButton,spaceButton,cancelButton], animated: false)
-        
         // add toolbar to textField
         selectNurseTextField.inputAccessoryView = toolbar2
+            
     }
     
     /// Done date picker
     @objc func donedatePicker() {
-        let row = thePicker.selectedRow(inComponent: 0)
-        thePicker.selectRow(row, inComponent: 0, animated: false)
-        //instance creation
-        let listData = RealmManager.shared.nurseList?[row]
-        self.selectNurseTextField.text = "\(listData?.practitioner?.name?.text ?? "")"
-        self.selectNurseTextField.resignFirstResponder()
-        
-        moveView()
+            let row = thePicker.selectedRow(inComponent: 0)
+            thePicker.selectRow(row, inComponent: 0, animated: false)
+            //instance creation
+            let listData = RealmManager.shared.nurseList?[row]
+            self.selectNurseTextField.text = "\(listData?.practitioner?.name?.text ?? "")"
+            self.selectNurseTextField.resignFirstResponder()
+            moveView()
     }
     
     /// cancel date picker

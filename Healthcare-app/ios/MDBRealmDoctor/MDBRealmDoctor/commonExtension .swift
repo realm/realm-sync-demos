@@ -69,8 +69,8 @@ func convertDateFormat(inputDate: String) -> String {
 
 func getAlertFOrLogOut(controllerToInduce : UIViewController) {
     DispatchQueue.main.async {
-        let alert = UIAlertController(title: UIConstants.HomePage.logOutTitle, message: UIConstants.HomePage.logOutOption, preferredStyle: .actionSheet)
-        
+        let alert = UIAlertController(title: UIConstants.HomePage.logOutTitle, message: UIConstants.HomePage.logOutOption, preferredStyle:  UIDevice.isRunningOnIpad == true ? .alert : .actionSheet)
+       
         alert.addAction(UIAlertAction(title: UIConstants.HomePage.okTxt, style: .destructive, handler: { _ in
             RealmManager.shared.logoutAndClearRealmData(controllerInstance: controllerToInduce)
         }))

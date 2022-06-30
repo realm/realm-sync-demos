@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2C269979A43EFBB7B96E28C0 /* Pods_MDBRealmDoctor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F44EA15B5DBA091946882D79 /* Pods_MDBRealmDoctor.framework */; };
-		459E9B462112DE1385032C5A /* Pods_MDBRealmDoctorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63D6E33970697108158045DD /* Pods_MDBRealmDoctorTests.framework */; };
-		6138A185A0E8E515549D06B4 /* Pods_MDBRealmDoctor_MDBRealmDoctorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69B2826A1A00DF89B65E2CD1 /* Pods_MDBRealmDoctor_MDBRealmDoctorUITests.framework */; };
+		81DEEE904F89B63ABAE669AF /* Pods_PractitionerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A632A13D955020F89B9A9C /* Pods_PractitionerTests.framework */; };
 		8A01D164281101D200F56D9D /* Sort_FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A01D163281101D200F56D9D /* Sort_FilterViewController.swift */; };
 		8A01D166281146CC00F56D9D /* Sort_FiltertableviewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A01D165281146CC00F56D9D /* Sort_FiltertableviewCell.xib */; };
 		8A01D16C2811483300F56D9D /* Sort_FiltertableviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A01D16B2811483300F56D9D /* Sort_FiltertableviewCell.swift */; };
@@ -123,6 +121,8 @@
 		9F9F13D2280FFFBA00C67E25 /* MDBRealmDoctorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9F13D1280FFFBA00C67E25 /* MDBRealmDoctorTests.swift */; };
 		9F9F13DC280FFFBA00C67E25 /* MDBRealmDoctorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9F13DB280FFFBA00C67E25 /* MDBRealmDoctorUITests.swift */; };
 		9F9F13DE280FFFBA00C67E25 /* MDBRealmDoctorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9F13DD280FFFBA00C67E25 /* MDBRealmDoctorUITestsLaunchTests.swift */; };
+		F99E7E95E9E279E0F5E913C8 /* Pods_Practitioner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 978408869072AFB9A204198F /* Pods_Practitioner.framework */; };
+		FE341C5FB76540C3DCD379C8 /* Pods_Practitioner_PractitionerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0144C7B3066971E68997752 /* Pods_Practitioner_PractitionerUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -145,11 +145,13 @@
 /* Begin PBXFileReference section */
 		13A5DB0EE27DA2F609F934AD /* Pods-MDBRealmDoctorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDBRealmDoctorTests.release.xcconfig"; path = "Target Support Files/Pods-MDBRealmDoctorTests/Pods-MDBRealmDoctorTests.release.xcconfig"; sourceTree = "<group>"; };
 		23101B4B85A220DF6C72BAB9 /* Pods-MDBRealmDoctor-MDBRealmDoctorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDBRealmDoctor-MDBRealmDoctorUITests.debug.xcconfig"; path = "Target Support Files/Pods-MDBRealmDoctor-MDBRealmDoctorUITests/Pods-MDBRealmDoctor-MDBRealmDoctorUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4063A6EACC2AC1232D14E774 /* Pods-Practitioner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Practitioner.release.xcconfig"; path = "Target Support Files/Pods-Practitioner/Pods-Practitioner.release.xcconfig"; sourceTree = "<group>"; };
+		4F2AE0A80824A99CE09E7742 /* Pods-Practitioner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Practitioner.debug.xcconfig"; path = "Target Support Files/Pods-Practitioner/Pods-Practitioner.debug.xcconfig"; sourceTree = "<group>"; };
 		4FD6DABBAF4E4968D17CD1E2 /* Pods-MDBRealmDoctor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDBRealmDoctor.debug.xcconfig"; path = "Target Support Files/Pods-MDBRealmDoctor/Pods-MDBRealmDoctor.debug.xcconfig"; sourceTree = "<group>"; };
 		551E9DCF8427FF8A98891483 /* Pods-MDBRealmDoctorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDBRealmDoctorTests.debug.xcconfig"; path = "Target Support Files/Pods-MDBRealmDoctorTests/Pods-MDBRealmDoctorTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5A135201B67D5D0392585AE2 /* Pods-MDBRealmDoctor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDBRealmDoctor.release.xcconfig"; path = "Target Support Files/Pods-MDBRealmDoctor/Pods-MDBRealmDoctor.release.xcconfig"; sourceTree = "<group>"; };
-		63D6E33970697108158045DD /* Pods_MDBRealmDoctorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MDBRealmDoctorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		69B2826A1A00DF89B65E2CD1 /* Pods_MDBRealmDoctor_MDBRealmDoctorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MDBRealmDoctor_MDBRealmDoctorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		66C649A2140696CA6F0B466F /* Pods-Practitioner-PractitionerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Practitioner-PractitionerUITests.debug.xcconfig"; path = "Target Support Files/Pods-Practitioner-PractitionerUITests/Pods-Practitioner-PractitionerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7DE9A8EF6C9273FE4F05ADB6 /* Pods-PractitionerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PractitionerTests.debug.xcconfig"; path = "Target Support Files/Pods-PractitionerTests/Pods-PractitionerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8A01D163281101D200F56D9D /* Sort_FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sort_FilterViewController.swift; sourceTree = "<group>"; };
 		8A01D165281146CC00F56D9D /* Sort_FiltertableviewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Sort_FiltertableviewCell.xib; sourceTree = "<group>"; };
 		8A01D16B2811483300F56D9D /* Sort_FiltertableviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sort_FiltertableviewCell.swift; sourceTree = "<group>"; };
@@ -253,6 +255,8 @@
 		8AD95EEF2810F4CF00B1A956 /* commonExtension .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "commonExtension .swift"; sourceTree = "<group>"; };
 		8ADF48E02824F5B20031A2C7 /* SyncRealmWaitingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncRealmWaitingViewController.swift; sourceTree = "<group>"; };
 		8ADF48E2282555F80031A2C7 /* ImageCacheHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheHandler.swift; sourceTree = "<group>"; };
+		978408869072AFB9A204198F /* Pods_Practitioner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Practitioner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CCAB66734681187DA269946 /* Pods-PractitionerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PractitionerTests.release.xcconfig"; path = "Target Support Files/Pods-PractitionerTests/Pods-PractitionerTests.release.xcconfig"; sourceTree = "<group>"; };
 		9F9F13B7280FFFB800C67E25 /* Practitioner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Practitioner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F9F13BA280FFFB800C67E25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F9F13BC280FFFB800C67E25 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -265,8 +269,10 @@
 		9F9F13D7280FFFBA00C67E25 /* PractitionerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PractitionerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F9F13DB280FFFBA00C67E25 /* MDBRealmDoctorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDBRealmDoctorUITests.swift; sourceTree = "<group>"; };
 		9F9F13DD280FFFBA00C67E25 /* MDBRealmDoctorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDBRealmDoctorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A0144C7B3066971E68997752 /* Pods_Practitioner_PractitionerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Practitioner_PractitionerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A90E793E0562BF354311D220 /* Pods-Practitioner-PractitionerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Practitioner-PractitionerUITests.release.xcconfig"; path = "Target Support Files/Pods-Practitioner-PractitionerUITests/Pods-Practitioner-PractitionerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B41AEB1D8AC32B580FD8650B /* Pods-MDBRealmDoctor-MDBRealmDoctorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDBRealmDoctor-MDBRealmDoctorUITests.release.xcconfig"; path = "Target Support Files/Pods-MDBRealmDoctor-MDBRealmDoctorUITests/Pods-MDBRealmDoctor-MDBRealmDoctorUITests.release.xcconfig"; sourceTree = "<group>"; };
-		F44EA15B5DBA091946882D79 /* Pods_MDBRealmDoctor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MDBRealmDoctor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5A632A13D955020F89B9A9C /* Pods_PractitionerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PractitionerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -276,7 +282,7 @@
 			files = (
 				8A30C9EF2817F81E00A6EF35 /* RealmSwift in Frameworks */,
 				8A30C9ED2817F81E00A6EF35 /* Realm in Frameworks */,
-				2C269979A43EFBB7B96E28C0 /* Pods_MDBRealmDoctor.framework in Frameworks */,
+				F99E7E95E9E279E0F5E913C8 /* Pods_Practitioner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +290,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				459E9B462112DE1385032C5A /* Pods_MDBRealmDoctorTests.framework in Frameworks */,
+				81DEEE904F89B63ABAE669AF /* Pods_PractitionerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +298,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6138A185A0E8E515549D06B4 /* Pods_MDBRealmDoctor_MDBRealmDoctorUITests.framework in Frameworks */,
+				FE341C5FB76540C3DCD379C8 /* Pods_Practitioner_PractitionerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,9 +308,9 @@
 		1EDA3B69338E6E8498A2759A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F44EA15B5DBA091946882D79 /* Pods_MDBRealmDoctor.framework */,
-				69B2826A1A00DF89B65E2CD1 /* Pods_MDBRealmDoctor_MDBRealmDoctorUITests.framework */,
-				63D6E33970697108158045DD /* Pods_MDBRealmDoctorTests.framework */,
+				978408869072AFB9A204198F /* Pods_Practitioner.framework */,
+				A0144C7B3066971E68997752 /* Pods_Practitioner_PractitionerUITests.framework */,
+				F5A632A13D955020F89B9A9C /* Pods_PractitionerTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -753,6 +759,12 @@
 				B41AEB1D8AC32B580FD8650B /* Pods-MDBRealmDoctor-MDBRealmDoctorUITests.release.xcconfig */,
 				551E9DCF8427FF8A98891483 /* Pods-MDBRealmDoctorTests.debug.xcconfig */,
 				13A5DB0EE27DA2F609F934AD /* Pods-MDBRealmDoctorTests.release.xcconfig */,
+				4F2AE0A80824A99CE09E7742 /* Pods-Practitioner.debug.xcconfig */,
+				4063A6EACC2AC1232D14E774 /* Pods-Practitioner.release.xcconfig */,
+				66C649A2140696CA6F0B466F /* Pods-Practitioner-PractitionerUITests.debug.xcconfig */,
+				A90E793E0562BF354311D220 /* Pods-Practitioner-PractitionerUITests.release.xcconfig */,
+				7DE9A8EF6C9273FE4F05ADB6 /* Pods-PractitionerTests.debug.xcconfig */,
+				9CCAB66734681187DA269946 /* Pods-PractitionerTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -955,7 +967,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MDBRealmDoctor-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Practitioner-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -977,7 +989,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MDBRealmDoctor-MDBRealmDoctorUITests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Practitioner-PractitionerUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -990,15 +1002,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MDBRealmDoctor/Pods-MDBRealmDoctor-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Practitioner/Pods-Practitioner-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MDBRealmDoctor/Pods-MDBRealmDoctor-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Practitioner/Pods-Practitioner-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MDBRealmDoctor/Pods-MDBRealmDoctor-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Practitioner/Pods-Practitioner-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9955DCEC00EEFDFD7A0EA432 /* [CP] Embed Pods Frameworks */ = {
@@ -1007,15 +1019,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MDBRealmDoctor-MDBRealmDoctorUITests/Pods-MDBRealmDoctor-MDBRealmDoctorUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Practitioner-PractitionerUITests/Pods-Practitioner-PractitionerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MDBRealmDoctor-MDBRealmDoctorUITests/Pods-MDBRealmDoctor-MDBRealmDoctorUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Practitioner-PractitionerUITests/Pods-Practitioner-PractitionerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MDBRealmDoctor-MDBRealmDoctorUITests/Pods-MDBRealmDoctor-MDBRealmDoctorUITests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Practitioner-PractitionerUITests/Pods-Practitioner-PractitionerUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F04218F0759CC6B692A1481E /* [CP] Check Pods Manifest.lock */ = {
@@ -1033,7 +1045,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MDBRealmDoctorTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-PractitionerTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1214,7 +1226,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1269,7 +1281,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -1281,12 +1293,12 @@
 		};
 		9F9F13E2280FFFBA00C67E25 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4FD6DABBAF4E4968D17CD1E2 /* Pods-MDBRealmDoctor.debug.xcconfig */;
+			baseConfigurationReference = 4F2AE0A80824A99CE09E7742 /* Pods-Practitioner.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = H972GMBYZ9;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1316,12 +1328,12 @@
 		};
 		9F9F13E3280FFFBA00C67E25 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5A135201B67D5D0392585AE2 /* Pods-MDBRealmDoctor.release.xcconfig */;
+			baseConfigurationReference = 4063A6EACC2AC1232D14E774 /* Pods-Practitioner.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = H972GMBYZ9;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1350,7 +1362,7 @@
 		};
 		9F9F13E5280FFFBA00C67E25 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 551E9DCF8427FF8A98891483 /* Pods-MDBRealmDoctorTests.debug.xcconfig */;
+			baseConfigurationReference = 7DE9A8EF6C9273FE4F05ADB6 /* Pods-PractitionerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1371,7 +1383,7 @@
 		};
 		9F9F13E6280FFFBA00C67E25 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 13A5DB0EE27DA2F609F934AD /* Pods-MDBRealmDoctorTests.release.xcconfig */;
+			baseConfigurationReference = 9CCAB66734681187DA269946 /* Pods-PractitionerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1392,7 +1404,7 @@
 		};
 		9F9F13E8280FFFBA00C67E25 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 23101B4B85A220DF6C72BAB9 /* Pods-MDBRealmDoctor-MDBRealmDoctorUITests.debug.xcconfig */;
+			baseConfigurationReference = 66C649A2140696CA6F0B466F /* Pods-Practitioner-PractitionerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1411,7 +1423,7 @@
 		};
 		9F9F13E9280FFFBA00C67E25 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B41AEB1D8AC32B580FD8650B /* Pods-MDBRealmDoctor-MDBRealmDoctorUITests.release.xcconfig */;
+			baseConfigurationReference = A90E793E0562BF354311D220 /* Pods-Practitioner-PractitionerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -16,6 +16,7 @@ import UIKit
     //Realm app ID
     let app = App(id: RealmConstants.iOS_realmID.realmAppID)
     
+    
     //master relam from atlas
     var masterRealm: Realm?
     
@@ -25,7 +26,10 @@ import UIKit
     //Selected Filter
     var selectedFilter : Int?
     
-    override private init() { }
+    override private init() {
+        
+        app.syncManager.logLevel = .all
+    }
     
     //MARK: - Login
     /// Login to the realm app with email and password
@@ -75,15 +79,14 @@ import UIKit
     
     //MARK: - Write the subscription data
     func setSubscription(finished : @escaping () -> Void,errorF: @escaping () -> Void) {
-        guard let subscriptions = self.masterRealm?.subscriptions else {
+        guard let subscriptions = RealmManager.shared.masterRealm?.subscriptions else {
             return errorF()
         }
         
         //get the UUID
         let uuid = UserDefaults.standard.value(forKey: userDefaultsConstants.userD.uuid) as? String ?? ""
         
-        subscriptions.write({ [weak self] in
-            guard let self = self else {return}
+        subscriptions.write({
             
             //Organisation
             if let currentSubscription = subscriptions .first(named: realmManagerKey.organizationTXt) {
@@ -206,9 +209,18 @@ import UIKit
         })
     }
     
+    
+    func revalidateRealm (finished : @escaping () -> Void) -> Void {
+        masterRealm?.invalidate();
+        guard let config = app.currentUser?.flexibleSyncConfiguration() else {
+          return finished()
+        }
+        masterRealm = try! Realm.init(configuration: config)
+        return finished()
+    }
+    
     ///Function to get the speciality list
     func getSpecialityList(searchType : String) -> Results<Code>? {
-        
         let masterCodes = masterRealm?.objects(Code.self)
         let filterCategoryCodes = masterCodes?.where {
             $0.category == searchType
@@ -341,6 +353,22 @@ import UIKit
                 $0.encounter._id == userDetails
             }
             return listData?.first
+        }catch {
+        }
+        return nil
+    }
+    
+    
+    func getProcedures(encounterID : String) -> Results<Procedure>? {
+        
+        let masterCodes = masterRealm?.objects(Procedure.self)
+        do {
+            let userDetails = try ObjectId(string: "\(encounterID)")
+            
+            let listData = masterCodes?.where {
+                $0.encounter._id == userDetails
+            }
+            return listData
         }catch {
         }
         return nil
@@ -572,11 +600,24 @@ import UIKit
     }
     
     //MARK:- Doctor/nurse notes update
-    func getTheProcedureList(listProcedure : Procedure, noteReceived : String, receivedObj : String, success onTaskSuccess:@escaping OnTaskSuccess) {
-        
+    func updateNotesToAProcedure(listProcedure : Procedure, noteReceived : String, receivedObj : String, success onTaskSuccess:@escaping OnTaskSuccess) {
+        let currentUserType = self.findUserType();
         let objIDRet = try! ObjectId(string: "\(receivedObj)")
+//        notes.author?.reference?.lowercased().contains(currentUserType)
+        let hasCurrentUserNotes = listProcedure.note.filter("author.reference CONTAINS[c] '\(currentUserType)'")
+        print(hasCurrentUserNotes)
         try! self.masterRealm?.write {
-            if listProcedure.note.count == 1 || listProcedure.note.count == 0 {
+            if hasCurrentUserNotes.count>0 {
+                //has note
+                let reference = self.findUserType() == realmManagerKey.typeOfUser ? realmManagerKey.practionerCode : realmManagerKey.nurseCode
+                
+                for i in 0..<listProcedure.note.count {
+                    if listProcedure.note[i].author?.reference?.lowercased() == reference.lowercased() {
+                        listProcedure.note[i].author?.text = noteReceived
+                        listProcedure.note[i].text = noteReceived
+                    }
+                }
+            }else {
                 //new insert
                 let procedureNoteInstance   = Procedure_Notes()
                 let modelInstance           = Reference()
@@ -589,16 +630,6 @@ import UIKit
                 procedureNoteInstance.author = modelInstance
                 procedureNoteInstance.text   = noteReceived
                 listProcedure.note.append(procedureNoteInstance)
-            }else {
-                //has note
-                let reference = self.findUserType() == realmManagerKey.typeOfUser ? realmManagerKey.practionerCode : realmManagerKey.nurseCode
-                
-                for i in 0..<listProcedure.note.count {
-                    if listProcedure.note[i].author?.reference?.lowercased() == reference.lowercased() {
-                        listProcedure.note[i].author?.text = noteReceived
-                        listProcedure.note[i].text = noteReceived
-                    }
-                }
             }
             onTaskSuccess(true)
         }
@@ -776,7 +807,8 @@ import UIKit
                 case .success(let realm):
                     print("Successfully opened realm: \(realm)")
                     // Use realm and load into master realm
-                    self.masterRealm = realm
+                    RealmManager.shared.masterRealm = realm
+                    
                     self.setSubscription {
                         //Finished
                         //Check the organisation availale for the user logic

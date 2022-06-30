@@ -15,7 +15,8 @@ class DoctorDetailsViewController: BaseViewController {
         super.viewDidLoad()
         self.addBackButtonToNav()
         self.title = "Hospitals"
-        
+        self.setUserRoleAndNameOnNavBar()
+
         self.tableView.dataSource = self
         self.tableView.delegate = self
         self.tableView.register(UINib(nibName: "DashboardTableViewCell", bundle: nil), forCellReuseIdentifier: "DashboardTableViewCell")
@@ -40,7 +41,7 @@ class DoctorDetailsViewController: BaseViewController {
         // Observe collection notifications. Keep a strong
          // reference to the notification token or the
          // observation will stop.
-        viewModel.notificationToken = viewModel.practitionerObject?.observe { [weak self] (change: RealmCollectionChange) in
+        viewModel.notificationToken = viewModel.practitionerRoleObjects?.observe { [weak self] (change: RealmCollectionChange) in
             switch change {
             case .initial:
                 // Results are now populated and can be accessed without blocking the UI

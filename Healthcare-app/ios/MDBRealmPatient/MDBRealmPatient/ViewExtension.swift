@@ -36,7 +36,7 @@ extension UIView {
 }
 
 @IBDesignable class customShadowView: UIView {
-    var shadowAdded: Bool = false
+    var shadowAdded: Bool = true
 
     @IBInspectable var cornerRadius: CGFloat = 0 {
         didSet {

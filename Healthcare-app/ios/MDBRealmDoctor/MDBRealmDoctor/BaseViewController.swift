@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 import NVActivityIndicatorView
+import RealmSwift
 
 class BaseViewController : UIViewController {
     
@@ -27,6 +28,7 @@ class BaseViewController : UIViewController {
     func setUpNavBar() {
         self.navigationController?.navigationBar.tintColor = UIColor.black
         self.title = UIConstants.signUpView.signUpText
+        self.setUserRoleAndNameOnNavBar()
         self.navigationItem.setHidesBackButton(true, animated: true)
         navigationController?.navigationBar.prefersLargeTitles = false
         
@@ -34,7 +36,7 @@ class BaseViewController : UIViewController {
         let backUIBarButtonItem = UIBarButtonItem(image: UIImage(named: UIConstants.signUpView.leftArrowImage), style: .plain, target: self, action: #selector(self.clickButton))
         self.navigationItem.leftBarButtonItem  = backUIBarButtonItem
     }
-    
+        
     /// Fuction to pop the controller
     @objc func clickButton(){
         self.navigationController?.popViewController(animated: true)

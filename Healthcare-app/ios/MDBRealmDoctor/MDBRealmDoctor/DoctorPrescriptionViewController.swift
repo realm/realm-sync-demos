@@ -46,12 +46,12 @@ class DoctorPrescriptionViewController: UIViewController {
         //get the list of nurse in the nurse list segment
         RealmManager.shared.nurseList = RealmManager.shared.findUserType() == "doctor" ? RealmManager.shared.nurseListSelection(orgID: self.organisation_ID) : nil
         
-        
-        let realm = try! Realm()
-        let results = realm.objects(Procedure.self)
-        
-        
-        notificationToken = results.observe({ _ in
+        let results = RealmManager.shared.getProcedures(encounterID:encounter_ID )
+                
+        notificationToken = results?.observe({ _ in
+            //get the list of nurse in the nurse list segment
+            RealmManager.shared.nurseList = RealmManager.shared.findUserType() == "doctor" ? RealmManager.shared.nurseListSelection(orgID: self.organisation_ID) : nil
+            
             self.doctorPrescriptionTableView.reloadData()
         })
         

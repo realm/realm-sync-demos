@@ -15,6 +15,8 @@ class BookingHistoryViewController: BaseViewController {
         super.viewDidLoad()
         self.addBackButtonToNav()
         self.title = "Consultations"
+        self.setUserRoleAndNameOnNavBar()
+
         self.tableView.register(UINib(nibName: "DashboardTableViewCell", bundle: nil), forCellReuseIdentifier: "DashboardTableViewCell")
         self.tableView.register(UINib(nibName: "BookingHistoryTableViewCell", bundle: nil), forCellReuseIdentifier: "BookingHistoryTableViewCell")
         self.viewModel.getProducts()
@@ -23,7 +25,9 @@ class BookingHistoryViewController: BaseViewController {
     @objc @IBAction func actionDidSelectDetails(_ sender: UIButton) {
         if let bookingDetailsVC =
             Constants.dashboardStoryBoard.instantiateViewController(withIdentifier: "BookingDetailsViewController") as? BookingDetailsViewController {
-            bookingDetailsVC.viewModel.procedureDetailsObject = self.viewModel.procedureUpcomingList?[sender.tag]
+            let procedure = self.viewModel.procedureUpcomingList?[sender.tag];
+            bookingDetailsVC.procedure_id = procedure?._id
+//            bookingDetailsVC.viewModel.procedureDetailsObject =
             self.navigationController?.pushViewController(bookingDetailsVC, animated: true)
         }
     }

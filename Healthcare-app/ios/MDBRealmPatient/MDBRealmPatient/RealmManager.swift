@@ -12,7 +12,10 @@ import RealmSwift
     var masterRealm: Realm?
     var defaultObjectId = ObjectId("000000000000000000000000")
     
-    override private init() { }
+    override private init() {
+        
+        app.syncManager.logLevel = .all
+    }
     
     // MARK: - Signup / Create user
     
@@ -389,13 +392,15 @@ import RealmSwift
         return nil
     }
     /// Get all Procedure
-    func getProcedureById(procedureId: ObjectId) -> Procedure? {
+    func getProcedureById(procedureId: ObjectId) -> Results<Procedure>? {
         let results = masterRealm?.objects(Procedure.self).filter("_id == %@", procedureId)
         if results?.count ?? 0 > 0 {
-            return results?.first
+            return results
         }
         return nil
     }
+    
+    
     // MARK: - Condition
     
     /// Get all Condition
