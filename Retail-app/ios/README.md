@@ -8,7 +8,7 @@ Note: Replace the google places api key in AppConfig.swift for address search fe
 ## Installation
 
 The dependency manager is cocoapods. 
-To get the app running, goto root folder on terminal, and do 
+To get the app running, goto this ios project's root folder on terminal, and do 
 
 ```cpp
 pod install
