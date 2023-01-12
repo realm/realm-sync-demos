@@ -5,7 +5,16 @@ App users will be the store managers and delivery users.
 
 Note: Replace the google places api key in AppConfig.swift for address search feature.
 
-## Features:
+## Installation
+
+The dependency manager is cocoapods. 
+To get the app running, goto root folder on terminal, and do 
+
+```cpp
+pod install
+```
+
+## Features in the app:
 ## SignUp
 - First Name, Last Name, Email, Password and User type (Store Manager or Delivery User)
 - Select the stores that will be managed by this Store User
@@ -50,4 +59,3 @@ Note: Replace the google places api key in AppConfig.swift for address search fe
 ## Delivery User Job details screen <br><img src="./Screenshots/13.png" width="323" height="700">
 ## Delivery User Update job status screen <br><img src="./Screenshots/14.png" width="323" height="700">
 ## Delivery User Completed job screen <br><img src="./Screenshots/15.png" width="323" height="700">
-
