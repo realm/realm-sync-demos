@@ -52,18 +52,14 @@ import RealmSwift
     func updateStoresForStoreUser(stores: [Stores], success onTaskSuccess:@escaping OnTaskSuccess) {
         let userId = UserDefaults.standard.value(forKey: Defaults.userId) as? String ?? ""
         let userIdObj = try! RealmSwift.ObjectId(string: userId)
-        if let storeUsers = masterRealm?.objects(Users.self).filter("_id == %@", userIdObj) {
-            if storeUsers.count > 0{
-                let storeUser = storeUsers.first
-                let storesList = List<Stores>()
-                storesList.append(objectsIn: stores)
-                // Open a thread-safe transaction
-                try! masterRealm?.write {
-                    storeUser?.stores = storesList
-                    onTaskSuccess(true)
-                    return
-                }
-            }
+        let storeUser = masterRealm?.objects(Users.self).filter("_id == %@", userIdObj).first!
+        let storesList = List<Stores>()
+        storesList.append(objectsIn: stores)
+        // Open a thread-safe transaction
+        try! masterRealm?.write {
+            storeUser?.stores = storesList
+            onTaskSuccess(true)
+            return
         }
         onTaskSuccess(false)
     }
@@ -86,9 +82,10 @@ import RealmSwift
                 print("Successfully logged in as user \(user)")
                 // If the user data has been refreshed recently, you can access the
                 // custom user data directly on the user object
+                print("User custom data: \(user.customData)")
                 let userCustomData = user.customData
-                print("User custom data: \(userCustomData)")
-                // saving few user data in userdefaults for easy access.
+                // Refresh the custom user data
+                // save few data in userdefaults for easy access.
                 self.saveUserDataToUserDefaults(userDict: userCustomData as [String : Any])
                 success(userCustomData)
             }
@@ -111,6 +108,7 @@ import RealmSwift
     
     /// Reset data stored in Userdefaults
     func clearUserDefaultsData() {
+        print("clearUserDefaultsData")
         UserDefaults.standard.removeObject(forKey: Defaults.userId)
         UserDefaults.standard.removeObject(forKey: Defaults.userRole)
         UserDefaults.standard.removeObject(forKey: Defaults.partition)
@@ -126,6 +124,7 @@ import RealmSwift
                 let realm = try! Realm()
                 try! realm.write {
                     realm.deleteAll()
+                    print("realm.deleteAll")
                     self.clearUserDefaultsData()
                     DispatchQueue.main.async {
                         Router.setRootViewController()
@@ -292,20 +291,15 @@ import RealmSwift
     func updateStockQuantity(forInventory inventory: StoreInventory, withStock quantity: Int, success onTaskSuccess:@escaping OnTaskSuccess) {
         // when increasing inventory quantity from store partition, decreasee the same quantity from product totalquantiity in master partition. and vice versa.
         guard let existingQuantity = inventory.quantity else { return }
-        if let inventoriesToUpdate = storeRealm?.objects(StoreInventory.self).filter({$0._id == inventory._id}) {
-            if inventoriesToUpdate.count > 0 {
-                let inventoryToUpdate = inventoriesToUpdate.first
-
-                // Open a thread-safe transaction
-                try! storeRealm?.write {
-                    inventoryToUpdate?.quantity = quantity
-                    let isIncrement = !(existingQuantity < quantity)
-                    if let productId = inventory.productId {
-                        self.updateProductTotalQuantity(forProduct: productId, isIncrement: isIncrement) { status in
-                            onTaskSuccess(status)
-                            return
-                        }
-                    }
+        let inventoryToUpdate = storeRealm?.objects(StoreInventory.self).filter{$0._id == inventory._id}.first!
+        // Open a thread-safe transaction
+        try! storeRealm?.write {
+            inventoryToUpdate?.quantity = quantity
+            let isIncrement = !(existingQuantity < quantity)
+            if let productId = inventory.productId {
+                self.updateProductTotalQuantity(forProduct: productId, isIncrement: isIncrement) { status in
+                    onTaskSuccess(status)
+                    return
                 }
             }
         }
@@ -317,20 +311,16 @@ import RealmSwift
     ///   - productId: productid of the inventory
     ///   - increment: flag that says whether it is an increment or decrement to be done
     func updateProductTotalQuantity(forProduct productId: ObjectId, isIncrement increment: Bool, success onTaskSuccess:@escaping OnTaskSuccess) {
-        if let productsToUpdate = masterRealm?.objects(Products.self).filter({$0._id == productId}) {
-            if productsToUpdate.count > 0 {
-                let productToUpdate = productsToUpdate.first
-                // Open a thread-safe transaction
-                try! masterRealm?.write {
-                    if increment == true {
-                        productToUpdate?.totalQuantity += 1
-                    } else {
-                        productToUpdate?.totalQuantity -= 1
-                    }
-                    onTaskSuccess(true)
-                    return
-                }
+        let productToUpdate = masterRealm?.objects(Products.self).filter{$0._id == productId}.first!
+        // Open a thread-safe transaction
+        try! masterRealm?.write {
+            if increment == true {
+                productToUpdate?.totalQuantity += 1
+            } else {
+                productToUpdate?.totalQuantity -= 1
             }
+            onTaskSuccess(true)
+            return
         }
         onTaskSuccess(false)
     }
@@ -547,34 +537,26 @@ import RealmSwift
     }
     
     func updateJobStatus(status: String, receivedBy: String?, forJob job: Jobs, success onTaskSuccess:@escaping OnTaskSuccess) {
-        if let jobs = masterRealm?.objects(Jobs.self).filter({$0._id == job._id}) {
-            if jobs.count > 0 {
-                let job = jobs.first
-                // Open a thread-safe transaction
-                try! masterRealm?.write {
-                    job?.status = status
-                    if receivedBy != nil {
-                        job?.receivedBy = receivedBy
-                    }
-                    onTaskSuccess(true)
-                    return
-                }
+        let job = masterRealm?.objects(Jobs.self).filter{$0._id == job._id}.first!
+        // Open a thread-safe transaction
+        try! masterRealm?.write {
+            job?.status = status
+            if receivedBy != nil {
+                job?.receivedBy = receivedBy
             }
+            onTaskSuccess(true)
+            return
         }
         onTaskSuccess(false)
     }
     
     func updateAssignee(user: Users, forJob job: Jobs, success onTaskSuccess:@escaping OnTaskSuccess) {
-        if let jobs = masterRealm?.objects(Jobs.self).filter({$0._id == job._id}) {
-            if jobs.count > 0 {
-                let job = jobs.first
-                // Open a thread-safe transaction
-                try! masterRealm?.write {
-                    job?.assignedTo = user
-                    onTaskSuccess(true)
-                    return
-                }
-            }
+        let job = masterRealm?.objects(Jobs.self).filter{$0._id == job._id}.first!
+        // Open a thread-safe transaction
+        try! masterRealm?.write {
+            job?.assignedTo = user
+            onTaskSuccess(true)
+            return
         }
         onTaskSuccess(false)
     }
@@ -614,18 +596,13 @@ import RealmSwift
     }
     
     func updateOrder(order: Orders, success onTaskSuccess:@escaping OnTaskSuccess) {
-        if let existingOrders = masterRealm?.objects(Orders.self).filter({$0._id == order._id}) {
-            if existingOrders.count > 0 {
-                let existingOrder = existingOrders.first
-                // Open a thread-safe transaction
-                try! masterRealm?.write {
-                    existingOrder?.products = order.products
-                    onTaskSuccess(true)
-                    return
-                }
-            }
+        let existingOrder = masterRealm?.objects(Orders.self).filter{$0._id == order._id}.first!
+        // Open a thread-safe transaction
+        try! masterRealm?.write {
+            existingOrder?.products = order.products
+            onTaskSuccess(true)
+            return
         }
-        
         onTaskSuccess(false)
     }
     

@@ -5,7 +5,6 @@
 import UIKit
 import NVActivityIndicatorView
 import SwiftUI
-import RealmSwift
 
 class BaseViewController: UIViewController, SlideUpSelectionDelegate {
     let activityIndicatorView = NVActivityIndicatorView(frame: CGRect(x: 80, y: 80, width: 60, height:60), type: .ballClipRotatePulse, color: .white)
@@ -41,27 +40,57 @@ class BaseViewController: UIViewController, SlideUpSelectionDelegate {
     /// After login & Signup, Sync realms from required partitions and  initiate navigation to home screen of the user
     func syncRealmDataAndGotoHome() {
         self.showLoader()
-        // If a realm user is loggged in, instantiate the master and store realms.
-        // Else redirect to login screen.
         if let user = RealmManager.shared.app.currentUser {
-            
-            // Configure master realm to its synced local realm instance.
-            let masterPartitionValue = UserDefaults.standard.value(forKey: Defaults.partition) as? String ?? ""
-            let masterConfiguration = user.configuration(partitionValue: masterPartitionValue)
-            RealmManager.shared.masterRealm = try! Realm(configuration: masterConfiguration)
-            
-            // Configure store realm to its synced local realm instance.
-            let storeId = UserDefaults.standard.value(forKey: Defaults.stores) as? String
-            let storePartitionValue = "store=\(storeId ?? "")"
-            let storeConfiguration = user.configuration(partitionValue: storePartitionValue)
-            RealmManager.shared.storeRealm = try! Realm(configuration: storeConfiguration)
-
-            // Navigate to home screen
-            self.hideLoader()
-            Router.setRootViewController()
+            if user.isLoggedIn == true {
+                // sync master partition
+                RealmManager.shared.syncMasterRealm { completion in
+                    if completion == false {
+                        self.hideLoader()
+                        self.showMessage(message: "Failed to open master")
+                    }
+                    // if store admin, sync store partition
+                    if let userRole = UserDefaults.standard.value(forKey: Defaults.userRole) {
+                        if userRole as! String == UserRole.storeUser.rawValue {
+                            let myUserInfo = RealmManager.shared.getMyUserInfo()
+                            if myUserInfo?.stores.count ?? 0 > 0 {
+                                let storeId = UserDefaults.standard.value(forKey: Defaults.stores)
+                                // if active store is not set, then set the first store as active
+                                if storeId == nil {
+                                    UserDefaults.standard.setValue(myUserInfo?.stores.first?._id.stringValue, forKey: Defaults.stores)
+                                }
+                            }
+                            self.syncStoreRealmData()
+                            return
+                        }
+                    }
+                    // do navigation to Home page
+                    self.hideLoader()
+                    DispatchQueue.main.async {
+                        Router.setRootViewController()
+                        return
+                    }
+                }
+            } else {
+                self.hideLoader()
+                Router.gotoLogin()
+            }
         } else {
             self.hideLoader()
             Router.gotoLogin()
+        }
+    }
+    
+    private func syncStoreRealmData() {
+        RealmManager.shared.syncStoreRealm { completed in
+            if completed == false {
+                self.showMessage(message: "Failed to open realm - store")
+            }
+            // do navigation to Home page
+            self.hideLoader()
+//            DispatchQueue.main.async {
+                Router.setRootViewController()
+                return
+//            }
         }
     }
     

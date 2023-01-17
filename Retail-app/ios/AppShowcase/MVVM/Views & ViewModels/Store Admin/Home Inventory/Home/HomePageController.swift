@@ -35,12 +35,12 @@ class HomePageController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setLogoOnNavBarLeftItem()
+        observeRealmChanges()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.tabBarController?.tabBar.isHidden = false
-        self.observeRealmChanges()
         loadProducts()
     }
     
@@ -48,44 +48,20 @@ class HomePageController: BaseViewController {
         // Observe collection notifications. Keep a strong
          // reference to the notification token or the
          // observation will stop.
-        guard let collectionVw = self.collectionView else { return }
-        guard let lowStockCollectionVw = self.lowStockCollectionView else { return }
-
-        viewModel.notificationToken?.invalidate()
-        viewModel.lowStockNotfnToken?.invalidate()
-        
-        viewModel.notificationToken = viewModel.filteredArray?.observe { [weak self] (changes: RealmCollectionChange) in
-            self?.reactToRealmChanges(onCollection: collectionVw, realmChanges: changes)
+        viewModel.notificationToken = viewModel.products?.observe { [weak self] (changes: RealmCollectionChange) in
+             guard let collectionView = self?.collectionView else { return }
+            self?.reactToRealmChanges(onCollection: collectionView, realmChanges: changes)
          }
         viewModel.lowStockNotfnToken = viewModel.lowStockProducts?.observe { [weak self] (changes: RealmCollectionChange) in
-            self?.reactToRealmChanges(onCollection: lowStockCollectionVw, realmChanges: changes)
+             guard let collectionView = self?.lowStockCollectionView else { return }
+            self?.reactToRealmChanges(onCollection: collectionView, realmChanges: changes)
             self?.lowStockCollectionView.isHidden = self?.viewModel.lowStockProducts?.count == 0
          }
     }
     
     func reactToRealmChanges(onCollection collectionView: UICollectionView,realmChanges changes: RealmCollectionChange<Results<StoreInventory>> )  {
-        DispatchQueue.main.async {
-            switch changes {
-            case .initial:
-                // Results are now populated and can be accessed without blocking the UI
-                collectionView.reloadData()
-            case .update(_, let deletions, let insertions, let modifications):
-                // Query results have changed, so apply them to the UITableView
-                collectionView.performBatchUpdates({
-                    // Always apply updates in the following order: deletions, insertions, then modifications.
-                    // Handling insertions before deletions may result in unexpected behavior.
-                    collectionView.deleteItems(at: deletions.map({ IndexPath(row: $0, section: 0)}))
-                    collectionView.insertItems(at:  insertions.map({ IndexPath(row: $0, section: 0) }))
-                    collectionView.reloadItems(at: modifications.map({ IndexPath(row: $0, section: 0) }))
-                }, completion: { finished in
-                    // ...
-                })
-            case .error(let error):
-                // An error occurred while opening the Realm file on the background worker thread
-                fatalError("\(error)")
-            }
-        }
-
+        
+        collectionView.reloadData()
     }
     // MARK: - Private methods
     
@@ -136,6 +112,7 @@ extension HomePageController: UICollectionViewDelegate, UICollectionViewDataSour
             return cell!
         } else {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellIdentifier.productCollectionViewCell, for: indexPath) as? ProductsCollectionViewCell
+//            cell?.contentView.makeRoundCorner(withRadius: 0)
             cell?.makeRoundCornerWithoutBorder(withRadius: 15)
             cell?.setShadow()
             cell?.productImage.makeRoundCornerWithoutBorder(withRadius: 5.0)

@@ -61,9 +61,15 @@ class ProductDetailController: BaseViewController {
         viewModel.productNotfnToken = viewModel.product?.observe { [weak self] change in
             self?.loadData()
         }
-        viewModel.inventoryNotfnToken = viewModel.inventory?.observe { [weak self] change in
+        viewModel.productNotfnToken = viewModel.inventory?.observe { [weak self] change in
             self?.loadData()
         }
+    }
+
+    private func refreshProductAndInventoryInfo() {
+        viewModel.product = RealmManager.shared.getProduct(withId: (viewModel.inventory?.productId)!)
+        viewModel.inventory = RealmManager.shared.getStoreInventory(withId: viewModel.inventory!._id)
+        loadData()
     }
 
     private func loadData(){
@@ -93,7 +99,11 @@ class ProductDetailController: BaseViewController {
     
     @IBAction private func minusAction(_ sender: UIButton) {
         if let quantity = Int(self.editStockTxtFld.text ?? "0") {
+//                self.editStockTxtFld.text = "\(quantity-1)"
             RealmManager.shared.updateStockQuantity(forInventory: viewModel.inventory!, withStock: quantity-1) { status in
+                DispatchQueue.main.async {
+//                    self.refreshProductAndInventoryInfo()
+                }
             }
         }
     }
@@ -101,6 +111,9 @@ class ProductDetailController: BaseViewController {
     @IBAction private func plusAction(_ sender: UIButton) {
         if let quantity = Int(self.editStockTxtFld.text ?? "0") {
             RealmManager.shared.updateStockQuantity(forInventory: viewModel.inventory!, withStock: quantity+1) { status in
+                DispatchQueue.main.async {
+//                    self.refreshProductAndInventoryInfo()
+                }
             }
         }
     }

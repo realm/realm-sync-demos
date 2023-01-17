@@ -1,0 +1,38 @@
+PODS:
+  - Alamofire (5.6.4)
+  - AlamofireImage (4.2.0):
+    - Alamofire (~> 5.4)
+  - GooglePlaces (6.0.0)
+  - IQKeyboardManager (6.5.11)
+  - NVActivityIndicatorView (5.0.0):
+    - NVActivityIndicatorView/Base (= 5.0.0)
+  - NVActivityIndicatorView/Base (5.0.0)
+  - SwiftLint (0.50.3)
+
+DEPENDENCIES:
+  - AlamofireImage
+  - GooglePlaces (= 6.0.0)
+  - IQKeyboardManager
+  - NVActivityIndicatorView (= 5.0.0)
+  - SwiftLint
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlamofireImage
+    - GooglePlaces
+    - IQKeyboardManager
+    - NVActivityIndicatorView
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
+  AlamofireImage: 34a2d90b0e5fe6a5605f85ae4b7b01e784c60192
+  GooglePlaces: c97d96ae68594acb64035c9ca9f26fbfc1d23af1
+  IQKeyboardManager: ef43ce1ba1e5aaf4adf222c0a46f39761f246879
+  NVActivityIndicatorView: f109ed069924ac1b4adbc1ae9cfaeac0be1d6c2c
+  SwiftLint: 77f7cb2b9bb81ab4a12fcc86448ba3f11afa50c6
+
+PODFILE CHECKSUM: 77a16ff65702d19a55b95d0dc7f514362e073706
+
+COCOAPODS: 1.11.3
